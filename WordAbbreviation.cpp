@@ -27,6 +27,7 @@ protected:
         - I can realised that sometime your current situation is little dicey and you might be 
           going through the phase which is problematic for you and yoor growth, 
 
+        - 
 
 
 
@@ -34,18 +35,25 @@ protected:
     string Abbreviation(string& word)
     {
         int wl = word.length();
+
         if (wl == 1 || wl == 2) {
             return word;
         }
 
         string out = "";
-        out += word.at(0);
-        out += to_string(wl - 2);
-        out += word.at(wl - 1);
 
-        //  
+        if (wl > 2) {
+            out += word.at(0);
+            out += to_string(wl - 2);
+            out += word.at(wl - 1);
+        }
+        
+        if (out.empty()) {
+            // To make sure the Error message will help you while debugging
+            cout << "Something Wrong happened while creating Abbreviation!!!" << endl;
+        }
 
-
+        return out;
     }
 
 

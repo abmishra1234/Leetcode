@@ -14,20 +14,19 @@ using namespace std;
 #define FORREF
 #ifndef FORREF
 
-
-
-
-
-
-
 int main()
 {
 	cout << "Hello !!" << endl;
 
 
 
+
 	return 0;
 }
+
+
+
+
 
 
 
