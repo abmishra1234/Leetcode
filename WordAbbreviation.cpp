@@ -64,6 +64,7 @@ public:
         auto it = umap.find(abrword);
         if (it == umap.end()) {
             cond_1 = true;
+            return (cond_1 || cond_2);
         }
 
         // below code is for evaluating the second condition
@@ -88,10 +89,25 @@ public:
 
 int main()
 {
-    vector<string> dictionary = {"", "a", "ab", "acdeb", "agdeb"};
+    vector<string> dictionary = { "deer", "door", "cake", "card" };
     ValidWordAbbr* obj = new ValidWordAbbr(dictionary);
-    
+    cout << "null" << endl;
 
+    // 1.
+    bool result = obj->isUnique("dear");
+    cout << result << endl; // false
+
+    result = obj->isUnique("cart");
+    cout << result << endl; // true
+
+    result = obj->isUnique("cane");
+    cout << result << endl; // false
+
+    result = obj->isUnique("make");
+    cout << result << endl; // true  
+
+    result = obj->isUnique("cake");
+    cout << result << endl; // true  
 
 
 
