@@ -21,5 +21,8 @@
     <ClCompile Include="WordAbbreviation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Split_Array_Largest_Sum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
