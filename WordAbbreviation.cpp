@@ -15,66 +15,85 @@ using namespace std;
 #ifndef FORREF
 
 class ValidWordAbbr {
+    // map for word and their abbreviated word
+    unordered_map<string, unordered_set<string>> umap;
 
+    // Create one utility private method to work inside the 
+    // ValidWordAbbr class
 
-protected:
-    /*
-        The abbreviation of a word is a concatenation of its first letter, 
-        the number of characters between the first and last letter, and its last letter. 
-        If a word has only two characters, then it is an abbreviation of itself.
-
-        Let's Concentrate on, how to do the things in the best way
-        - I can realised that sometime your current situation is little dicey and you might be 
-          going through the phase which is problematic for you and yoor growth, 
-
-        - 
-
-
-
-    */
-    string Abbreviation(string& word)
-    {
-        int wl = word.length();
-
-        if (wl == 1 || wl == 2) {
+    string doAbbredWord(string word) {
+        size_t wl = word.length();
+        /*
+            if the word is empty
+            or this word might be of length 1 or 2
+        */
+        if (wl <= 2)
             return word;
-        }
-
-        string out = "";
-
-        if (wl > 2) {
-            out += word.at(0);
-            out += to_string(wl - 2);
-            out += word.at(wl - 1);
-        }
         
-        if (out.empty()) {
-            // To make sure the Error message will help you while debugging
-            cout << "Something Wrong happened while creating Abbreviation!!!" << endl;
-        }
+        // if wl > 2
+        int remaiLength = wl - 2;
+        string outStr = "";
+        
+        outStr += word.at(0);
+        outStr += to_string(remaiLength);
+        outStr += word.at(wl - 1);
 
-        return out;
+        return outStr;
     }
 
-
 public:
-    ValidWordAbbr(vector<string>& dictionary) {
 
+    ValidWordAbbr(vector<string>& dictionary) {
+        // clear the map before proceeding further
+        umap.clear(); 
+
+        for (auto w : dictionary) {
+            string abreWord = doAbbredWord(w);
+            umap[abreWord].insert(w);
+        }
     }
 
     bool isUnique(string word) {
+        
+        // There is no word in dictionary whose abbreviation is equal to word's abbreviation.
+        bool cond_1 = false;
+        bool cond_2 = false;
 
+        // below code is for cond_1
+        string abrword = doAbbredWord(word);
+        auto it = umap.find(abrword);
+        if (it == umap.end()) {
+            cond_1 = true;
+        }
+
+        // below code is for evaluating the second condition
+        unordered_set<string> wordSet = it->second;
+        int wset_size = wordSet.size();
+        if (wset_size == 1 && strcmp(it->second.begin()->c_str(), word.c_str()) == 0) {
+            cond_2 = true;
+        }
+
+        return (cond_1 || cond_2);
     }
 };
 
-
+/**
+ * Your ValidWordAbbr object will be instantiated and called as such:
+ * ValidWordAbbr* obj = new ValidWordAbbr(dictionary);
+ * bool param_1 = obj->isUnique(word);
+ */
 
 
 
 
 int main()
 {
-	cout << "Hello !!" << endl;
+    vector<string> dictionary = {"", "a", "ab", "acdeb", "agdeb"};
+    ValidWordAbbr* obj = new ValidWordAbbr(dictionary);
+    
+
+
+
 
 	return 0;
 }
