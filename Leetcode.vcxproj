@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="412_FizzBuzz.cpp" />
+    <ClCompile Include="PlusOne.cpp" />
+    <ClCompile Include="Richest_Customer.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Ransom_Note.cpp" />
     <ClCompile Include="Split_Array_Largest_Sum.cpp" />
     <ClCompile Include="WordAbbreviation.cpp" />
   </ItemGroup>

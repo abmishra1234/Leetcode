@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\ArrayAndString">
+      <UniqueIdentifier>{c41e422d-a2cd-437a-8cba-f77887c5fa32}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -23,6 +26,18 @@
     </ClCompile>
     <ClCompile Include="Split_Array_Largest_Sum.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Richest_Customer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="412_FizzBuzz.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ransom_Note.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PlusOne.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
