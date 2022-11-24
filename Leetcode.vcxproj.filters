@@ -39,5 +39,8 @@
     <ClCompile Include="PlusOne.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="DiagonalTraverse.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
