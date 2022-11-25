@@ -1,2 +1,4 @@
-﻿  SpiralMatrix.cpp
+﻿  AddBinary.cpp
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\AddBinary.cpp(21,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\AddBinary.cpp(22,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe

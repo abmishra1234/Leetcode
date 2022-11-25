@@ -128,7 +128,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="412_FizzBuzz.cpp" />
+    <ClCompile Include="AddBinary.cpp" />
     <ClCompile Include="DiagonalTraverse.cpp" />
+    <ClCompile Include="PascalTriangle.cpp" />
     <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="Richest_Customer.cpp" />
     <ClCompile Include="Source.cpp" />
