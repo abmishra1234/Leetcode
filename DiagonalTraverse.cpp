@@ -14,79 +14,27 @@ using namespace std;
 //#define FORREF
 #ifndef FORREF
 class Solution {
-    // move method for moving the forward direction
-    void move(bool forward, int& r, int& c) {
-        if (forward) {
-            r--;
-            c++;
-        }
-        else
-        {
-            r++;
-            c--;
-        }
-    }
-    void check(int& r, int& c, const int nr, const int nc, bool &forward) {
-        bool change = false;
-        // for row
-        if (r < 0) {
-            r = 0;
-            forward = !forward;
-        }
-        
-        if (r >= nr) {
-            r = nr - 1;
-            c++;
-            forward = !forward;
-            check(r, c, nr, nc, forward);
-        }
-
-        // for column
-        if (c < 0) {
-            c = 0;
-            change = true;
-        }
-        
-        if (c >= nc) {
-            c = nc - 1;
-            r++;
-            forward = !forward;
-            check(r, c, nr, nc, forward);
-        }
-    }
 public:
-    /*
-        TODO : DO the dry run of the code
-
-    */
     vector<int> findDiagonalOrder(vector<vector<int>>& mat) {
-        vector<int> result;
-        int nr = (int) mat.size();
-        cout << "nr = " << nr << endl; // 3
-        
-        if (nr == 0) {
-            cout << "Matrix dimension is wrong, please takecare!!!" << endl;
-            return result;
+        vector<int> res;
+        int i = 0, j = 0, n = mat.size(), m = mat[0].size(), add = -1;
+        res.push_back(mat[i][j]);
+        while (i < n - 1 || j < m - 1) {
+            if (j < m - 1 && ((i == 0 && add == -1) || (i == n - 1 && add == 1))) {
+                ++j;
+                add = -add;
+            }
+            else if ((j == 0 && add == 1) || (j == m - 1 && add == -1)) {
+                ++i;
+                add = -add;
+            }
+            else {
+                i += add;
+                j -= add;
+            }
+            res.push_back(mat[i][j]);
         }
-
-        int nc = (int) mat[0].size();
-        cout << "nc = " << nc << endl; // 3
-
-        int elementCnt = nr * nc;
-        cout << "elementCnt = " << elementCnt << endl; // 9
-
-
-        int r = 0;
-        int c = 0;
-        bool forward = true;
-
-        while (elementCnt > 0) {
-            check(r, c, nr, nc, forward); // {-1, 1}
-            result.push_back(mat[r][c]); // the element pushed : 1, 2
-            --elementCnt;
-            move(forward, r, c); // r = -1, c = 1
-        }
-        return result;
+        return res;
     }
 };
 
