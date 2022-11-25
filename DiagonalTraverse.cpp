@@ -11,7 +11,7 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 // Diagonal Traversing  
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 class Solution {
 public:
