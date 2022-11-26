@@ -60,5 +60,8 @@
     <ClCompile Include="RemoveElement.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="MaxConsecutiveOnes.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
