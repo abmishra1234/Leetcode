@@ -16,47 +16,51 @@ using namespace std;
 
 class Solution {
 public:
+    // This is the method to find the min sub array len for the condition  
     int minSubArrayLen(int target, vector<int>& nums) {
-        int i = 0, j = 0;
+        int min_len = INT_MAX;
         int ns = nums.size();
+        int l = 0;
+        int r = 0;
+        int lsum = 0;
 
-        int minSubArrLen = INT_MAX;
+        bool done = false;
 
-        // Sliding window cobcept need to be applied
-        // i is representing the start point of slide window
-        // j is the end point of sliding window
-        while (i < ns) { // you are making sure that your window start index is not going beyond the nums array last index
-            
-            // Expanding window
-            int tsum = 0; // window temp sum value
-            int tlen = 0;
-            while (true) {
-                ++tlen;
-                tsum += nums[j];
-                ++j;
-                if (tsum < target)
-                    continue;
-                else
-                {
-                    minSubArrLen = min(minSubArrLen, tlen);
+        while (l < ns && r < ns) {
+            // sliding window with Expanding
+            while (r < ns) {
+                lsum += nums[r];
+                ++r;
+
+                if (lsum >= target) {
+                    min_len = min(min_len, (r - l));
                     break;
                 }
             }
 
-            // Contracting window
+            // Contracting Window
+            while (l < ns && l < r) {
+                if (l == r) {
+                    if (lsum >= target) {
+                        min_len = min(min_len, (r - l));
+                    }
+                    done = true;
+                }
 
+                lsum -= nums[l];
+                ++l;
+                if (lsum >= target) {
+                    min_len = min(min_len, (r - l));
+                    continue;
+                }
+                else
+                    break;
 
-            
-
-
-
+            }
+            if (done) break;
         }
 
-
-        
-
-
-
+        return (min_len != INT_MAX) ? min_len : 0;
     }
 };
 
@@ -64,25 +68,25 @@ public:
 int main(void)
 {
     Solution sln;
-    // 1
-    vector<int> nums1 = { 2,3,1,2,4,3 };
-    int target = 7;
-    int subArrLen = sln.minSubArrayLen(target, nums1);
-    cout << "subArrLen = " << subArrLen << endl; // 2
     
     // 2
     vector<int> nums2 = { 1,4,4 };
-    target = 4;
-    subArrLen = sln.minSubArrayLen(target, nums2);
+    int target = 4;
+    int subArrLen = sln.minSubArrayLen(target, nums2);
     cout << "subArrLen = " << subArrLen << endl; // 1
+
     
-    // 3
+    // 1
+    vector<int> nums1 = { 2,3,1,2,4,3 };
+    target = 7;
+    subArrLen = sln.minSubArrayLen(target, nums1);
+    cout << "subArrLen = " << subArrLen << endl; // 2
+    
+       // 3
     vector<int> nums3 = { 1,1,1,1,1,1,1,1 };
     target = 11;
     subArrLen = sln.minSubArrayLen(target, nums3);
     cout << "subArrLen = " << subArrLen << endl; // 0
-
-
 
     return 0;
 }
