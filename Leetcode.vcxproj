@@ -130,13 +130,16 @@
     <ClCompile Include="412_FizzBuzz.cpp" />
     <ClCompile Include="AddBinary.cpp" />
     <ClCompile Include="DiagonalTraverse.cpp" />
+    <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="PascalTriangle.cpp" />
     <ClCompile Include="PlusOne.cpp" />
+    <ClCompile Include="RemoveElement.cpp" />
     <ClCompile Include="Richest_Customer.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Ransom_Note.cpp" />
     <ClCompile Include="SpiralMatrix.cpp" />
     <ClCompile Include="Split_Array_Largest_Sum.cpp" />
+    <ClCompile Include="StrStr.cpp" />
     <ClCompile Include="WordAbbreviation.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
