@@ -132,6 +132,7 @@
     <ClCompile Include="DiagonalTraverse.cpp" />
     <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="MaxConsecutiveOnes.cpp" />
+    <ClCompile Include="MinimumSizeSubarraySum.cpp" />
     <ClCompile Include="PascalTriangle.cpp" />
     <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="RemoveElement.cpp" />
