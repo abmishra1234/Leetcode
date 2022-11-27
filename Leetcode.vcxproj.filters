@@ -16,6 +16,9 @@
     <Filter Include="Source Files\ArrayAndString">
       <UniqueIdentifier>{c41e422d-a2cd-437a-8cba-f77887c5fa32}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\QueueAndStack">
+      <UniqueIdentifier>{6be89524-f856-40dd-8c55-bda17847d617}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -77,6 +80,12 @@
     </ClCompile>
     <ClCompile Include="ReverseWordsInStringIII.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
+    <ClCompile Include="RemoveDuplicateFromSortedIntArray.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
+    <ClCompile Include="DesignCircularQueue.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

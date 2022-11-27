@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="412_FizzBuzz.cpp" />
     <ClCompile Include="AddBinary.cpp" />
+    <ClCompile Include="DesignCircularQueue.cpp" />
     <ClCompile Include="DiagonalTraverse.cpp" />
     <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="MaxConsecutiveOnes.cpp" />
@@ -136,6 +137,7 @@
     <ClCompile Include="PascalTriangle.cpp" />
     <ClCompile Include="PascalTriangleII.cpp" />
     <ClCompile Include="PlusOne.cpp" />
+    <ClCompile Include="RemoveDuplicateFromSortedIntArray.cpp" />
     <ClCompile Include="RemoveElement.cpp" />
     <ClCompile Include="ReverseWordInString.cpp" />
     <ClCompile Include="ReverseWordsInStringIII.cpp" />
