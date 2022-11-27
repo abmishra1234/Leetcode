@@ -72,5 +72,11 @@
     <ClCompile Include="PascalTriangleII.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="ReverseWordInString.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseWordsInStringIII.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

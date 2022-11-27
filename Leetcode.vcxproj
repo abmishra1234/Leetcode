@@ -137,6 +137,8 @@
     <ClCompile Include="PascalTriangleII.cpp" />
     <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="RemoveElement.cpp" />
+    <ClCompile Include="ReverseWordInString.cpp" />
+    <ClCompile Include="ReverseWordsInStringIII.cpp" />
     <ClCompile Include="Richest_Customer.cpp" />
     <ClCompile Include="RotateArray.cpp" />
     <ClCompile Include="Source.cpp" />
