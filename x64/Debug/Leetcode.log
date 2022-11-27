@@ -1,5 +1,3 @@
 ﻿  DesignCircularQueue.cpp
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\DesignCircularQueue.cpp(25): error C4716: 'MyCircularQueue::enQueue': must return a value
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\DesignCircularQueue.cpp(45): error C4716: 'MyCircularQueue::isFull': must return a value
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\DesignCircularQueue.cpp(29): error C4716: 'MyCircularQueue::deQueue': must return a value
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\DesignCircularQueue.cpp(37): error C4716: 'MyCircularQueue::Rear': must return a value
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\DesignCircularQueue.cpp(40): warning C4715: 'MyCircularQueue::enQueue': not all control paths return a value
+  Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe
