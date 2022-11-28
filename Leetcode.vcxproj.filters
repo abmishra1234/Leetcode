@@ -87,5 +87,14 @@
     <ClCompile Include="DesignCircularQueue.cpp">
       <Filter>Source Files\QueueAndStack</Filter>
     </ClCompile>
+    <ClCompile Include="CircularQueueImpleII.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
+    <ClCompile Include="MovingAvg.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
+    <ClCompile Include="WallsAndGates.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

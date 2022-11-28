@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClCompile Include="412_FizzBuzz.cpp" />
     <ClCompile Include="AddBinary.cpp" />
+    <ClCompile Include="CircularQueueImpleII.cpp" />
     <ClCompile Include="DesignCircularQueue.cpp" />
     <ClCompile Include="DiagonalTraverse.cpp" />
     <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="MaxConsecutiveOnes.cpp" />
     <ClCompile Include="MinimumSizeSubarraySum.cpp" />
+    <ClCompile Include="MovingAvg.cpp" />
     <ClCompile Include="PascalTriangle.cpp" />
     <ClCompile Include="PascalTriangleII.cpp" />
     <ClCompile Include="PlusOne.cpp" />
@@ -148,6 +150,7 @@
     <ClCompile Include="SpiralMatrix.cpp" />
     <ClCompile Include="Split_Array_Largest_Sum.cpp" />
     <ClCompile Include="StrStr.cpp" />
+    <ClCompile Include="WallsAndGates.cpp" />
     <ClCompile Include="WordAbbreviation.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
