@@ -11,76 +11,71 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
+#define INF 2147483647
+/*
+    Let's write your code one's again for handling this problem
+    @Note or Precaution on the problem
+    1. you can put the two source or all the gates into the queue one's
+    2. How big and reallocate possibility with your container because
+       container reallocation is putting very heavy panelty on performance
 
-int xDir[4] = {0,-1,0,1};
-int yDir[4] = {-1,0,1,0};
+    3. Please see , do you really need any special another vising flag here ?
+    4. Try to write the code iteratively as much as possible to avoid Stack overflow for system stack and 1MB limitation in Programming platform.
+*/
+/*
+    Assumption here is that from every cell you can move in max 04 direction(L,U,R,D)
+    Also, your movement is possible only if the upcoming cell is empty, meaning if it's value is INF
+*/
+int xr[4] = {0, -1, 0, 1};
+int yc[] = {-1, 0, 1, 0};
 
-struct Point {
+class Point {
+public:
     int r, c;
-    Point(int rx, int cy) {
-        r = rx, c = cy;
+    Point(int x, int y) {
+        r = x, c = y;
     }
 };
 
+bool Valid(int x, int y, const int &R, const int &C) {
+    if (x < 0 || x >= R) return false;
+    if (y < 0 || y >= C) return false;
+
+    return true;
+}
 class Solution {
-    const int INF = 2147483647;
-    queue<Point> pQueue;
-
 public:
+    void wallsAndGates(vector<vector<int>>& rooms) {
+        auto* q = new std::list<Point>();
 
-    bool valid(int x, int y, const int R, const int C) {
-        if (x < 0 || x >= R)
-            return false;
-
-        if (y < 0 || y >= C)
-            return false;
-
-        return true;
-
-    }
-
-    // Source point is all the cells having gate
-    // This method will populate the distance in each empty cell with minimum value from
-    // the gate cell
-    void bfs(vector<vector<int>>& rooms, int rSrc, int cSrc, vector<vector<int>> &visited) {
         int R = rooms.size();
         int C = rooms[0].size();
 
-        pQueue.push(Point(rSrc, cSrc));
-        visited[rSrc][cSrc] = true;
-        rooms[rSrc][cSrc] = 0;
-
-        while (pQueue.empty() == false) {
-
-            Point pt = pQueue.front();
-            pQueue.pop();
-
-            int x, y;
-
-            for (int i = 0; i < 4; ++i) {
-                x = pt.r + xDir[i];
-                y = pt.c + yDir[i];
-
-                if (valid(x,y, R, C) && visited[x][y] == false && rooms[x][y] != -1 && rooms[x][y] != 0) {
-                    pQueue.push(Point(x, y));
-                    visited[x][y] = true;
-                    rooms[x][y] = min(rooms[x][y], rooms[pt.r][pt.c] + 1);
+        // So in below chunk of code, you just have colected all the 
+        // gate position from where bfs will start
+        for (int i = 0; i < R; ++i) {
+            for (int j = 0; j < C; ++j) {
+                if (rooms[i][j] == 0) {
+                    q->push_back(Point(i, j));
                 }
             }
         }
-    }
 
-    void wallsAndGates(vector<vector<int>>& rooms) {
-        int R = rooms.size();
-        int C = rooms[0].size();
+        // iterate it until your queue become empty?
+        while (q->empty() == false) {
+            Point pt = q->front();
+            q->pop_front();
 
-        for (int i = 0; i < R; ++i) {
-            for (int j = 0; j < C; ++j) {
-                vector<vector<int>> visited(R, vector<int>(C, 0));
-                if (rooms[i][j] == 0) {
-                    bfs(rooms, i, j, visited);
+            int x, y;
+            for (int i = 0; i < 4; ++i) {
+                x = pt.r + xr[i];
+                y = pt.c + yc[i];
+
+                if (Valid(x, y, R, C) && rooms[x][y] == INF) {
+                    rooms[x][y] = min(rooms[x][y], 1 + rooms[pt.r][pt.c]);
+                    q->push_back(Point(x, y));
                 }
             }
         }
