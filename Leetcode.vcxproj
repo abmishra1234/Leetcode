@@ -136,6 +136,7 @@
     <ClCompile Include="MaxConsecutiveOnes.cpp" />
     <ClCompile Include="MinimumSizeSubarraySum.cpp" />
     <ClCompile Include="MovingAvg.cpp" />
+    <ClCompile Include="NumberofIslands.cpp" />
     <ClCompile Include="PascalTriangle.cpp" />
     <ClCompile Include="PascalTriangleII.cpp" />
     <ClCompile Include="PlusOne.cpp" />
