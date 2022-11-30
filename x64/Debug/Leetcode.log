@@ -1,4 +1,5 @@
-﻿  WallsAndGates.cpp
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\WallsAndGates.cpp(56,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\WallsAndGates.cpp(57,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe
+﻿  NumberofIslands.cpp
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\NumberofIslands.cpp(33,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\NumberofIslands.cpp(34,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\NumberofIslands.cpp(61,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\NumberofIslands.cpp(62,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
