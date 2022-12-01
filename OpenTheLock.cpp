@@ -22,7 +22,7 @@ using namespace std;
 class Solution {
     unordered_set<string> deadEndSet;
     // For bfs implementation, you have to use the queue for maintaining the order
-    std::list<vector<int>>* q;
+    std::list<pair<vector<int>, int>>* q;
     unordered_set<string> visited;
 
 protected:
@@ -98,7 +98,7 @@ public:
         */
         for (auto s : deadends) deadEndSet.insert(s);
         if ("0000" == target) return 0;
-        q = new list<vector<int>>(); // queue created for maintaining the intermediate lock state before reaching the target
+        q = new list<pair<vector<int>, int>>(); // queue created for maintaining the intermediate lock state before reaching the target
         // it is holding the value in terms of number representing lock wheels
         vector<int> lock;
         // your lock initial state
@@ -106,25 +106,23 @@ public:
         //GenerateString(lock); Added method for debugging the code...
      
         // push this initial lock state into queue to start with
-        q->push_back(lock);
+        q->push_back({ lock,0 });
         visited.insert(GenerateString(lock));
-
-
         /*
         * Repeat until your queue is not empty??
         */
 
         int chngCnt = 0;
-
         while (q->empty() == false) {
             // pop the first element 
-            vector<int> v = q->front(); // this will give you first element from linklist
+            vector<int> v = q->front().first; // this will give you first element from linklist
+            int cnt = q->front().second;
             q->pop_front();
 
             string currStr = GenerateString(v);
             if (currStr == target) {
-                cout << "Match Found!!!" << endl;
-                return chngCnt;
+ //               cout << "Match Found!!!" << endl;
+                return cnt;
             }
 
             if (deadEndSet.find(currStr) != deadEndSet.end())
@@ -136,14 +134,14 @@ public:
                 v[i] = pi.first;
                 string tStr = GenerateString(v);
                 if (visited.find(tStr) == visited.end()) {
-                    q->push_back(v);
+                    q->push_back({ v, cnt + 1 });
                     visited.insert(tStr);
                 }
 
                 v[i] = pi.second;
                 tStr = GenerateString(v);
                 if (visited.find(tStr) == visited.end()) {
-                    q->push_back(v);
+                    q->push_back({ v, cnt + 1 });
                     visited.insert(tStr);
                 }
                 v[i] = bkp;
@@ -171,7 +169,7 @@ int main(void)
     deadends = { "8887","8889","8878","8898","8788","8988","7888","9888" }, target = "8888";
     cout << sln.openLock(deadends, target) << endl;
 
-      return 0;
+    return 0;
 }
 
 #endif // FORREF
