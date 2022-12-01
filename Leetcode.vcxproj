@@ -140,6 +140,7 @@
     <ClCompile Include="OpenTheLock.cpp" />
     <ClCompile Include="PascalTriangle.cpp" />
     <ClCompile Include="PascalTriangleII.cpp" />
+    <ClCompile Include="PerfectSquares.cpp" />
     <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="RemoveDuplicateFromSortedIntArray.cpp" />
     <ClCompile Include="RemoveElement.cpp" />
