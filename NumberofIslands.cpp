@@ -11,7 +11,7 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 
 // As discussed in the problem, our 04 directions are,

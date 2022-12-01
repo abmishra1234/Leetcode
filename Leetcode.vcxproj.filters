@@ -99,5 +99,8 @@
     <ClCompile Include="NumberofIslands.cpp">
       <Filter>Source Files\QueueAndStack</Filter>
     </ClCompile>
+    <ClCompile Include="OpenTheLock.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
