@@ -135,6 +135,7 @@
     <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="MaxConsecutiveOnes.cpp" />
     <ClCompile Include="MinimumSizeSubarraySum.cpp" />
+    <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="MovingAvg.cpp" />
     <ClCompile Include="NumberofIslands.cpp" />
     <ClCompile Include="OpenTheLock.cpp" />
