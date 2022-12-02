@@ -111,5 +111,8 @@
     <ClCompile Include="ValidParenthesis.cpp">
       <Filter>Source Files\QueueAndStack</Filter>
     </ClCompile>
+    <ClCompile Include="DailyTemperatures.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
