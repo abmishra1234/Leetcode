@@ -117,5 +117,8 @@
     <ClCompile Include="ReversePolishNotation.cpp">
       <Filter>Source Files\QueueAndStack</Filter>
     </ClCompile>
+    <ClCompile Include="NumberOfIslandUsingDFS.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
