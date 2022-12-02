@@ -146,6 +146,7 @@
     <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="RemoveDuplicateFromSortedIntArray.cpp" />
     <ClCompile Include="RemoveElement.cpp" />
+    <ClCompile Include="ReversePolishNotation.cpp" />
     <ClCompile Include="ReverseWordInString.cpp" />
     <ClCompile Include="ReverseWordsInStringIII.cpp" />
     <ClCompile Include="Richest_Customer.cpp" />
