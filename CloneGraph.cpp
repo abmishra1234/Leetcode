@@ -54,7 +54,7 @@ protected:
                 Node* cn = clone_util(n, visited);
                 tNode->neighbors.push_back(cn);
             }
-            else tNode->neighbors.push_back(it->second);
+            else tNode->neighbors.push_back(it->second); // I was doing one mistake here and my code was failing
         }
         return tNode;
     }
