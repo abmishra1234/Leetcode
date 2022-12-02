@@ -130,6 +130,7 @@
     <ClCompile Include="412_FizzBuzz.cpp" />
     <ClCompile Include="AddBinary.cpp" />
     <ClCompile Include="CircularQueueImpleII.cpp" />
+    <ClCompile Include="CloneGraph.cpp" />
     <ClCompile Include="DailyTemperatures.cpp" />
     <ClCompile Include="DesignCircularQueue.cpp" />
     <ClCompile Include="DiagonalTraverse.cpp" />
