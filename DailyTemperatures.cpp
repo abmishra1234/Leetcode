@@ -11,11 +11,13 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-//#define FORREF
+#define FORREF
+#define DISABLE
 #ifndef FORREF
 
 class Solution {
 public:
+#ifndef DISABLE
     vector<int> dailyTemperatures(vector<int>& temperatures) {
         vector<int> result;
         stack<int> stk; // to maintain the higher value from back
@@ -42,6 +44,30 @@ public:
         }
         return result;
     }
+#endif // DISABLE
+
+    vector<int> dailyTemperatures(vector<int>& temp) {
+        vector<int> result;
+        int ns = temp.size();
+        result.resize(ns, -1);
+
+        int i = ns - 1;
+        while ( i >= 0) {
+            if (i == ns - 1) result[i] = 0;
+            else
+            {
+                if (temp[i] < temp[i + 1]) result[i] = 1;
+                else
+                {
+                    int tind = i+1;
+                    while (tind < ns && result[tind] != 0 && temp[i] >= temp[tind]) tind += result[tind];
+                    result[i] = (tind == (i+1) || temp[i] >= temp[tind]) ? 0 : (tind - i);
+                }
+            }
+            --i;
+        }
+        return result;
+    }
 };
 
 Solution sln;
@@ -50,20 +76,11 @@ int main() {
     vector<int> input;
     vector<int> result;
     
-    input = { 73,74,75,71,69,72,76,73 };
+    input = { 55,38,53,81,61,93,97,32,43,78 };
     result = sln.dailyTemperatures(input); // 1,1,4,2,1,1,0,0
     
-    if (result == vector<int>({ 1, 1, 4, 2, 1, 1, 0, 0 })) cout << "1. PASS" << endl;
+    if (result == vector<int>({ 3,1,1,2,1,1,0,1,1,0 })) cout << "1. PASS" << endl;
 
-    input = { 30,40,50,60 };
-    result = sln.dailyTemperatures(input); // 1,1,1,0
-
-    if (result == vector<int>({ 1,1,1,0 })) cout << "2. PASS" << endl;
-
-    input = { 30,60,90 };
-    result = sln.dailyTemperatures(input); // 1,1,0
-
-    if (result == vector<int>({ 1,1,0 })) cout << "3. PASS" << endl;
 
 
 
