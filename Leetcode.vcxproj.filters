@@ -126,5 +126,8 @@
     <ClCompile Include="CloneGrapgUsingBFS.cpp">
       <Filter>Source Files\QueueAndStack</Filter>
     </ClCompile>
+    <ClCompile Include="TargetSum.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
