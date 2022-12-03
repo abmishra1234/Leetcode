@@ -14,49 +14,34 @@ using namespace std;
 //#define FORREF
 #ifndef FORREF
 
+typedef unordered_map<string, int> UMap;
+
 class Solution {
 public:
+
     /*
-        This solve method is a utility method 
-        to solve the actual problem.
-        count <<-- this is the output parameter 
+        This is memoization approach of this problem.
     */
-    void solve(vector<int> nums, const int& target, int nums_ind, string& expression, int sum, 
-        int &count, unordered_set<string> &visited) {
-        // the below is the exit condition for recursion
-        // and you are considering two case here 1. success and another failed
-
-        if (nums_ind >= nums.size()) {
-            // The success case is when your sum == target and the expression is unique
-            if (sum == target && visited.find(expression) == visited.end()) {
-                ++count;
-                visited.insert(expression);
-            }
-            return;
+    int solve(vector<int>& nums, int target, int pos, UMap& memo) {
+        if (pos >= nums.size()) {
+            if (target == 0) return 1;
+            else return 0;
         }
-
-        string expr_bkp;
-
-        expr_bkp = expression;
-        expression = expression + '+' + to_string(nums[nums_ind]);
-        // +value case
-        solve(nums, target, nums_ind + 1, expression, sum + nums[nums_ind], count, visited);
-        expression = expr_bkp; // backtrack
         
-        // -value case
-        expr_bkp = expression;
-        expression = expression + '-' + to_string(nums[nums_ind]);
-        // +value case
-        solve(nums, target, nums_ind + 1, expression, sum - nums[nums_ind], count, visited);
-        expression = expr_bkp; // backtrack
-    }
+        string expression = to_string(pos) + '_' + to_string(target);
+        auto it = memo.find(expression);
+        if (it != memo.end()) return it->second;
 
+        int posi = solve(nums, target - nums[pos], pos + 1, memo);
+        int neg = solve(nums, target + nums[pos], pos + 1, memo);
+
+        memo[expression] = (posi + neg);
+        return memo.find(expression)->second;
+    }
+ 
     int findTargetSumWays(vector<int>& nums, int target) {
-        int ans = 0;
-        string expr = "";
-        unordered_set<string> visited;
-        solve(nums, target, 0, expr, 0, ans, visited);
-        return ans;
+        UMap memo;
+        return solve(nums, target, 0, memo);
     }
 };
 
@@ -69,7 +54,7 @@ Solution sln;
     So, how to improve this problem from the brute force approach ???
     whenever Brute Force approach is not working, check does any optimisation will help us?
 
-    For that purpose, we always have to proceed with the recursion tree and see any optimisation you can view over their ??
+    For that purpose, we always have to proceed with the recursion tree and see any optimization you can view over their ??
 
 
 
@@ -88,6 +73,11 @@ int main() {
     nums = { 1 }, target = 1;
     ans = sln.findTargetSumWays(nums, target);
     if (ans == 1) cout << "2. PASS" << endl;
+
+    // TC #3
+
+
+
 
     return 0;
 }
