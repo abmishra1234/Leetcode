@@ -19,7 +19,7 @@ using namespace std;
     There are no repeated edges and no self-loops in the graph.
     The Graph is connected and all nodes can be visited starting from the given node.
 */
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 // Definition for a Node.
 class Node {
