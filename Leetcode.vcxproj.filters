@@ -135,5 +135,8 @@
     <ClCompile Include="BinaryTreeInorderTraversal.cpp">
       <Filter>Source Files\QueueAndStack</Filter>
     </ClCompile>
+    <ClCompile Include="ImplementQueueUsingStack.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
