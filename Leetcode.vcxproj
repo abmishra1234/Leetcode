@@ -134,6 +134,7 @@
     <ClCompile Include="CloneGrapgUsingBFS.cpp" />
     <ClCompile Include="CloneGraph.cpp" />
     <ClCompile Include="DailyTemperatures.cpp" />
+    <ClCompile Include="DecodeString.cpp" />
     <ClCompile Include="DesignCircularQueue.cpp" />
     <ClCompile Include="DFSTemplateII.cpp" />
     <ClCompile Include="DiagonalTraverse.cpp" />
