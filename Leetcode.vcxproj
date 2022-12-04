@@ -138,6 +138,7 @@
     <ClCompile Include="DFSTemplateII.cpp" />
     <ClCompile Include="DiagonalTraverse.cpp" />
     <ClCompile Include="ImplementQueueUsingStack.cpp" />
+    <ClCompile Include="ImplementStackusingQueues.cpp" />
     <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="MaxConsecutiveOnes.cpp" />
     <ClCompile Include="MinimumSizeSubarraySum.cpp" />
