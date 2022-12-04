@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="412_FizzBuzz.cpp" />
     <ClCompile Include="AddBinary.cpp" />
+    <ClCompile Include="BinaryTreeInorderTraversal.cpp" />
     <ClCompile Include="CircularQueueImpleII.cpp" />
     <ClCompile Include="CloneGrapgUsingBFS.cpp" />
     <ClCompile Include="CloneGraph.cpp" />
