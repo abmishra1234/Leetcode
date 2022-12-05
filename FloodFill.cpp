@@ -22,7 +22,7 @@ using namespace std;
     0 <= sc < n
 */
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 // L U R B
 int xr[4] = { 0, -1, 0, 1 };
