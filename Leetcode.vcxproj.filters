@@ -150,5 +150,8 @@
     <ClCompile Include="01Matrix.cpp">
       <Filter>Source Files\QueueAndStack</Filter>
     </ClCompile>
+    <ClCompile Include="KeysAndRooms.cpp">
+      <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
