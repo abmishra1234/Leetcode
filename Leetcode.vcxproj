@@ -139,6 +139,7 @@
     <ClCompile Include="DesignCircularQueue.cpp" />
     <ClCompile Include="DFSTemplateII.cpp" />
     <ClCompile Include="DiagonalTraverse.cpp" />
+    <ClCompile Include="FindKThLargestElem.cpp" />
     <ClCompile Include="FloodFill.cpp" />
     <ClCompile Include="HeapFundamentals.cpp" />
     <ClCompile Include="ImplementQueueUsingStack.cpp" />

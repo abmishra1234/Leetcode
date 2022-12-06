@@ -162,5 +162,8 @@
     <ClCompile Include="TopKLargestElements.cpp">
       <Filter>Source Files\Heap</Filter>
     </ClCompile>
+    <ClCompile Include="FindKThLargestElem.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
