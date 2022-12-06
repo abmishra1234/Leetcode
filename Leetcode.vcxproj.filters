@@ -19,6 +19,9 @@
     <Filter Include="Source Files\QueueAndStack">
       <UniqueIdentifier>{6be89524-f856-40dd-8c55-bda17847d617}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Heap">
+      <UniqueIdentifier>{f11628dd-60fe-4d85-aa10-e5c785c7e003}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -152,6 +155,9 @@
     </ClCompile>
     <ClCompile Include="KeysAndRooms.cpp">
       <Filter>Source Files\QueueAndStack</Filter>
+    </ClCompile>
+    <ClCompile Include="HeapFundamentals.cpp">
+      <Filter>Source Files\Heap</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

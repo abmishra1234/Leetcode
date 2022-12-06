@@ -140,6 +140,7 @@
     <ClCompile Include="DFSTemplateII.cpp" />
     <ClCompile Include="DiagonalTraverse.cpp" />
     <ClCompile Include="FloodFill.cpp" />
+    <ClCompile Include="HeapFundamentals.cpp" />
     <ClCompile Include="ImplementQueueUsingStack.cpp" />
     <ClCompile Include="ImplementStackusingQueues.cpp" />
     <ClCompile Include="KeysAndRooms.cpp" />
