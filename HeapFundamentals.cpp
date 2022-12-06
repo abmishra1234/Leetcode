@@ -14,9 +14,7 @@ using namespace std;
     TODO : Implement for some custom class, 
            and understand the modification required here.
 */
-
-
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 class Solution {
     priority_queue<int, vector<int>, less<int>> *pMaxHeap;
