@@ -168,5 +168,11 @@
     <ClCompile Include="KthLargestElemInStream.cpp">
       <Filter>Source Files\Heap</Filter>
     </ClCompile>
+    <ClCompile Include="LastStoneWeight.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="TheKWeakestRowsInaMatrix.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

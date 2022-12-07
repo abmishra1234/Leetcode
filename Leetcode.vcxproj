@@ -146,6 +146,7 @@
     <ClCompile Include="ImplementStackusingQueues.cpp" />
     <ClCompile Include="KeysAndRooms.cpp" />
     <ClCompile Include="KthLargestElemInStream.cpp" />
+    <ClCompile Include="LastStoneWeight.cpp" />
     <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="MaxConsecutiveOnes.cpp" />
     <ClCompile Include="MinimumSizeSubarraySum.cpp" />
@@ -168,6 +169,7 @@
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="Ransom_Note.cpp" />
     <ClCompile Include="TargetSum.cpp" />
+    <ClCompile Include="TheKWeakestRowsInaMatrix.cpp" />
     <ClCompile Include="TopKLargestElements.cpp" />
     <ClCompile Include="ValidParenthesis.cpp" />
     <ClCompile Include="SpiralMatrix.cpp" />
