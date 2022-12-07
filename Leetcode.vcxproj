@@ -146,6 +146,7 @@
     <ClCompile Include="ImplementStackusingQueues.cpp" />
     <ClCompile Include="KeysAndRooms.cpp" />
     <ClCompile Include="KthLargestElemInStream.cpp" />
+    <ClCompile Include="KthSmallestElement.cpp" />
     <ClCompile Include="LastStoneWeight.cpp" />
     <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="MaxConsecutiveOnes.cpp" />

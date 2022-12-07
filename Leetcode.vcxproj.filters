@@ -174,5 +174,8 @@
     <ClCompile Include="TheKWeakestRowsInaMatrix.cpp">
       <Filter>Source Files\Heap</Filter>
     </ClCompile>
+    <ClCompile Include="KthSmallestElement.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
