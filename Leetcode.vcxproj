@@ -144,6 +144,7 @@
     <ClCompile Include="HeapFundamentals.cpp" />
     <ClCompile Include="ImplementQueueUsingStack.cpp" />
     <ClCompile Include="ImplementStackusingQueues.cpp" />
+    <ClCompile Include="KClosestPoint2Origin.cpp" />
     <ClCompile Include="KeysAndRooms.cpp" />
     <ClCompile Include="KthLargestElemInStream.cpp" />
     <ClCompile Include="KthSmallestElement.cpp" />

@@ -180,5 +180,8 @@
     <ClCompile Include="MeetingRoomII.cpp">
       <Filter>Source Files\Heap</Filter>
     </ClCompile>
+    <ClCompile Include="KClosestPoint2Origin.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
