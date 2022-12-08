@@ -150,6 +150,7 @@
     <ClCompile Include="LastStoneWeight.cpp" />
     <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="MaxConsecutiveOnes.cpp" />
+    <ClCompile Include="MeetingRoomII.cpp" />
     <ClCompile Include="MinimumSizeSubarraySum.cpp" />
     <ClCompile Include="MinStack.cpp" />
     <ClCompile Include="MovingAvg.cpp" />

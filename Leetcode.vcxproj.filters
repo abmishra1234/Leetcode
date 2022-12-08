@@ -177,5 +177,8 @@
     <ClCompile Include="KthSmallestElement.cpp">
       <Filter>Source Files\Heap</Filter>
     </ClCompile>
+    <ClCompile Include="MeetingRoomII.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
