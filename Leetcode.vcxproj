@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="01Matrix.cpp" />
     <ClCompile Include="1642_Leetcode.cpp" />
+    <ClCompile Include="24_Leetcode.cpp" />
     <ClCompile Include="412_FizzBuzz.cpp" />
     <ClCompile Include="AddBinary.cpp" />
     <ClCompile Include="BinaryTreeInorderTraversal.cpp" />
