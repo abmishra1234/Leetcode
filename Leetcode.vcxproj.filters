@@ -195,5 +195,8 @@
     <ClCompile Include="1642_Leetcode.cpp">
       <Filter>Source Files\Heap</Filter>
     </ClCompile>
+    <ClCompile Include="FindMedianFromDataStream.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
