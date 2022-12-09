@@ -11,26 +11,23 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-/*
-    Not yet completed problem.
-*/
-
 #define FORREF
 #ifndef FORREF
 
 class Solution {
-public:
-    void recRevereseStr(string &str, int l, int r) {
-        if (l >= r) return;
-        if (str[l] == str[r]) recRevereseStr(str, l + 1, r - 1);
-        std::swap(str[l], str[r]);
-        recRevereseStr(str, l + 1, r - 1);
+    void solve(vector<char>& arr, int l, int r)
+    {
+        if (l >= r)
+            return;
+        char t = arr[l];
+        arr[l] = arr[r];
+        arr[r] = t;
+        solve(arr, l + 1, r - 1);
     }
 
-    void printReverse(const char* str) {
-        if (!*str)
-            return;
-        recRevereseStr(str, 0, str.length() - 1);
+public:
+    void reverseString(vector<char>& s) {
+        solve(s, 0, s.size() - 1);
     }
 };
 
