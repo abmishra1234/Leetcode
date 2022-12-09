@@ -22,6 +22,9 @@
     <Filter Include="Source Files\Heap">
       <UniqueIdentifier>{f11628dd-60fe-4d85-aa10-e5c785c7e003}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Recursion-I">
+      <UniqueIdentifier>{e006cd5a-84e3-405f-b5e4-44f738e1bfa1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -181,6 +184,15 @@
       <Filter>Source Files\Heap</Filter>
     </ClCompile>
     <ClCompile Include="KClosestPoint2Origin.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
+    <ClCompile Include="MinimumCosttoConnectStick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PrincipalOfRecursion.cpp">
+      <Filter>Source Files\Recursion-I</Filter>
+    </ClCompile>
+    <ClCompile Include="1642_Leetcode.cpp">
       <Filter>Source Files\Heap</Filter>
     </ClCompile>
   </ItemGroup>
