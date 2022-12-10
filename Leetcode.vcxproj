@@ -136,6 +136,7 @@
     <ClCompile Include="24_Leetcode.cpp" />
     <ClCompile Include="412_FizzBuzz.cpp" />
     <ClCompile Include="50_Medium_Leetcode.cpp" />
+    <ClCompile Include="648_Medium_Leetcode.cpp" />
     <ClCompile Include="677_Medium_Approach02.cpp" />
     <ClCompile Include="677_Medium_Leetcode.cpp" />
     <ClCompile Include="700_Leetcode.cpp" />

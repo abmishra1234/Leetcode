@@ -231,5 +231,8 @@
     <ClCompile Include="677_Medium_Approach02.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
+    <ClCompile Include="648_Medium_Leetcode.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
