@@ -210,5 +210,8 @@
     <ClCompile Include="Fundamental.cpp">
       <Filter>Source Files\Recursion-I</Filter>
     </ClCompile>
+    <ClCompile Include="104_Leetcode.cpp">
+      <Filter>Source Files\Recursion-I</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
