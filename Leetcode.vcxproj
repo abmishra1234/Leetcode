@@ -129,8 +129,10 @@
   <ItemGroup>
     <ClCompile Include="01Matrix.cpp" />
     <ClCompile Include="1642_Leetcode.cpp" />
+    <ClCompile Include="206_Leetcode.cpp" />
     <ClCompile Include="24_Leetcode.cpp" />
     <ClCompile Include="412_FizzBuzz.cpp" />
+    <ClCompile Include="700_Leetcode.cpp" />
     <ClCompile Include="AddBinary.cpp" />
     <ClCompile Include="BinaryTreeInorderTraversal.cpp" />
     <ClCompile Include="CircularQueueImpleII.cpp" />
@@ -144,6 +146,7 @@
     <ClCompile Include="FindKThLargestElem.cpp" />
     <ClCompile Include="FindMedianFromDataStream.cpp" />
     <ClCompile Include="FloodFill.cpp" />
+    <ClCompile Include="Fundamental.cpp" />
     <ClCompile Include="HeapFundamentals.cpp" />
     <ClCompile Include="ImplementQueueUsingStack.cpp" />
     <ClCompile Include="ImplementStackusingQueues.cpp" />
