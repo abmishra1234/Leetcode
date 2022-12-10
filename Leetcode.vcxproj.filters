@@ -25,6 +25,9 @@
     <Filter Include="Source Files\Recursion-I">
       <UniqueIdentifier>{e006cd5a-84e3-405f-b5e4-44f738e1bfa1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Trie">
+      <UniqueIdentifier>{35facc2b-b2cf-41c8-abc1-aab5040f51ea}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -218,6 +221,15 @@
     </ClCompile>
     <ClCompile Include="21_Easy_Leetcode.cpp">
       <Filter>Source Files\Recursion-I</Filter>
+    </ClCompile>
+    <ClCompile Include="208_Medium_Leetcode.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
+    <ClCompile Include="677_Medium_Leetcode.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
+    <ClCompile Include="677_Medium_Approach02.cpp">
+      <Filter>Source Files\Trie</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
