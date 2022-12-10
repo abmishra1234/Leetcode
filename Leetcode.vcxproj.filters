@@ -213,5 +213,11 @@
     <ClCompile Include="104_Leetcode.cpp">
       <Filter>Source Files\Recursion-I</Filter>
     </ClCompile>
+    <ClCompile Include="50_Medium_Leetcode.cpp">
+      <Filter>Source Files\Recursion-I</Filter>
+    </ClCompile>
+    <ClCompile Include="21_Easy_Leetcode.cpp">
+      <Filter>Source Files\Recursion-I</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

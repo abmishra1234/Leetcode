@@ -131,8 +131,10 @@
     <ClCompile Include="104_Leetcode.cpp" />
     <ClCompile Include="1642_Leetcode.cpp" />
     <ClCompile Include="206_Leetcode.cpp" />
+    <ClCompile Include="21_Easy_Leetcode.cpp" />
     <ClCompile Include="24_Leetcode.cpp" />
     <ClCompile Include="412_FizzBuzz.cpp" />
+    <ClCompile Include="50_Medium_Leetcode.cpp" />
     <ClCompile Include="700_Leetcode.cpp" />
     <ClCompile Include="AddBinary.cpp" />
     <ClCompile Include="BinaryTreeInorderTraversal.cpp" />
