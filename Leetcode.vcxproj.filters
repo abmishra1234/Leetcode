@@ -234,5 +234,8 @@
     <ClCompile Include="648_Medium_Leetcode.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
+    <ClCompile Include="01_DesignSearchAutocompleteSystem.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
