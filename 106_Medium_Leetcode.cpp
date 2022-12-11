@@ -11,6 +11,10 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
+/*
+    Approach 01 : Recursive Approach
+*/
+
 #define FORREF
 #ifndef FORREF
 struct TreeNode {
@@ -53,7 +57,7 @@ public:
         m.clear();
         createmap(inorder);
 
-        // get the position of last element from inorder
+        // start from position of last element of postorder
         int postind = postorder.size() - 1;
         return solve(inorder, postorder, postind, 0, postorder.size() - 1);
     }
