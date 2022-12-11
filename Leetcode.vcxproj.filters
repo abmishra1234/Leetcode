@@ -28,6 +28,9 @@
     <Filter Include="Source Files\Trie">
       <UniqueIdentifier>{35facc2b-b2cf-41c8-abc1-aab5040f51ea}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\BinaryTree">
+      <UniqueIdentifier>{095bcdac-7dd5-4969-a782-7ae2376a7414}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -236,6 +239,9 @@
     </ClCompile>
     <ClCompile Include="01_DesignSearchAutocompleteSystem.cpp">
       <Filter>Source Files\Trie</Filter>
+    </ClCompile>
+    <ClCompile Include="106_Medium_Leetcode.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
