@@ -10,8 +10,9 @@ using namespace std;
 #include<stack>
 #include<queue>
 #include<algorithm>
+#include<sstream>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 /*
     Replace words
@@ -37,11 +38,8 @@ int pind = 0;
 class Solution {
 public:
     TrieNode* root;
-    Solution() {
-        pind = 0;
-        root = &pool[pind++];
-        root->create();
-    }
+
+    Solution() { root = nullptr;}
 
     void insert(string word) {
         TrieNode* start = root;
@@ -60,74 +58,65 @@ public:
             }
         }
     }
-    /*
-        This below method is two step algorithm
-        1. If you don't found any relevant prefix root than copy
-        the complete word into the output sentence.
-        2. 
 
-
-    */
-    void searchAndReplace(string sentence, string& changedSentenece) {
-        
-        bool skipuntil = false;
+    bool SearchRootWord(const string& word, string& rootword) {
         TrieNode* start = root;
-        int code;
-        string rootword = "";
-
-
-        for (int i = 0; i < sentence.length(); ++i) {
-            if (skipuntil) {
-                if (sentence[i] == ' ') skipuntil = false;
-                continue;
-            }
-            
-            code = sentence[i] - 'a';
+        int i = 0;
+        while (word[i] != '\0') {
+            int code = word[i] - 'a';
             if (start->ch[code] == nullptr) {
-                skipuntil = true;
-                // copy the origional word of sentence in output sentence
-                continue;
+                return false;
             }
-            
-            rootword += sentence[i];
-
-            if (start->wc == true) {
-                
-
-
+            start = start->ch[code];
+            rootword += word[i];
+            i++;
+            if (start->wc) {
+                break;
             }
-
-
-
-
-
-
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
+        return true;
     }
 
+    /*
+        I need one method which will split
+        word and store in synamic string array from given sentence 
+    */
+    void SplitWord(const string& sentence, const char &delim, vector<string>& words) {
+        // for using stringstream class, you need to include the sstream header
+        stringstream str(sentence); 
+        
+        string word;
+        // 3rd parameter is delimeter in ascii code
+        while (getline(str, word, delim)) words.push_back(word);
+    }
 
     string replaceWords(vector<string>& dictionary, 
         string sentence) {
+        pind = 0;
+        root = &pool[pind++];
+        root->create();
         
         // add words inside the Trie DS
         for (auto s : dictionary) insert(s);
 
-        string outstr = "";
-        searchAndReplace(sentence, outstr);
+        // now we have to use our string class to break sentence into word
+        vector<string> words;
+        SplitWord(sentence, ' ', words);
         
+        // so by now our sentence splits into the word
+        string outstr = "";
+        for (int i = 0; i < words.size(); ++i) {
+            string rootword = "";
+            if (SearchRootWord(words[i], rootword)) {
+                outstr += rootword;
+            }
+            else outstr += words[i];
+
+            if (i != words.size() - 1) {
+                outstr += " ";
+            }
+        }
+        //cout << outstr << endl;
         return outstr;
     }
 };
