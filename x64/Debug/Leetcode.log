@@ -1,5 +1,5 @@
-﻿  01_DesignSearchAutocompleteSystem.cpp
+﻿  105_Medium_Leetcode.cpp
+  106_Medium_ApproachII.cpp
   106_Medium_Leetcode.cpp
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\106_Medium_Leetcode.cpp(56,1): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...
   Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe

@@ -130,6 +130,8 @@
     <ClCompile Include="01Matrix.cpp" />
     <ClCompile Include="01_DesignSearchAutocompleteSystem.cpp" />
     <ClCompile Include="104_Leetcode.cpp" />
+    <ClCompile Include="105_Medium_Leetcode.cpp" />
+    <ClCompile Include="106_Medium_ApproachII.cpp" />
     <ClCompile Include="106_Medium_Leetcode.cpp" />
     <ClCompile Include="1642_Leetcode.cpp" />
     <ClCompile Include="206_Leetcode.cpp" />

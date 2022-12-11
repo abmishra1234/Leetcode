@@ -243,5 +243,11 @@
     <ClCompile Include="106_Medium_Leetcode.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="106_Medium_ApproachII.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="105_Medium_Leetcode.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
