@@ -39,20 +39,11 @@ class Solution {
 
 public:
     /*
-        This seems to be part of level order traversing
-        how you can able to do it??
-    */
-    Node* connect(Node* root) {
-        
-        return nullptr;
-    }
-
-    /*
         Let's modify your level order code for maintaining the 
         level by level of the tree node
     */
-    void levelorder(Node* root, vector<vector<Node*>> &leveldata) {
-        if (!root) return;
+    Node* levelorder(Node* root, vector<vector<Node*>> &leveldata) {
+        if (!root) return nullptr;
 
         // the first thing you should do to clean the queue
         while (q.empty() == false) q.pop();
@@ -65,6 +56,8 @@ public:
         cout << endl;
         while (q.empty() == false) {
             ppi p = q.front();
+            // Just to get the updated level below 
+            level = p.second;
             q.pop();
 
             cout << "val = " << p.first->val
@@ -82,40 +75,29 @@ public:
         }
         
         // now you have level data, it's time to set next pointer
-        // properly
+        // connection properly
 
-    
-    
-    
+        for (int i = 1; i <= level; ++i) {
+            while (leveldata[i].size() >= 1) {
+                if (leveldata[i].size() == 1) {
+                    leveldata[i][0]->next = nullptr;
+                    leveldata[i].erase(leveldata[i].begin());
+                }
+                else if (leveldata[i].size() > 1) {
+                    leveldata[i][0]->next = leveldata[i][1];
+                    leveldata[i].erase(leveldata[i].begin());
+                }
+            }
+        }
+        return root;
     }
 
     // Let's write logic for traversing the 
     // level order in binary tree
-    void levelorder(Node* root) {
-        if (!root) return;
-
-        // the first thing you should do to clean the queue
-        while (q.empty() == false) q.pop();
-        int level = 1;
-        // push the starting node into the queue
-        q.push({ root, level });
-
-        cout << endl;
-        while (q.empty() == false) {
-            ppi p = q.front();
-            q.pop();
-
-            cout << "val = " << p.first->val 
-                << ", level = " << p.second << endl;
-
-            if (p.first->left) {
-                q.push({ p.first->left, p.second+1 });
-            }
-            
-            if (p.first->right) {
-                q.push({ p.first->right, p.second + 1 });
-            }
-        }
+    Node* connect(Node* root) {
+        if (!root) return root;
+        vector<vector<Node*>> leveldata(MAXN, vector<Node*>());
+        return levelorder(root, leveldata);
     }
     void inorder(Node* root) {
         if (!root) return;
@@ -141,8 +123,7 @@ public:
         root = buildtree_util(v, 0, root);
         inorder(root);
         // Just clear the vector if anything already exist
-        vector<vector<Node*>> leveldata(MAXN, vector<Node*>());
-        levelorder(root, leveldata);
+        connect(root);
     }
 };
 
