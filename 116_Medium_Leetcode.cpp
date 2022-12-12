@@ -11,7 +11,7 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 
 class Node {
@@ -60,8 +60,8 @@ public:
             level = p.second;
             q.pop();
 
-            cout << "val = " << p.first->val
-                << ", level = " << p.second << endl;
+            //cout << "val = " << p.first->val
+            //    << ", level = " << p.second << endl;
 
             if (p.first->left) {
                 q.push({ p.first->left, p.second + 1 });
