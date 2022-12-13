@@ -256,4 +256,9 @@
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="lca.txt">
+      <Filter>Source Files\BinaryTree</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

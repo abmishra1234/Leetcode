@@ -11,7 +11,12 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-//#define FORREF
+/*
+    @Note : This coding assignment is not completed yet, 
+    please do the needful asap.
+*/
+
+#define FORREF
 #ifndef FORREF
 
 struct TreeNode {
@@ -21,7 +26,6 @@ struct TreeNode {
     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
     TreeNode(int x, TreeNode* l, TreeNode* r) : val(x), left(l), right(r) {}
 };
-
 
 class Solution {
 public:
