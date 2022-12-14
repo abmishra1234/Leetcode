@@ -171,6 +171,8 @@
     <ClCompile Include="LongestCommonPrefixString.cpp" />
     <ClCompile Include="MaxConsecutiveOnes.cpp" />
     <ClCompile Include="MeetingRoomII.cpp" />
+    <ClCompile Include="MergeSort_BottomUp.cpp" />
+    <ClCompile Include="MergeSort_TopDown.cpp" />
     <ClCompile Include="MinimumCosttoConnectStick.cpp" />
     <ClCompile Include="MinimumSizeSubarraySum.cpp" />
     <ClCompile Include="MinStack.cpp" />
@@ -204,6 +206,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt" />
+    <Text Include="merge.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
