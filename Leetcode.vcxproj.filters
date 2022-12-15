@@ -40,6 +40,9 @@
     <Filter Include="Source Files\BinarySearchTree">
       <UniqueIdentifier>{a9296596-fb3c-4439-90fe-fac97212a9e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Backtracking">
+      <UniqueIdentifier>{664e9f8d-c951-42ed-ae4f-1785a1b29723}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -282,6 +285,9 @@
     <ClCompile Include="QuickSort.cpp">
       <Filter>Source Files\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="52_Hard_Leetcode.cpp">
+      <Filter>Source Files\Backtracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
@@ -289,6 +295,9 @@
     </Text>
     <Text Include="merge.txt">
       <Filter>Source Files\Sorting</Filter>
+    </Text>
+    <Text Include="Theory_Backtracking.txt">
+      <Filter>Source Files\Backtracking</Filter>
     </Text>
   </ItemGroup>
 </Project>

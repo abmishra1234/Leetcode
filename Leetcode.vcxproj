@@ -143,6 +143,7 @@
     <ClCompile Include="24_Leetcode.cpp" />
     <ClCompile Include="412_FizzBuzz.cpp" />
     <ClCompile Include="50_Medium_Leetcode.cpp" />
+    <ClCompile Include="52_Hard_Leetcode.cpp" />
     <ClCompile Include="648_Medium_Leetcode.cpp" />
     <ClCompile Include="677_Medium_Approach02.cpp" />
     <ClCompile Include="677_Medium_Leetcode.cpp" />
@@ -211,6 +212,7 @@
   <ItemGroup>
     <Text Include="lca.txt" />
     <Text Include="merge.txt" />
+    <Text Include="Theory_Backtracking.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,7 @@
+- Backtracking is just an optimized brute force search
+	-- So from that point it is also clear that incase you are 
+	   unable to provide the right optimisation, it means that
+	   your solution is not better than brute force search.
+
+
+- 
