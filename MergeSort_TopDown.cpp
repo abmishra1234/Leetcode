@@ -38,9 +38,8 @@ MyVect tvec;
 class Solution {
 public:
     void merge(MyVect& v, int l, int mid, int r) {
-        tvec.clear();
-        
         int i = l, j = mid + 1;
+        int k = 0;
 
         while (i <= mid && j <= r) {
             if (v[i] <= v[j]) tvec.push_back(v[i++]);
@@ -91,7 +90,9 @@ int main(void)
 
     for (int t = 1; t <= T; ++t) {
         cin >> N;
-        v.resize(MAXN);
+        v.resize(N);
+        tvec.resize(N);
+
         vs = 0; // reset the vector size to 0
         for (int n = 0; n < N; ++n) {
             cin >> v[vs++];
