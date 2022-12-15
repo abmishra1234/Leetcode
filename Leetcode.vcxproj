@@ -147,6 +147,7 @@
     <ClCompile Include="677_Medium_Leetcode.cpp" />
     <ClCompile Include="700_Leetcode.cpp" />
     <ClCompile Include="98_Medium_Leetcode.cpp" />
+    <ClCompile Include="98_Medium_Leetcode_Approach02.cpp" />
     <ClCompile Include="AddBinary.cpp" />
     <ClCompile Include="BinaryTreeInorderTraversal.cpp" />
     <ClCompile Include="CircularQueueImpleII.cpp" />

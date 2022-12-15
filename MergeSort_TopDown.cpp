@@ -18,7 +18,7 @@ using namespace std;
     meaning, implement using recursion.
 */
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 #define MAXN 100000
 
