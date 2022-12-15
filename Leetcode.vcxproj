@@ -188,6 +188,7 @@
     <ClCompile Include="PerfectSquares.cpp" />
     <ClCompile Include="PlusOne.cpp" />
     <ClCompile Include="PrincipalOfRecursion.cpp" />
+    <ClCompile Include="QuickSort.cpp" />
     <ClCompile Include="RemoveDuplicateFromSortedIntArray.cpp" />
     <ClCompile Include="RemoveElement.cpp" />
     <ClCompile Include="ReversePolishNotation.cpp" />

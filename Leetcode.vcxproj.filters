@@ -279,6 +279,9 @@
     <ClCompile Include="240_Medium_Leetcode.cpp">
       <Filter>Source Files\Sorting</Filter>
     </ClCompile>
+    <ClCompile Include="QuickSort.cpp">
+      <Filter>Source Files\Sorting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
