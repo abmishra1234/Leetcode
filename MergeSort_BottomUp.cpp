@@ -17,7 +17,7 @@ using namespace std;
     meaning, implement using iterative approach.
 */
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 #define MAXN 100000
 
@@ -61,6 +61,7 @@ public:
             v[i++] = tvec[ki++];
         }
     }
+
     /*
         This method to be implement for mergesort  
         using bottom up approach.
