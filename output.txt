@@ -1,8 +1,12 @@
 Element before sorting -->
+5 3 2 8 7 6 4 
+Element after sorting -->
+2 3 4 5 6 7 8 
+Element before sorting -->
 1 5 3 2 8 7 6 4 
 Element after sorting -->
 1 2 3 4 5 6 7 8 
 Element before sorting -->
-5 3 2 8 7 6 4 
+5 3 2 8 7 6 4 115 23 
 Element after sorting -->
-2 3 4 5 6 7 8 
+2 3 4 5 6 7 8 23 115 
