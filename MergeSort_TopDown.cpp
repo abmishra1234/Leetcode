@@ -18,7 +18,7 @@ using namespace std;
     meaning, implement using recursion.
 */
 
-#define FORREF
+//#define FORREF
 #ifndef FORREF
 #define MAXN 100000
 
@@ -42,23 +42,22 @@ public:
         int k = 0;
 
         while (i <= mid && j <= r) {
-            if (v[i] <= v[j]) tvec.push_back(v[i++]);
-            else tvec.push_back(v[j++]);
+            if (v[i] <= v[j]) tvec[k++] = v[i++];
+            else tvec[k++] = v[j++];
         }
 
         while (i <= mid) {
-            tvec.push_back(v[i++]);
+            tvec[k++] = v[i++];
         }
 
         while (j <= r) {
-            tvec.push_back(v[j++]);
+            tvec[k++] = v[j++];
         }
 
-        int k = 0;
+        int ki = 0;
         i = l;
-        while (k < tvec.size()) {
-            v[i] = tvec[k];
-            ++i, ++k;
+        while (ki < k) {
+            v[i++] = tvec[ki++];
         }
     }
 
@@ -90,6 +89,7 @@ int main(void)
 
     for (int t = 1; t <= T; ++t) {
         cin >> N;
+
         v.resize(N);
         tvec.resize(N);
 
@@ -97,6 +97,7 @@ int main(void)
         for (int n = 0; n < N; ++n) {
             cin >> v[vs++];
         }
+        
         /*
             post returning from this method your vector should be
             sorted one
