@@ -19,7 +19,7 @@ using namespace std;
     problem.
 */
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 
 class Solution {
