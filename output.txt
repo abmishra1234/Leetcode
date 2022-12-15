@@ -1,7 +1,7 @@
 Element before sorting -->
-5 3 2 8 7 6 4 
+-4 0 7 4 9 -5 -1 0 -7 -1 
 Element after sorting -->
-2 3 4 5 6 7 8 
+-7 -5 -4 -1 -1 0 0 4 7 9 
 Element before sorting -->
 1 5 3 2 8 7 6 4 
 Element after sorting -->

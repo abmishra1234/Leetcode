@@ -34,6 +34,12 @@
     <Filter Include="Source Files\Sorting">
       <UniqueIdentifier>{7bcfe864-58fa-4072-8ad1-cce9973e7047}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\SegmentTree">
+      <UniqueIdentifier>{791bc5ca-7e10-4b25-8390-ef210651fd67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\BinarySearchTree">
+      <UniqueIdentifier>{a9296596-fb3c-4439-90fe-fac97212a9e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -263,6 +269,9 @@
     </ClCompile>
     <ClCompile Include="MergeSort_BottomUp.cpp">
       <Filter>Source Files\Sorting</Filter>
+    </ClCompile>
+    <ClCompile Include="98_Medium_Leetcode.cpp">
+      <Filter>Source Files\BinarySearchTree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
