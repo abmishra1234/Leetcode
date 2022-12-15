@@ -276,6 +276,9 @@
     <ClCompile Include="98_Medium_Leetcode_Approach02.cpp">
       <Filter>Source Files\BinarySearchTree</Filter>
     </ClCompile>
+    <ClCompile Include="240_Medium_Leetcode.cpp">
+      <Filter>Source Files\Sorting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

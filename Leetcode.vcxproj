@@ -139,6 +139,7 @@
     <ClCompile Include="208_Medium_Leetcode.cpp" />
     <ClCompile Include="21_Easy_Leetcode.cpp" />
     <ClCompile Include="236_Medium_Leetcode.cpp" />
+    <ClCompile Include="240_Medium_Leetcode.cpp" />
     <ClCompile Include="24_Leetcode.cpp" />
     <ClCompile Include="412_FizzBuzz.cpp" />
     <ClCompile Include="50_Medium_Leetcode.cpp" />
