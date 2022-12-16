@@ -288,6 +288,9 @@
     <ClCompile Include="52_Hard_Leetcode.cpp">
       <Filter>Source Files\Backtracking</Filter>
     </ClCompile>
+    <ClCompile Include="489_Hard_Leetcode.cpp">
+      <Filter>Source Files\Backtracking</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
