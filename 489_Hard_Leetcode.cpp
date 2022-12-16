@@ -12,13 +12,8 @@ using namespace std;
 #include<algorithm>
 
 /*
-    Note in this problem is for you to first
-    solve problem by own and later check the other solution also
-    and compare your solution with other's best solution and see'
-    the gap if any and improve on that case handling here in this
-    problem.
+    Complete this driver code as earliest as possible.
 */
-
 //#define FORREF
 #ifndef FORREF
 
