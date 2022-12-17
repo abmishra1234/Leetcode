@@ -249,7 +249,7 @@
     <ClCompile Include="648_Medium_Leetcode.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
-    <ClCompile Include="01_DesignSearchAutocompleteSystem.cpp">
+    <ClCompile Include="642_Hard_Leetcode.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
     <ClCompile Include="106_Medium_Leetcode.cpp">

@@ -14,7 +14,7 @@ using namespace std;
 /*
     Complete this driver code as earliest as possible.
 */
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 
 // the below chunk is for movement
