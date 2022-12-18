@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="01Matrix.cpp" />
+    <ClCompile Include="22_Medium_GenerateParenthesis.cpp" />
     <ClCompile Include="37_Hard_SudokuPuzzle.cpp" />
     <ClCompile Include="77_Medium_Combinations.cpp" />
     <ClCompile Include="BinaryTreeSame.cpp" />
