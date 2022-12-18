@@ -11,7 +11,7 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-#define FORREF
+//#define FORREF
 #ifndef FORREF
 /*
     Given two binary trees, write a function to check if they are the same or not.
@@ -47,7 +47,7 @@ public:
         Let's convert Recursive Approach to Iterative Approach,
         using support of your own stack
     */
-    bool isSame(TreeNode* h1, TreeNode* h2) {
+    bool isSameTree(TreeNode* h1, TreeNode* h2) {
         // Step 01 is to validate the input
         // and same should be copied from above recursive code as it is...
         if (!h1 && !h2) return true;
@@ -64,7 +64,9 @@ public:
         systemstk.push_back(h2);
 
         // Iterative version here
-        while (false == systemstk.empty()) {
+        bool result = true;
+
+        while (result && false == systemstk.empty()) {
             // pop the two element from the system stack
             TreeNode* p1 = systemstk.front();
             systemstk.pop_front();
@@ -72,24 +74,38 @@ public:
             systemstk.pop_front();
 
             // The first thing you do the check, just you are doing in recursion method
-            if (!p1 && !p2) return true;
-            else if (!p1 && p2) return false;
-            else if (p1 && !p2) return false;
-            else if (p1->val != p2->val) return false;
-
-            systemstk.push_back(p1->left);
-            systemstk.push_back(p1->right);
-
-            systemstk.push_back(p2->left);
-            systemstk.push_back(p2->right);
+            if (!p1 && !p2) result = true;
+            else if (!p1 && p2) result = false;
+            else if (p1 && !p2) result = false;
+            else if (p1->val != p2->val) result = false;
+            
+            if (p1 && p2) {
+                systemstk.push_back(p1->left);
+                systemstk.push_back(p2->left);
+                systemstk.push_back(p1->right);
+                systemstk.push_back(p2->right);
+            }
         }
 
-        return true;
+        return result;
     }
 };
 
+Solution sln;
+
 int main(void)
 {
+    TreeNode* h1 = new TreeNode(1);
+    //h1->left = new TreeNode(2);
+    //h1->right = new TreeNode(3);
+
+    TreeNode* h2 = new TreeNode(1);
+ //   h2->left = new TreeNode(2);
+    h2->right = new TreeNode(3);
+
+    cout << sln.isSameTree(h1, h2) << endl;
+
+
 
     return 0;
 }
