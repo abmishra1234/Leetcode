@@ -309,6 +309,9 @@
     <ClCompile Include="22_Medium_GenerateParenthesis.cpp">
       <Filter>Source Files\RecursionII</Filter>
     </ClCompile>
+    <ClCompile Include="51_Hard_NQueensProblem.cpp">
+      <Filter>Source Files\RecursionII</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
