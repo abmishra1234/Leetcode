@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="01Matrix.cpp" />
     <ClCompile Include="37_Hard_SudokuPuzzle.cpp" />
+    <ClCompile Include="77_Medium_Combinations.cpp" />
     <ClCompile Include="N-211_Medium_Leetcode.cpp" />
     <ClCompile Include="N-642_Hard_Leetcode.cpp" />
     <ClCompile Include="104_Leetcode.cpp" />

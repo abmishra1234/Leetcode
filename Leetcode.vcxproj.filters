@@ -300,6 +300,9 @@
     <ClCompile Include="37_Hard_SudokuPuzzle.cpp">
       <Filter>Source Files\RecursionII</Filter>
     </ClCompile>
+    <ClCompile Include="77_Medium_Combinations.cpp">
+      <Filter>Source Files\RecursionII</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
