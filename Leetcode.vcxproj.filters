@@ -43,6 +43,9 @@
     <Filter Include="Source Files\Backtracking">
       <UniqueIdentifier>{664e9f8d-c951-42ed-ae4f-1785a1b29723}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\RecursionII">
+      <UniqueIdentifier>{f58a7cf0-c478-4e58-84dc-31f0f1a23d77}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -249,7 +252,7 @@
     <ClCompile Include="648_Medium_Leetcode.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
-    <ClCompile Include="642_Hard_Leetcode.cpp">
+    <ClCompile Include="N-642_Hard_Leetcode.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
     <ClCompile Include="106_Medium_Leetcode.cpp">
@@ -290,6 +293,12 @@
     </ClCompile>
     <ClCompile Include="489_Hard_Leetcode.cpp">
       <Filter>Source Files\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="N-211_Medium_Leetcode.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
+    <ClCompile Include="37_Hard_SudokuPuzzle.cpp">
+      <Filter>Source Files\RecursionII</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

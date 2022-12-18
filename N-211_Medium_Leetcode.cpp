@@ -14,8 +14,14 @@ using namespace std;
 #define _CRT_SECURE_NO_WARNINGS
 
 /*
-    There is something wrong in my approach it is almost in pathetic time complexity
-    Let's Improve again
+    Your code is not performant at all,
+    check the serious issue with code,
+
+    Use some caching approach in the given problem to resolve
+    See the memoization beneficial here ?
+
+    You are doing lot's work again and again without taking your mind??
+
 */
 
 #define FORREF
@@ -60,19 +66,14 @@ public:
             }
         }
     }
-    /*
-        if there is no dot in search str than search will be normal search in trie
-        else, you have to follow the below role
-        if '.' means it matches with any character so you have to use the 
-        dfs kind of approach to validate the latter search.
-    */
+
     bool search(string word) {
         return solve(root, word, 0);
     }
 
     bool solve(TrieNode* root, string word, int pos) {
         // so this is the base case where until this point you found the match
-        if (pos >= word.length()) return word[pos-1] == '.' ? true : root->wc;
+        if (pos >= word.length()) return root->wc;
         if (!root) return false;
         if (word[pos] != '.') {
             int code = word.at(pos) - 'a';
@@ -84,8 +85,7 @@ public:
         bool result = false;
         for (int i = 0; i < 26; ++i) {
             if (root->ch[i]) {
-                result = solve(root->ch[i], word, pos + 1);
-                if (!result) return false;
+                result |= solve(root->ch[i], word, pos + 1);
             }
         }
         return result;
