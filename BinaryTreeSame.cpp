@@ -11,7 +11,7 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 /*
     Given two binary trees, write a function to check if they are the same or not.
