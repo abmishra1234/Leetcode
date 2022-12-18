@@ -45,20 +45,47 @@ public:
     /*
         Approach 02: Iterative one
         Let's convert Recursive Approach to Iterative Approach,
-        using this 
-
+        using support of your own stack
     */
     bool isSame(TreeNode* h1, TreeNode* h2) {
-        
+        // Step 01 is to validate the input
+        // and same should be copied from above recursive code as it is...
+        if (!h1 && !h2) return true;
+        else if (h1 && !h2) return false;
+        else if (!h1 && h2) return false;
+        else if (h1->val != h2->val) return false;
 
+        // Step 02 - Let's Simulate the same recursion case in your iterative approach also
+        // Let's create one stack here,
+        deque<TreeNode*> systemstk; // custom syste stack
 
+        // Push the head into the stack as equivalent to call  = bool isSame(TreeNode* h1, TreeNode* h2)
+        systemstk.push_back(h1);
+        systemstk.push_back(h2);
 
+        // Iterative version here
+        while (false == systemstk.empty()) {
+            // pop the two element from the system stack
+            TreeNode* p1 = systemstk.front();
+            systemstk.pop_front();
+            TreeNode* p2 = systemstk.front();
+            systemstk.pop_front();
 
+            // The first thing you do the check, just you are doing in recursion method
+            if (!p1 && !p2) return true;
+            else if (!p1 && p2) return false;
+            else if (p1 && !p2) return false;
+            else if (p1->val != p2->val) return false;
 
+            systemstk.push_back(p1->left);
+            systemstk.push_back(p1->right);
 
-        return false;
+            systemstk.push_back(p2->left);
+            systemstk.push_back(p2->right);
+        }
+
+        return true;
     }
-
 };
 
 int main(void)
