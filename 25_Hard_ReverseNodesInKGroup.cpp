@@ -11,7 +11,7 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 
 struct ListNode {
@@ -25,9 +25,59 @@ struct ListNode {
 class Solution {
 public:
     ListNode* solve(ListNode* head, int k) {
-                
+        deque<ListNode*> q;
 
+        ListNode* start = head;
+        ListNode* prev = nullptr;
+        int nodecount = 0;
 
+        while (start) {
+            prev = start;
+            start = start->next;
+            prev->next = nullptr;
+            q.push_back(prev);
+            ++nodecount;
+        }
+
+        int factor = nodecount / k;
+        ListNode* newhead = nullptr, * tail = nullptr;
+
+        while (factor > 0) {
+            stack<ListNode*> s;
+            for (int i = 0; i < k; ++i) {
+                s.push(q.front());
+                q.pop_front();
+            }
+            
+            while (false == s.empty()) {
+                ListNode* temp = s.top();
+                s.pop();
+                if (newhead == nullptr) {
+                    newhead = tail = temp;
+                }
+                else
+                {
+                    tail->next = temp;
+                    tail = tail->next;
+                }
+            }
+            --factor;
+        }
+
+        while (false == q.empty()) {
+            ListNode* temp = q.front();
+            q.pop_front();
+            if (newhead == nullptr) {
+                newhead = tail = temp;
+            }
+            else
+            {
+                tail->next = temp;
+                tail = tail->next;
+            }
+        }
+
+        return newhead;
     }
 
     ListNode* reverseKGroup(ListNode* head, int k) {
