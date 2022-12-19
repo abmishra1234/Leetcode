@@ -52,6 +52,9 @@
     <Filter Include="Source Files\Graph">
       <UniqueIdentifier>{23480245-d393-4e5f-aa99-fadb4217bd75}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\LinkedList">
+      <UniqueIdentifier>{858032e4-adcf-42df-b64d-a986357e9c1a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -326,6 +329,9 @@
     </ClCompile>
     <ClCompile Include="1971_Easy_FindIfPathExistInGraph.cpp">
       <Filter>Source Files\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="25_Hard_ReverseNodesInKGroup.cpp">
+      <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

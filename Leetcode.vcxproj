@@ -131,6 +131,7 @@
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="1971_Easy_FindIfPathExistInGraph.cpp" />
     <ClCompile Include="22_Medium_GenerateParenthesis.cpp" />
+    <ClCompile Include="25_Hard_ReverseNodesInKGroup.cpp" />
     <ClCompile Include="37_Hard_SudokuPuzzle.cpp" />
     <ClCompile Include="426_Medium_ConvertBinarySearchTree.cpp" />
     <ClCompile Include="51_Hard_NQueensProblem.cpp" />
