@@ -46,6 +46,9 @@
     <Filter Include="Source Files\RecursionII">
       <UniqueIdentifier>{f58a7cf0-c478-4e58-84dc-31f0f1a23d77}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Hashtable">
+      <UniqueIdentifier>{57262863-99f2-4cb6-800b-a82edc66b067}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -314,6 +317,9 @@
     </ClCompile>
     <ClCompile Include="426_Medium_ConvertBinarySearchTree.cpp">
       <Filter>Source Files\RecursionII</Filter>
+    </ClCompile>
+    <ClCompile Include="127_Hard_Leetcode.cpp">
+      <Filter>Source Files\Hashtable</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
