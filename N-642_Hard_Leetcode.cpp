@@ -12,129 +12,103 @@ using namespace std;
 #include<algorithm>
 
 #define _CRT_SECURE_NO_WARNINGS
-/*
-    These are some standard tips and Tricks you should think??
-    - This problem is good exercise of using the Trie and Priority Queue
-      togethr 
-    - Check all the optimisation of caching?
-    - Try to think, multiple approach and see the comparison?
-    - In Tire, node creation should be backed with Node Pool concept,
-      also check the sanity of your approach with the tweek
 
-    - Until you are not deleting any thing from the Trie or your solution
-      you are safe to use caching heavily, it will optimize your time complexity
-
-      incase you have delete api to implement than you should check that does
-      your caching is helping you or not?
-*/
-
-#define FORREF
+//#define FORREF
 #ifndef FORREF
-#define MAXP 100000
-#define MAXCH 27
-#define SPACE 26
 
-typedef pair<string, int> psi; // pair of sentence vs freq count
+#define MAXT 100000
 
+typedef pair<string, int> psi;
 struct Cmp {
-    auto operator()(const psi& a, const psi& b) const {
+    bool operator()(const psi& a, const psi& b) const {
         if (a.second == b.second) return a.first < b.first;
         return a.second > b.second;
     }
 };
 
-typedef set<psi, Cmp> MySet;
+typedef set<psi, Cmp> MyCustomSet;
 
-int getcode(char ch) {
-    if (ch == ' ') return SPACE;
-    return (ch - 'a');
-}
 
 struct TrieNode {
-    MySet* sp;
-    TrieNode* ch[27];
-
+    MyCustomSet* hotword; // This is suppose to hold the hot word list, max would be 03
+    TrieNode* ch[27]; // 26 alphabets and one space character
     void create() {
-        sp = nullptr;
-        for (int i = 0; i < MAXCH; ++i) ch[i] = nullptr;
+        hotword = nullptr;
+        for (int i = 0; i < 27; ++i) ch[i] = nullptr;
     }
-}pool[MAXP];
-int pid;
+}pool[MAXT];
+int pind;
 
-typedef unordered_map<string, int> MyMap;
-MyMap mp;
 
 class AutocompleteSystem {
-    string search;
+#define SPACE ' '
     TrieNode* root;
 public:
-
-    void add(string sentence, int freq) {
+    int getcode(char ch) {
+        if (ch == ' ') return SPACE;
+        return ch - 'a'; // otherwise all small case value returned
+    }
+    
+    // insert into the trie methos
+    void insert(string sentence, int hotness) {
         TrieNode* start = root;
-        int code;
-        for (int i = 0; i < sentence.length(); ) {
-            code = getcode(sentence.at(i));
-            
-            if (root->ch[code] == nullptr) {
-                root->ch[code] = &pool[pid++];
-                root->ch[code]->create();
+        for (int i = 0; i < sentence.length(); ++i) {
+            int code = getcode(sentence[i]);
+            if (start->ch[code] == nullptr) {
+                start->ch[code] = &pool[pind++];
+                start->ch[code]->create();
             }
-
-            root = root->ch[code];
-            if (root->sp == nullptr) {
-                root->sp = new MySet();
-                root->sp->insert({ sentence, freq });
+            start = start->ch[code];
+            // Assign the sorted set pointer with the given constarint.
+            // constraint rules are like below
+            if (start->hotword == nullptr) {
+                start->hotword = new MyCustomSet();
             }
-            else
-            {
-                root->sp->erase({ sentence, freq-1 });
-                root->sp->insert({ sentence, freq });
-            }
-            ++i;
+            // Let's see if you need some improvement in logic here?
+            // One optimization in memory usage here instead of putting eveything here
+            // only put the id value and put the element in some db
+            start->hotword->insert({ sentence ,hotness });
         }
     }
 
+    void precompute(vector<string>& sentences, vector<int>& times) {
+        for (int i = 0; i < sentences.size(); ++i) {
+            insert(sentences[i], times[i]);
+        }
+    }
+
+    /*
+        This method is for making something which is pre computed or cleaned the canvas, and
+        so on so forth...
+    */
     AutocompleteSystem(vector<string>& sentences, vector<int>& times) {
-        pid = 0;
-        search = "";
-        mp.clear();
-        root = &pool[pid++];
+        // For Trie DS init step
+        pind = 0;
+        root = &pool[pind++];
         root->create();
 
-        // Now you push the element into the trie
-        for (int i = 0; i < sentences.size(); ++i) {
-            add(sentences[i], times[i]);
-        }
+        // pre compute and populate your trie for given sentences and their hotness
+        precompute(sentences, times);
     }
 
     vector<string> input(char c) {
-        vector<string> result;
+        
 
-        if (c == '#') {
-            mp[search]++;
-            add(search, mp[search]);
-            search = "";
-            return {};
-        }
-        else
-        {
-            search += c;
-            // TBD, Write your search logic and return result from here
-            
 
-        }
-        return result;
     }
 };
 
-/*
-    Your TC are not strong enough, please build some of your own TC
-    to verify your logic and complete it.
-    This is your learning, to get the right motivation over the quick coding 
-*/
+/**
+ * Your AutocompleteSystem object will be instantiated and called as such:
+ * AutocompleteSystem* obj = new AutocompleteSystem(sentences, times);
+ * vector<string> param_1 = obj->input(c);
+ */
+
 int main(void)
 {
-    // write test case to cover your implementation
+    //cout << (int)SPACE << endl;
+
+
 
 
     return 0;
