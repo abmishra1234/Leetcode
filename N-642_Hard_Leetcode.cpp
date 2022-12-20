@@ -13,7 +13,7 @@ using namespace std;
 
 #define _CRT_SECURE_NO_WARNINGS
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 
 #define MAXT 100000
@@ -28,6 +28,8 @@ struct Cmp {
 
 typedef set<psi, Cmp> MyCustomSet;
 
+typedef unordered_map<string, int> MyMap;
+MyMap m;
 
 struct TrieNode {
     MyCustomSet* hotword; // This is suppose to hold the hot word list, max would be 03
@@ -41,11 +43,11 @@ int pind;
 
 
 class AutocompleteSystem {
-#define SPACE ' '
     TrieNode* root;
+    string search;
 public:
     int getcode(char ch) {
-        if (ch == ' ') return SPACE;
+        if (ch == ' ') return 26;
         return ch - 'a'; // otherwise all small case value returned
     }
     
@@ -67,14 +69,43 @@ public:
             // Let's see if you need some improvement in logic here?
             // One optimization in memory usage here instead of putting eveything here
             // only put the id value and put the element in some db
-            start->hotword->insert({ sentence ,hotness });
+            auto it = start->hotword->find({ sentence, m[sentence] });
+            if(it == start->hotword->end()) start->hotword->insert({ sentence ,hotness });
+            else {
+                int times = it->second;
+                start->hotword->erase(it);
+                start->hotword->insert({ sentence, times + hotness });
+            }
         }
+        m[sentence] += hotness;
     }
-
     void precompute(vector<string>& sentences, vector<int>& times) {
         for (int i = 0; i < sentences.size(); ++i) {
             insert(sentences[i], times[i]);
+            m[sentences[i]] = times[i];
         }
+    }
+
+    vector<string> recommend(string prefix) {
+        vector<string> result;
+        TrieNode* start = root;
+        for (int i = 0; i < prefix.length(); ++i) {
+            int code = getcode(prefix[i]);
+            if (start->ch[code] == nullptr) {
+                return {};
+            }
+            start = start->ch[code];
+        }
+
+        // so you reached the prefix leaf character/node
+        int cnt = 3;
+        auto it = start->hotword->begin();
+        while (cnt > 0 && it != start->hotword->end()) {
+            result.push_back(it->first);
+            it++;
+            --cnt;
+        }
+        return result;
     }
 
     /*
@@ -87,14 +118,35 @@ public:
         root = &pool[pind++];
         root->create();
 
+        m.clear();
         // pre compute and populate your trie for given sentences and their hotness
         precompute(sentences, times);
+        /*
+            This string is empty by now and I am expecting the query string will get updated
+            int the input method.
+        */ 
+        search = ""; 
     }
 
     vector<string> input(char c) {
-        
+        /*
+            Here in this method, there are two path as per the problem
+            Path 1 - termination of typing by putting the character '#'
+            Path 2 - You are typing the character in their pattern to be recommended??
 
-
+            So we have to handle these two path seperately with them to consider according to the problem
+        */
+            
+        if (c == '#') {
+            insert(search, 1);
+            search = "";
+            return {};
+        }
+        else
+        {
+            search += c;
+            return recommend(search);
+        }
     }
 };
 
