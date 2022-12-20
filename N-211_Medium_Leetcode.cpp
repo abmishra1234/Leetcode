@@ -24,7 +24,7 @@ using namespace std;
 
 */
 
-#define FORREF
+//#define FORREF
 #ifndef FORREF
 struct TrieNode {
     bool wc;
