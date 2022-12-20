@@ -35,8 +35,22 @@ struct TrieNode {
         for (int i = 0; i < 26; ++i) ch[i] = nullptr;
     }
 
-}pool[100000];
+}pool[150000];
 int pid;
+
+// {string type, {int type, bool type}}
+typedef pair<string, int> psi;
+
+// I wanted to cache this as a key for optimizing my recursive code 
+
+struct MyHash {
+    auto operator()(const psi& p)const {
+        return hash<string>{}(p.first) ^ hash<int>{}(p.second);
+    }
+};
+
+typedef unordered_map<psi, bool, MyHash> MyMap;
+MyMap m;
 
 
 // Trie class
@@ -51,7 +65,7 @@ public:
     }
     void addWord(string word) {
         TrieNode* start = root;
-        int wl = word.length();
+        int wl = (int) word.length();
         for (int i = 0; i < wl;) {
             int code = word.at(i) - 'a';
             if (start->ch[code] == nullptr) {
@@ -68,6 +82,7 @@ public:
     }
 
     bool search(string word) {
+        m.clear();
         return solve(root, word, 0);
     }
 
@@ -75,6 +90,9 @@ public:
         // so this is the base case where until this point you found the match
         if (pos >= word.length()) return root->wc;
         if (!root) return false;
+
+        //if (m.find({ word, pos }) != m.end()) return m[{word, pos}];
+
         if (word[pos] != '.') {
             int code = word.at(pos) - 'a';
             if (root->ch[code] == nullptr) return false;
@@ -86,8 +104,11 @@ public:
         for (int i = 0; i < 26; ++i) {
             if (root->ch[i]) {
                 result |= solve(root->ch[i], word, pos + 1);
+                if (result) return true;
             }
         }
+        //m[{word, pos}] = result;
+
         return result;
     }
 };
