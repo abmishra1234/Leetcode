@@ -138,7 +138,7 @@
     <ClCompile Include="77_Medium_Combinations.cpp" />
     <ClCompile Include="BinaryTreeSame.cpp" />
     <ClCompile Include="N-211_Medium_Leetcode.cpp" />
-    <ClCompile Include="N-642_Hard_Leetcode.cpp" />
+    <ClCompile Include="642_Hard_Leetcode.cpp" />
     <ClCompile Include="104_Leetcode.cpp" />
     <ClCompile Include="105_Medium_Leetcode.cpp" />
     <ClCompile Include="106_Medium_ApproachII.cpp" />
