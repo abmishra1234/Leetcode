@@ -133,11 +133,12 @@
     <ClCompile Include="22_Medium_GenerateParenthesis.cpp" />
     <ClCompile Include="25_Hard_ReverseNodesInKGroup.cpp" />
     <ClCompile Include="37_Hard_SudokuPuzzle.cpp" />
+    <ClCompile Include="421_Medium_MaximumXORofTwoNumbersinanArray.cpp" />
     <ClCompile Include="426_Medium_ConvertBinarySearchTree.cpp" />
     <ClCompile Include="51_Hard_NQueensProblem.cpp" />
     <ClCompile Include="77_Medium_Combinations.cpp" />
     <ClCompile Include="BinaryTreeSame.cpp" />
-    <ClCompile Include="N-211_Medium_Leetcode.cpp" />
+    <ClCompile Include="211_Medium_Leetcode.cpp" />
     <ClCompile Include="642_Hard_Leetcode.cpp" />
     <ClCompile Include="104_Leetcode.cpp" />
     <ClCompile Include="105_Medium_Leetcode.cpp" />

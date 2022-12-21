@@ -303,7 +303,7 @@
     <ClCompile Include="489_Hard_Leetcode.cpp">
       <Filter>Source Files\Backtracking</Filter>
     </ClCompile>
-    <ClCompile Include="N-211_Medium_Leetcode.cpp">
+    <ClCompile Include="211_Medium_Leetcode.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
     <ClCompile Include="37_Hard_SudokuPuzzle.cpp">
@@ -332,6 +332,9 @@
     </ClCompile>
     <ClCompile Include="25_Hard_ReverseNodesInKGroup.cpp">
       <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="421_Medium_MaximumXORofTwoNumbersinanArray.cpp">
+      <Filter>Source Files\Trie</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
