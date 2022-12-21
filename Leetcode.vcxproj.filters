@@ -336,6 +336,9 @@
     <ClCompile Include="421_Medium_MaximumXORofTwoNumbersinanArray.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
+    <ClCompile Include="886_Medium_Bipartition.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

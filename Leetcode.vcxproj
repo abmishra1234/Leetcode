@@ -137,6 +137,7 @@
     <ClCompile Include="426_Medium_ConvertBinarySearchTree.cpp" />
     <ClCompile Include="51_Hard_NQueensProblem.cpp" />
     <ClCompile Include="77_Medium_Combinations.cpp" />
+    <ClCompile Include="886_Medium_Bipartition.cpp" />
     <ClCompile Include="BinaryTreeSame.cpp" />
     <ClCompile Include="211_Medium_Leetcode.cpp" />
     <ClCompile Include="642_Hard_Leetcode.cpp" />
