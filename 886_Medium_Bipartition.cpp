@@ -12,7 +12,7 @@ using namespace std;
 #include<algorithm>
 #include<queue>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 /*
     //----------------------------- Approach 01

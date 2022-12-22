@@ -345,6 +345,9 @@
     <ClCompile Include="UnionFind_DS_Implementation.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="95_Medium_UniqueBinarySearchTreeII.cpp">
+      <Filter>Source Files\BinarySearchTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
