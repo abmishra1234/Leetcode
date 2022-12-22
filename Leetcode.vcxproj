@@ -215,12 +215,14 @@
     <ClCompile Include="TargetSum.cpp" />
     <ClCompile Include="TheKWeakestRowsInaMatrix.cpp" />
     <ClCompile Include="TopKLargestElements.cpp" />
+    <ClCompile Include="UnionFind_DS_Implementation.cpp" />
     <ClCompile Include="ValidParenthesis.cpp" />
     <ClCompile Include="SpiralMatrix.cpp" />
     <ClCompile Include="Split_Array_Largest_Sum.cpp" />
     <ClCompile Include="StrStr.cpp" />
     <ClCompile Include="WallsAndGates.cpp" />
     <ClCompile Include="WordAbbreviation.cpp" />
+    <ClCompile Include="[Approach02]886_Medium_Leetcode.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt" />

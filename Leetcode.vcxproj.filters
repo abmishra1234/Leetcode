@@ -339,6 +339,12 @@
     <ClCompile Include="886_Medium_Bipartition.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="[Approach02]886_Medium_Leetcode.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="UnionFind_DS_Implementation.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
