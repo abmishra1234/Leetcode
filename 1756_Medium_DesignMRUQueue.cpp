@@ -11,7 +11,7 @@ using namespace std;
 #include<queue>
 #include<algorithm>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 /*
     Design a queue-like data structure that moves 
