@@ -21,7 +21,7 @@ using namespace std;
     a) MRQueue(int n) : constructs the MRQueue with n elements : 1,2,3,...n
     b) int fetch(int k) moves the kth element (1-indexed) to the end of the queue and return it.
 
-    Approach:
+    Approach:[Brute Force Approach]
     1. I am using here one dequeue kind of DS
     2. [This might be considered as precompute stage] Initially pushing everything 
        in queue by just pushing back into dequeue
