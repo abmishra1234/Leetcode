@@ -1,7 +1,2 @@
-﻿  886_Medium_Bipartition.cpp
-  95_Medium_UniqueBinarySearchTreeII.cpp
-  UnionFind_DS_Implementation.cpp
-  [Approach02]886_Medium_Leetcode.cpp
-  Generating Code...
-95_Medium_UniqueBinarySearchTreeII.obj : error LNK2005: main already defined in 886_Medium_Bipartition.obj
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe : fatal error LNK1169: one or more multiply defined symbols found
+﻿  95_Medium_UniqueBinarySearchTreeII.cpp
+  Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe
