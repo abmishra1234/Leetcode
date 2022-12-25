@@ -138,6 +138,7 @@
     <ClCompile Include="421_Medium_MaximumXORofTwoNumbersinanArray.cpp" />
     <ClCompile Include="426_Medium_ConvertBinarySearchTree.cpp" />
     <ClCompile Include="496_Easy_NextGreaterElement.cpp" />
+    <ClCompile Include="503_Medium_NextGreaterElementII.cpp" />
     <ClCompile Include="51_Hard_NQueensProblem.cpp" />
     <ClCompile Include="77_Medium_Combinations.cpp" />
     <ClCompile Include="790_Medium_Approach01.cpp" />
