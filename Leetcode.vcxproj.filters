@@ -55,6 +55,12 @@
     <Filter Include="Source Files\LinkedList">
       <UniqueIdentifier>{858032e4-adcf-42df-b64d-a986357e9c1a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Mixed-Intervie-Problems">
+      <UniqueIdentifier>{c119a558-74b1-4f21-9fa3-ebc39f0b23f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Dynamic_Programming">
+      <UniqueIdentifier>{9b03ff7e-1264-4a55-a60b-2c6bef041a20}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -345,8 +351,20 @@
     <ClCompile Include="UnionFind_DS_Implementation.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="95_Medium_UniqueBinarySearchTreeII.cpp">
+    <ClCompile Include="[N]95_Medium_UniqueBinarySearchTreeII.cpp">
       <Filter>Source Files\BinarySearchTree</Filter>
+    </ClCompile>
+    <ClCompile Include="1756_Medium_DesignMRUQueue.cpp">
+      <Filter>Source Files\Mixed-Intervie-Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="1756_Medium_Approach02.cpp">
+      <Filter>Source Files\Mixed-Intervie-Problems</Filter>
+    </ClCompile>
+    <ClCompile Include="790_Medium_Approach01.cpp">
+      <Filter>Source Files\Dynamic_Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="496_Easy_NextGreaterElement.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
