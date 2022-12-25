@@ -369,6 +369,9 @@
     <ClCompile Include="503_Medium_NextGreaterElementII.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="556_Medium_NextGreaterElementIII.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
