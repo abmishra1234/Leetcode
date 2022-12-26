@@ -16,18 +16,14 @@ using namespace std;
 #ifndef FORREF
 /*
     Approach to solve this problem,
-    Two step process
-    1. First fetch the digit from the number
-    2. Swap two number by moving digits from right to left to produce bigger number 
 
-
-
-
-
+    So, Let's Write your won logic to cater the below code
+        auto digits = to_string(n);
+        next_permutation(begin(digits), end(digits));
+        auto res = stoll(digits);
+        return (res > INT_MAX || res <= n) ? -1 : res;
+    // replicate the above logic in your own implementation
 */
-
-
-
 
 class Solution {
 public:
