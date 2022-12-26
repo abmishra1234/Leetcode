@@ -14,41 +14,28 @@ using namespace std;
 
 //#define FORREF
 #ifndef FORREF
+/*
+    Approach to solve this problem,
+    Two step process
+    1. First fetch the digit from the number
+    2. Swap two number by moving digits from right to left to produce bigger number 
+
+
+
+
+
+*/
+
+
+
 
 class Solution {
 public:
-
     int nextGreaterElement(int n) {
-        int bkp = n;
-        deque<int> digits;
-        while (n > 0) {
-            digits.push_front(n % 10);
-            n /= 10;
-        }
-        //sort(digits.begin(), digits.end());
-        auto it = digits.begin();
-        int sum = 0;
-
-        int sz = digits.size();
-
-        for (int i = sz - 2; i >= 0; --i) {
-            if (digits[i] >= digits[i+1]) {
-                continue;
-            }
-            else {
-                swap(digits[i], digits[i+1]);
-                break;
-            }
-        }
-
-        while (it != digits.end()) {
-            sum *= 10;
-            sum += *it;
-            ++it;
-        }
-
-        if (sum > bkp) return sum;
-        else return -1;
+        auto digits = to_string(n);
+        next_permutation(begin(digits), end(digits));
+        auto res = stoll(digits);
+        return (res > INT_MAX || res <= n) ? -1 : res;
     }
 };
 
@@ -56,7 +43,7 @@ Solution sln;
 
 int main(void)
 {
-    int num = 230241;
+    int num = 2147483476;
     int ans = sln.nextGreaterElement(num);
     cout << ans << endl;
     return 0;
