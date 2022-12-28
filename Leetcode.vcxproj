@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="01Matrix.cpp" />
     <ClCompile Include="1019_Medium_NextGreaterNode.cpp" />
+    <ClCompile Include="1071_Easy_GCDofString.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="1756_Medium_Approach02.cpp" />
     <ClCompile Include="1756_Medium_DesignMRUQueue.cpp" />

@@ -375,6 +375,9 @@
     <ClCompile Include="1019_Medium_NextGreaterNode.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="1071_Easy_GCDofString.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
