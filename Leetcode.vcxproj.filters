@@ -378,6 +378,9 @@
     <ClCompile Include="1071_Easy_GCDofString.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="1834_Medium_SingleThreadedCPU.cpp">
+      <Filter>Source Files\Heap</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

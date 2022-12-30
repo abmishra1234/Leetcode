@@ -133,6 +133,7 @@
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="1756_Medium_Approach02.cpp" />
     <ClCompile Include="1756_Medium_DesignMRUQueue.cpp" />
+    <ClCompile Include="1834_Medium_SingleThreadedCPU.cpp" />
     <ClCompile Include="1971_Easy_FindIfPathExistInGraph.cpp" />
     <ClCompile Include="22_Medium_GenerateParenthesis.cpp" />
     <ClCompile Include="25_Hard_ReverseNodesInKGroup.cpp" />
