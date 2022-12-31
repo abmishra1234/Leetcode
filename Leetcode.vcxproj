@@ -148,6 +148,7 @@
     <ClCompile Include="503_Medium_NextGreaterElementII.cpp" />
     <ClCompile Include="51_Hard_NQueensProblem.cpp" />
     <ClCompile Include="556_Medium_NextGreaterElementIII.cpp" />
+    <ClCompile Include="680_Easy_PalindromeII.cpp" />
     <ClCompile Include="77_Medium_Combinations.cpp" />
     <ClCompile Include="790_Medium_Approach01.cpp" />
     <ClCompile Include="886_Medium_Bipartition.cpp" />
