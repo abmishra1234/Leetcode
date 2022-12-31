@@ -384,7 +384,7 @@
     <ClCompile Include="111_Easy_MinDepth.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
-    <ClCompile Include="18_Medium_04Sum.cpp">
+    <ClCompile Include="N_18_Medium_04Sum.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
     <ClCompile Include="110_Easy_BalancedBinaryTree.cpp">
@@ -394,6 +394,9 @@
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
     <ClCompile Include="680_Easy_PalindromeII.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
+    <ClCompile Include="560_Medium_SubarraySumEqualK.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
   </ItemGroup>
