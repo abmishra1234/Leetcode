@@ -399,6 +399,9 @@
     <ClCompile Include="560_Medium_SubarraySumEqualK.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="290_Easy_WordPattern.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

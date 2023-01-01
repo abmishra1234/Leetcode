@@ -13,7 +13,7 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-//#define FORREF
+#define FORREF
 
 /*
     1 <= nums.length <= 200
