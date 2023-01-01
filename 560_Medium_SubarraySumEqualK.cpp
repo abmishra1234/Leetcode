@@ -32,19 +32,27 @@ using namespace std;
 
 class Solution {
 public:
+    unordered_map<int, int> m;
     int subarraySum(vector<int>& nums, int k) {
+        int ns = nums.size();
+        if (ns == 0) return 0;
         int count = 0;
+        int prefix_sum = 0;
+        m.clear();
         
+        for (int i = 0; i < ns; ++i) {
+            prefix_sum += nums[i];
+            if (prefix_sum == k) count++;
 
+            if (m.find(prefix_sum - k) != m.end()) {
+                count += m[prefix_sum - k];
+            }
 
-
-
-
-
-
-
-
-
+            if (m.find(prefix_sum) != m.end())
+                m[prefix_sum] += 1;
+            else
+                m[prefix_sum] = 1;
+        }
         return count;
     }
 };
