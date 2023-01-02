@@ -78,7 +78,6 @@ public:
         return result;
     }
 
-    vector<vector<int>> threesum(vector<int> nums, int target) {
         typedef pair<int, pair<int, int>> p3i;
         struct MyHash {
             auto operator()(const p3i& a) const {
