@@ -402,6 +402,15 @@
     <ClCompile Include="290_Easy_WordPattern.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="520_Easy_DetectCapital.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
+    <ClCompile Include="212_Hard_WordSearchII.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
+    <ClCompile Include="35_Easy_SearchInsertPosition.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

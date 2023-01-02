@@ -137,7 +137,10 @@
     <ClCompile Include="1756_Medium_Approach02.cpp" />
     <ClCompile Include="1756_Medium_DesignMRUQueue.cpp" />
     <ClCompile Include="1834_Medium_SingleThreadedCPU.cpp" />
+    <ClCompile Include="212_Hard_WordSearchII.cpp" />
     <ClCompile Include="290_Easy_WordPattern.cpp" />
+    <ClCompile Include="35_Easy_SearchInsertPosition.cpp" />
+    <ClCompile Include="520_Easy_DetectCapital.cpp" />
     <ClCompile Include="560_Medium_SubarraySumEqualK.cpp" />
     <ClCompile Include="N_18_Medium_04Sum.cpp" />
     <ClCompile Include="1971_Easy_FindIfPathExistInGraph.cpp" />
