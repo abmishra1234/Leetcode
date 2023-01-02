@@ -13,7 +13,7 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-#define FORREF
+//#define FORREF
 #ifndef FORREF
 /*
     1. Take all words and push it into trie
@@ -27,21 +27,88 @@ using namespace std;
     So these are few cases to be considered while implementing solution of this problem
 */
 
-class Solution {
-public:
-    vector<string> findWords(vector<vector<char>>& board, 
-        vector<string>& words) {
-        // Trie based implementation
+#define MAXN 100005
 
+class Trie {
+public:
+    class TrieNode {
+    public:
+        bool wc; // word complete
+        TrieNode* ch[26];
+        void create() {
+            wc = false;
+            for (int i = 0; i < 26; ++i) ch[i] = nullptr;
+        }
+    }pool[MAXN];
+    int pind = 0;
+
+    //--------------------------
+    TrieNode* root;
+    void init() {
+        pind = 0;
+        root = &pool[pind++];
+        root->create();
+    }
+    
+    // add
+    void add(string word) {
+        TrieNode* start = root;
+        int i = 0;
+        int code;
+        for (; i < word.length();) {
+            code = word.at(i) - 'a';
+            if (!start->ch[code]) {
+                start->ch[code] = &pool[pind++];
+                start->ch[code]->create();
+            }
+            start = start->ch[code];
+            ++i;
+            if (i == word.length()) {
+                start->wc = true;
+                break;
+            }
+        }
+    }
+
+    // Solve method to be defined as custom search method to solve the problem
+    void solve(vector<vector<char>>& board, vector<string>& words, vector<string> &ans) {
+        TrieNode* start = root;
+
+        // how to optimize your check here in this problem
+        // As per my understing in this problem, I can see that, 
+
+
+        
 
 
 
 
     }
+
+
+
+
 };
+
+class Solution {
+public:
+    Trie t;
+    vector<string> findWords(vector<vector<char>>& board, 
+        vector<string>& words) {
+        // Trie based implementation
+        t.init();
+        vector<string> ans;
+        t.solve(board, words, ans);
+        return ans;
+    }
+};
+
+Solution sln;
 
 int main(void)
 {
+    // Write your verifcation code here below
+
 
     return 0;
 }
