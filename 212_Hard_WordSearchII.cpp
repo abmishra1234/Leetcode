@@ -69,8 +69,8 @@ public:
             }
         }
     }
-
-    typedef pair<int, pair<int, pair<string, TrieNode*>>> p2ist; // {row, col, string, TrieNode*}
+    // {row, col, string, TrieNode*}
+    typedef pair<int, pair<int, pair<string, TrieNode*>>> p2ist; 
 
     bool isvalid(int x, int y, int R, int C) {
         if (x < 0 || x >= R) return false;
@@ -82,15 +82,19 @@ public:
         Custom bfs for finding all the words starting from the perticular possible cell
 
     */
-    void bfs(vector<vector<char>>& board, int R, int C, p2ist cell, vector<string>& ans) {
+    void bfs(vector<vector<char>>& board, int R, int C, p2ist cell, unordered_set<string> &ans) {
         // so to avoid the cycle, use the visited[][] here
         vector<vector<bool>> visited(R, vector<bool>(C, false));
         deque<p2ist> q;
 
         // push the first cell
-        q.push_back(cell);
         visited[cell.first][cell.second.first] = true;
-        int code = board[cell.first][cell.second.first] - 'a';
+        cell.second.second.first += board[cell.first][cell.second.first];
+        cell.second.second.second
+            = cell.second.second.second->ch[board[cell.first][cell.second.first] - 'a'];
+        q.push_back(cell);
+
+        int code;
 
         // Iterate these 
         while (false == q.empty()) {
@@ -100,7 +104,7 @@ public:
             int x = p.first, y = p.second.first;
             string s = p.second.second.first;
             TrieNode* start = p.second.second.second;
-            if (start->wc) ans.push_back(s);
+            if (start->wc) ans.insert(s);
 
             // left
             y--;
@@ -114,6 +118,7 @@ public:
                     visited[x][y] = true;
                 }
             }
+            ++y;
 
             // top
             x--;
@@ -127,6 +132,7 @@ public:
                     visited[x][y] = true;
                 }
             }
+            ++x;
 
             // right
             y++;
@@ -140,6 +146,7 @@ public:
                     visited[x][y] = true;
                 }
             }
+            --y;
 
             // bottom
             x++;
@@ -153,18 +160,20 @@ public:
                     visited[x][y] = true;
                 }
             }
+            --x;
         }
     }
 
     // Solve method to be defined as custom search method to solve the problem
     void solve(vector<vector<char>>& board, vector<string>& words, 
-        vector<string> &ans) {
+        unordered_set<string> &ans) {
         TrieNode* start = root;
 
         // I am assuming that all the words are not empty
         set<char> chset;
-        for (auto& s : words) {
+        for (auto s : words) {
             chset.insert(s.at(0));
+            add(s);
         }
         
         // Let's iterate the grid and start your bfs
@@ -190,18 +199,32 @@ public:
         // Trie based implementation
         t.init();
         vector<string> ans;
-        t.solve(board, words, ans);
+        unordered_set<string> wset;
+        t.solve(board, words, wset);
+        auto it = wset.begin();
+        while (it != wset.end()) {
+            ans.push_back(*it);
+            ++it;
+        }
         return ans;
     }
 };
 
 Solution sln;
 
+/*
+    TBD - This problem is failing for below test case
+    Do the debug and solve the problem.
+*/
+
 int main(void)
 {
     // Write your verifcation code here below
+    vector<vector<char>> board = { {'o','a','a','n'},
+        {'e','t','a','e'}, {'i','h','k','r'}, {'i','f','l','v'} };
 
-
+    vector<string> words = { "oath","pea","eat","rain","hklf", "hf" };
+    vector<string> ans = sln.findWords(board, words);
 
 
     return 0;
