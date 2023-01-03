@@ -70,24 +70,116 @@ public:
         }
     }
 
-    // Solve method to be defined as custom search method to solve the problem
-    void solve(vector<vector<char>>& board, vector<string>& words, vector<string> &ans) {
-        TrieNode* start = root;
+    typedef pair<int, pair<int, pair<string, TrieNode*>>> p2ist; // {row, col, string, TrieNode*}
 
-        // how to optimize your check here in this problem
-        // As per my understing in this problem, I can see that, 
-
-
-        
-
-
-
-
+    bool isvalid(int x, int y, int R, int C) {
+        if (x < 0 || x >= R) return false;
+        if (y < 0 || y >= C) return false;
+        return true;
     }
 
+    /*
+        Custom bfs for finding all the words starting from the perticular possible cell
 
+    */
+    void bfs(vector<vector<char>>& board, int R, int C, p2ist cell, vector<string>& ans) {
+        // so to avoid the cycle, use the visited[][] here
+        vector<vector<bool>> visited(R, vector<bool>(C, false));
+        deque<p2ist> q;
 
+        // push the first cell
+        q.push_back(cell);
+        visited[cell.first][cell.second.first] = true;
+        int code = board[cell.first][cell.second.first] - 'a';
 
+        // Iterate these 
+        while (false == q.empty()) {
+            p2ist p = q.front();
+            q.pop_front();
+
+            int x = p.first, y = p.second.first;
+            string s = p.second.second.first;
+            TrieNode* start = p.second.second.second;
+            if (start->wc) ans.push_back(s);
+
+            // left
+            y--;
+            if (isvalid(x, y, R, C) 
+                && !visited[x][y]) {
+                // does this new cell is part of trie word?
+                code = board[x][y] - 'a';
+                if (start->ch[code]) {
+                    s += board[x][y];
+                    q.push_back({ x,{y,{s, start->ch[code]}}});
+                    visited[x][y] = true;
+                }
+            }
+
+            // top
+            x--;
+            if (isvalid(x, y, R, C)
+                && !visited[x][y]) {
+                // does this new cell is part of trie word?
+                code = board[x][y] - 'a';
+                if (start->ch[code]) {
+                    s += board[x][y];
+                    q.push_back({ x,{y,{s, start->ch[code]}} });
+                    visited[x][y] = true;
+                }
+            }
+
+            // right
+            y++;
+            if (isvalid(x, y, R, C)
+                && !visited[x][y]) {
+                // does this new cell is part of trie word?
+                code = board[x][y] - 'a';
+                if (start->ch[code]) {
+                    s += board[x][y];
+                    q.push_back({ x,{y,{s, start->ch[code]}} });
+                    visited[x][y] = true;
+                }
+            }
+
+            // bottom
+            x++;
+            if (isvalid(x, y, R, C)
+                && !visited[x][y]) {
+                // does this new cell is part of trie word?
+                code = board[x][y] - 'a';
+                if (start->ch[code]) {
+                    s += board[x][y];
+                    q.push_back({ x,{y,{s, start->ch[code]}} });
+                    visited[x][y] = true;
+                }
+            }
+        }
+    }
+
+    // Solve method to be defined as custom search method to solve the problem
+    void solve(vector<vector<char>>& board, vector<string>& words, 
+        vector<string> &ans) {
+        TrieNode* start = root;
+
+        // I am assuming that all the words are not empty
+        set<char> chset;
+        for (auto& s : words) {
+            chset.insert(s.at(0));
+        }
+        
+        // Let's iterate the grid and start your bfs
+        // here bfs edge is to be decided based on path exist in trie words
+        int R = (int) board.size();
+        int C = (int) board[0].size();
+
+        for (int i = 0; i < R; ++i) {
+            for (int j = 0; j < C; ++j) {
+                // your element must be the part of chset
+                if (chset.find(board[i][j]) == chset.end()) continue;
+                bfs(board, R, C, { i,{ j,{"",start}}}, ans);
+            }
+        }
+    }
 };
 
 class Solution {
@@ -108,6 +200,8 @@ Solution sln;
 int main(void)
 {
     // Write your verifcation code here below
+
+
 
 
     return 0;
