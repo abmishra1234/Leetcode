@@ -13,6 +13,15 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
+/*
+    Incomplete yet...
+    Solution is Trie and dfs and backtrace
+    Using bfs is confusing here so avoid this and try solution again...
+
+*/
+
+
+
 //#define FORREF
 #ifndef FORREF
 /*
@@ -27,7 +36,7 @@ using namespace std;
     So these are few cases to be considered while implementing solution of this problem
 */
 
-#define MAXN 100005
+#define MAXN 200000
 class Trie {
 public:
     class TrieNode {
@@ -68,6 +77,7 @@ public:
             }
         }
     }
+
     // {row, col, string, TrieNode*}
     typedef pair<int, pair<int, pair<string, TrieNode*>>> p2ist; 
 
@@ -79,7 +89,6 @@ public:
 
     /*
         Custom bfs for finding all the words starting from the perticular possible cell
-
     */
     void bfs(vector<vector<char>>& board, int R, int C, p2ist cell, unordered_set<string> &ans) {
         // so to avoid the cycle, use the visited[][] here
@@ -107,14 +116,15 @@ public:
 
             // left
             y--;
-            if (isvalid(x, y, R, C) 
+            if (isvalid(x, y, R, C)
                 && !visited[x][y]) {
                 // does this new cell is part of trie word?
                 code = board[x][y] - 'a';
                 if (start->ch[code]) {
-                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}}});
                     visited[x][y] = true;
+                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                 }
+                //visited[x][y] = false;
             }
             ++y;
 
@@ -125,9 +135,10 @@ public:
                 // does this new cell is part of trie word?
                 code = board[x][y] - 'a';
                 if (start->ch[code]) {
-                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                     visited[x][y] = true;
+                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                 }
+                //visited[x][y] = false;
             }
             ++x;
 
@@ -138,9 +149,10 @@ public:
                 // does this new cell is part of trie word?
                 code = board[x][y] - 'a';
                 if (start->ch[code]) {
-                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                     visited[x][y] = true;
+                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                 }
+                //visited[x][y] = false;
             }
             --y;
 
@@ -151,10 +163,12 @@ public:
                 // does this new cell is part of trie word?
                 code = board[x][y] - 'a';
                 if (start->ch[code]) {
-                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                     visited[x][y] = true;
+                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                 }
+                //visited[x][y] = false;
             }
+
             --x;
         }
     }
@@ -218,7 +232,6 @@ int main(void)
 
     vector<string> words = { "oath","pea","eat","rain","hklf", "hf" };
     vector<string> ans = sln.findWords(board, words);
-
 
     return 0;
 }
