@@ -28,7 +28,6 @@ using namespace std;
 */
 
 #define MAXN 100005
-
 class Trie {
 public:
     class TrieNode {
@@ -89,7 +88,7 @@ public:
 
         // push the first cell
         visited[cell.first][cell.second.first] = true;
-        cell.second.second.first += board[cell.first][cell.second.first];
+        cell.second.second.first = cell.second.second.first + board[cell.first][cell.second.first];
         cell.second.second.second
             = cell.second.second.second->ch[board[cell.first][cell.second.first] - 'a'];
         q.push_back(cell);
@@ -113,8 +112,7 @@ public:
                 // does this new cell is part of trie word?
                 code = board[x][y] - 'a';
                 if (start->ch[code]) {
-                    s += board[x][y];
-                    q.push_back({ x,{y,{s, start->ch[code]}}});
+                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}}});
                     visited[x][y] = true;
                 }
             }
@@ -127,8 +125,7 @@ public:
                 // does this new cell is part of trie word?
                 code = board[x][y] - 'a';
                 if (start->ch[code]) {
-                    s += board[x][y];
-                    q.push_back({ x,{y,{s, start->ch[code]}} });
+                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                     visited[x][y] = true;
                 }
             }
@@ -141,8 +138,7 @@ public:
                 // does this new cell is part of trie word?
                 code = board[x][y] - 'a';
                 if (start->ch[code]) {
-                    s += board[x][y];
-                    q.push_back({ x,{y,{s, start->ch[code]}} });
+                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                     visited[x][y] = true;
                 }
             }
@@ -155,8 +151,7 @@ public:
                 // does this new cell is part of trie word?
                 code = board[x][y] - 'a';
                 if (start->ch[code]) {
-                    s += board[x][y];
-                    q.push_back({ x,{y,{s, start->ch[code]}} });
+                    q.push_back({ x,{y,{s + board[x][y], start->ch[code]}} });
                     visited[x][y] = true;
                 }
             }
@@ -167,7 +162,6 @@ public:
     // Solve method to be defined as custom search method to solve the problem
     void solve(vector<vector<char>>& board, vector<string>& words, 
         unordered_set<string> &ans) {
-        TrieNode* start = root;
 
         // I am assuming that all the words are not empty
         set<char> chset;
@@ -185,12 +179,11 @@ public:
             for (int j = 0; j < C; ++j) {
                 // your element must be the part of chset
                 if (chset.find(board[i][j]) == chset.end()) continue;
-                bfs(board, R, C, { i,{ j,{"",start}}}, ans);
+                bfs(board, R, C, { i,{ j,{"",root}}}, ans);
             }
         }
     }
 };
-
 class Solution {
 public:
     Trie t;
