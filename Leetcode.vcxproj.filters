@@ -417,6 +417,12 @@
     <ClCompile Include="198_Medium_HouseRobber.cpp">
       <Filter>Source Files\Dynamic_Programming</Filter>
     </ClCompile>
+    <ClCompile Include="746_Easy_MinCostClimbingStair.cpp">
+      <Filter>Source Files\Dynamic_Programming</Filter>
+    </ClCompile>
+    <ClCompile Include="740_Medium_DeleteAndEarn.cpp">
+      <Filter>Source Files\Dynamic_Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
