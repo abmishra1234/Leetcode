@@ -12,7 +12,7 @@ using namespace std;
 #include<algorithm>
 #include<sstream>
 
-#define FORREF
+//#define FORREF
 #ifndef FORREF
 /*
     Replace words

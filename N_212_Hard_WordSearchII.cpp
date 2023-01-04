@@ -22,7 +22,7 @@ using namespace std;
 
 
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 /*
     1. Take all words and push it into trie
