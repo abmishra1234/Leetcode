@@ -137,6 +137,8 @@
     <ClCompile Include="1756_Medium_Approach02.cpp" />
     <ClCompile Include="1756_Medium_DesignMRUQueue.cpp" />
     <ClCompile Include="1834_Medium_SingleThreadedCPU.cpp" />
+    <ClCompile Include="198_Medium_HouseRobber.cpp" />
+    <ClCompile Include="2244_Medium_Minimum Rounds to Complete All Tasks.cpp" />
     <ClCompile Include="N_212_Hard_WordSearchII.cpp" />
     <ClCompile Include="290_Easy_WordPattern.cpp" />
     <ClCompile Include="35_Easy_SearchInsertPosition.cpp" />

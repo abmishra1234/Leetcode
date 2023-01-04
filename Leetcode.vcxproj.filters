@@ -411,6 +411,12 @@
     <ClCompile Include="35_Easy_SearchInsertPosition.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="2244_Medium_Minimum Rounds to Complete All Tasks.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
+    <ClCompile Include="198_Medium_HouseRobber.cpp">
+      <Filter>Source Files\Dynamic_Programming</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
