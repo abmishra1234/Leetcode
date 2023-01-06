@@ -13,37 +13,44 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 class Solution {
 public:
     bool equalFrequency(string word) {
         vector<int> freq(26, 0);
+
+        // you have collected the all character frequency here
         for (auto ch : word) {
-            freq[ch - 'a'] += 1;
+            int code = ch - 'a';
+            freq[code] += 1;
         }
+        
+        // now try to change the frequency by 1 and check the frequency of rest char
+        for (int i = 0; i < 26; ++i) { // outer loop
+            if (freq[i] <= 0) continue;
+            freq[i] -= 1;
 
-        // freq > 1 count??
-        int maxv = INT_MIN;
-        int id = -1;
-        for (int i = 0; i < 26; ++i) {
-            if (freq[i] > 0 && freq[i] > maxv)
-            {
-                maxv = freq[i];
-                id = i;
+            int fr = 0;
+            bool failed = false;
+            for (int j = 0; j < 26; ++j) {
+                if (freq[j] == 0) continue;
+
+                if (freq[j] != fr) {
+                    if (fr == 0)
+                        fr = freq[j];
+                    else
+                    {
+                        failed = true;
+                        break;
+                    }
+                }
             }
+            if (!failed) return true;
+            freq[i] += 1;
+
         }
-
-        freq[id] -= 1;
-
-        unordered_set<int> s;
-
-        for (int i = 0; i < 26; ++i) {
-            if (freq[i] > 0) {
-                s.insert(freq[i]);
-            }
-        }
-        return (s.size() == 1);
+        return false;
     }
 };
 
@@ -61,8 +68,6 @@ int main(void)
     word = "cccaa";
     ans = sln.equalFrequency(word);
     if (ans == true) cout << "2. PASS" << endl;
-
-
 
     return 0;
 }
