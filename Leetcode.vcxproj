@@ -139,6 +139,7 @@
     <ClCompile Include="1834_Medium_SingleThreadedCPU.cpp" />
     <ClCompile Include="198_Medium_HouseRobber.cpp" />
     <ClCompile Include="2244_Medium_Minimum Rounds to Complete All Tasks.cpp" />
+    <ClCompile Include="2433.cpp" />
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp" />
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
     <ClCompile Include="N_212_Hard_WordSearchII.cpp" />

@@ -423,6 +423,9 @@
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp">
       <Filter>Source Files\Dynamic_Programming</Filter>
     </ClCompile>
+    <ClCompile Include="2433.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
