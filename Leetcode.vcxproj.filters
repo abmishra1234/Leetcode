@@ -435,6 +435,9 @@
     <ClCompile Include="2130_Medium_MaximumTwinSum.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="237_Medium_DeleteNode.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

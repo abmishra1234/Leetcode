@@ -142,6 +142,7 @@
     <ClCompile Include="2130_Medium_MaximumTwinSum.cpp" />
     <ClCompile Include="2181_Medium_MergeNodes.cpp" />
     <ClCompile Include="2244_Medium_Minimum Rounds to Complete All Tasks.cpp" />
+    <ClCompile Include="237_Medium_DeleteNode.cpp" />
     <ClCompile Include="2433.cpp" />
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp" />
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
