@@ -23,8 +23,6 @@ using namespace std;
 
 */
 
-
-
 #define FORREF
 #ifndef FORREF
 /*
