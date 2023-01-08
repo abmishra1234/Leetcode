@@ -438,6 +438,9 @@
     <ClCompile Include="237_Medium_DeleteNode.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="2487_Medium_RemoveNode.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
