@@ -135,9 +135,11 @@
     <ClCompile Include="125_Easy_ValidPalindrome.cpp" />
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
+    <ClCompile Include="1721_Medium_SwappingNode.cpp" />
     <ClCompile Include="1756_Medium_Approach02.cpp" />
     <ClCompile Include="1756_Medium_DesignMRUQueue.cpp" />
     <ClCompile Include="1834_Medium_SingleThreadedCPU.cpp" />
+    <ClCompile Include="1836_Medium_RemoveDuplicate.cpp" />
     <ClCompile Include="198_Medium_HouseRobber.cpp" />
     <ClCompile Include="2130_Medium_MaximumTwinSum.cpp" />
     <ClCompile Include="2181_Medium_MergeNodes.cpp" />
