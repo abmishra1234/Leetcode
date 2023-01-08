@@ -447,6 +447,9 @@
     <ClCompile Include="1721_Medium_SwappingNode.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="2046_medium_SortLinkedList.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

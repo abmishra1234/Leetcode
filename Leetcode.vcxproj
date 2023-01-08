@@ -141,6 +141,7 @@
     <ClCompile Include="1834_Medium_SingleThreadedCPU.cpp" />
     <ClCompile Include="1836_Medium_RemoveDuplicate.cpp" />
     <ClCompile Include="198_Medium_HouseRobber.cpp" />
+    <ClCompile Include="2046_medium_SortLinkedList.cpp" />
     <ClCompile Include="2130_Medium_MaximumTwinSum.cpp" />
     <ClCompile Include="2181_Medium_MergeNodes.cpp" />
     <ClCompile Include="2244_Medium_Minimum Rounds to Complete All Tasks.cpp" />
