@@ -14,15 +14,10 @@ using namespace std;
 #include<cstring>
 
 /*
-    Sorting with insertion sort will not work here??
-    Giving TLE
-    Why? because the number of node is upto 10^5
-
-    Follow up:
     Can you think of a solution with O(n) time complexity?
 */
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 class ListNode {
 public:
@@ -35,41 +30,33 @@ public:
 
 class Solution {
 public:
-    void util(ListNode* head, vector<int> &v) {
-        if (!head) {
-            sort(v.begin(), v.end(), greater<int>());
-            return;
-        }
-        v.push_back(head->val);
-        util(head->next, v);
-
-        // task to do while stack unwinding
-        head->val = v[0];
-        v.erase(v.begin());
-    }
-
     ListNode* sortLinkedList(ListNode* head) {
-        int elem = -5001;
+        ListNode* newhead = nullptr, *tail = nullptr;
         ListNode* start = head;
-        int cnt = 0;
         while (start) {
-            if (elem != start->val) {
-                elem = start->val;
-                ++cnt;
-            }
+            ListNode* node = start;
             start = start->next;
+            node->next = nullptr;
+
+            if (nullptr == newhead) {
+                tail = newhead = node;
+            }
+            else
+            {
+                if (node->val < 0) {
+                    node->next = newhead;
+                    newhead = node;
+                }
+                else
+                {
+                    tail->next = node;
+                    tail = node;
+                }
+            }
         }
-
-        if (cnt == 1) return head;
-
-        vector<int> v;
-        util(head, v);
-        return head;
+        return newhead;
     }
 };
-
-
-
 
 int main(void)
 {
