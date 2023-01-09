@@ -30,7 +30,8 @@ public:
 
 class Solution {
 public:
-    ListNode* sortLinkedList(ListNode* head) {
+    // bcz it is iterative solution
+    ListNode* isortLinkedList(ListNode* head) {
         ListNode* newhead = nullptr, *tail = nullptr;
         ListNode* start = head;
         while (start) {
@@ -54,6 +55,37 @@ public:
                 }
             }
         }
+        return newhead;
+    }
+    
+    void util(ListNode* head, ListNode* &newhead, ListNode* &tail) {
+        if (!head) return;
+
+        ListNode* node = head;
+        head = head->next;
+        node->next = nullptr;
+        if (nullptr == newhead) {
+            tail = newhead = node;
+        }
+        else
+        {
+            if (node->val < 0) {
+                node->next = newhead;
+                newhead = node;
+            }
+            else
+            {
+                tail->next = node;
+                tail = node;
+            }
+        }
+        util(head, newhead, tail);
+    }
+    
+    
+    ListNode* sortLinkedList(ListNode* head) {
+        ListNode* newhead = nullptr, * tail = nullptr;
+        util(head, newhead, tail);
         return newhead;
     }
 };
