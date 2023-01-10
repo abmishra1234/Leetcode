@@ -56,9 +56,37 @@ public:
         }
     }
 
-    void flatten(TreeNode* root) {
+    void rflatten(TreeNode* root) {
         TreeNode* prev = nullptr;
         util(root, prev);
+    }
+
+    /*
+        Let's try to Flatten the Binary Tree into 
+        LinkedList 
+
+        Solution - The below implementation is based on our own custom stack
+        Meaning Iterative Solution of this problem
+    */
+    void flatten(TreeNode* root) {
+        stack<TreeNode*> s;
+        if (!root) return;
+        TreeNode* start = nullptr;
+        s.push(root);
+
+        while (false == s.empty()) {
+            start = s.top();
+            s.pop();
+            if (start->right) s.push(start->right);
+            if (start->left) s.push(start->left);
+
+            if (s.empty() == false) {
+                start->right = s.top();
+                s.pop();
+                start->left = nullptr;
+                s.push(start->right);
+            }
+        }
     }
 };
 
