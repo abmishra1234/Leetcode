@@ -20,7 +20,7 @@ using namespace std;
     until you have good grasp of recursion
     
     Below is my recursive code for the problem.    
-    
+  
     I want to write iterative code for this also, let's do it...
 */
 
@@ -75,14 +75,16 @@ public:
         s.push(root);
 
         while (false == s.empty()) {
-            start = s.top();
-            s.pop();
+            // create the recursion start point
+            start = s.top(); s.pop();
+            
+            // This is for left and right recursion
             if (start->right) s.push(start->right);
             if (start->left) s.push(start->left);
 
-            if (s.empty() == false) {
-                start->right = s.top();
-                s.pop();
+            // This is Equivalent to stack unwinding step
+            if (false  == s.empty()) {
+                start->right = s.top(); s.pop();
                 start->left = nullptr;
                 s.push(start->right);
             }
