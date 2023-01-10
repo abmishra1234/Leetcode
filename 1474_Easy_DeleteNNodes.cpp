@@ -26,17 +26,22 @@ public:
 
 class Solution {
 public:
-    void util(ListNode*& head, int m, int n) {
+    void util(ListNode* head, int m, int n) {
         if (!head) return;
         // do the small task as suggested in problem
         int i = 1;
-        while (i <= m) head = head->next;
+        while (head && i++ < m) head = head->next;
         ListNode* fh = head;
+
         i = 1;
-        while (i <= n) head = head->next;
-        fh->next = head->next;
-        // Let the recursion do the rest task
-        util(head->next, m, n);
+        while (head && i++ <= n) head = head->next;
+        if (fh && head) {
+            fh->next = head->next;
+            // Let the recursion do the rest task
+            util(fh->next, m, n);
+        }
+        else if (fh)
+            fh->next = nullptr;
     }
 
     ListNode* deleteNodes(ListNode* head, int m, int n) {
