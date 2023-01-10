@@ -15,6 +15,15 @@ using namespace std;
 #include<cstring>
 
 //#define FORREF
+/*
+    This is very good question and it is not easy to solve,
+    until you have good grasp of recursion
+    
+    Below is my recursive code for the problem.    
+    
+    I want to write iterative code for this also, let's do it...
+*/
+
 #ifndef FORREF
 struct TreeNode {
     int val;
@@ -28,8 +37,28 @@ struct TreeNode {
 
 class Solution {
 public:
-    void flatten(TreeNode* root) {
+    void util(TreeNode* root, TreeNode* &prev) {
+        if (!root) return;
+        util(root->right, prev);
+        util(root->left, prev);
+        
+        // stack unwinding step
+        if (prev == nullptr) {
+            prev = root;
+            root->left = nullptr;
+            root->right = nullptr;
+        }
+        else
+        {
+            root->right = prev;
+            root->left = nullptr;
+            prev = root;
+        }
+    }
 
+    void flatten(TreeNode* root) {
+        TreeNode* prev = nullptr;
+        util(root, prev);
     }
 };
 
