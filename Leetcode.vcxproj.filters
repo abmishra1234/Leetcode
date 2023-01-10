@@ -477,6 +477,21 @@
     <ClCompile Include="PermutationII.cpp">
       <Filter>Source Files\Recursion-Practice-001</Filter>
     </ClCompile>
+    <ClCompile Include="SubsetII.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
+    </ClCompile>
+    <ClCompile Include="Combination.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
+    </ClCompile>
+    <ClCompile Include="CombinationSum.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
+    </ClCompile>
+    <ClCompile Include="CombinationII.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
+    </ClCompile>
+    <ClCompile Include="CombinationSumIII.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

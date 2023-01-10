@@ -154,6 +154,9 @@
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp" />
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
     <ClCompile Include="ArrayReverse.cpp" />
+    <ClCompile Include="CombinationII.cpp" />
+    <ClCompile Include="CombinationSum.cpp" />
+    <ClCompile Include="CombinationSumIII.cpp" />
     <ClCompile Include="FlattenBTToLL.cpp" />
     <ClCompile Include="N_212_Hard_WordSearchII.cpp" />
     <ClCompile Include="290_Easy_WordPattern.cpp" />
@@ -178,6 +181,8 @@
     <ClCompile Include="Permutation.cpp" />
     <ClCompile Include="PermutationII.cpp" />
     <ClCompile Include="PowerSet.cpp" />
+    <ClCompile Include="Combination.cpp" />
+    <ClCompile Include="SubsetII.cpp" />
     <ClCompile Include="[N]95_Medium_UniqueBinarySearchTreeII.cpp" />
     <ClCompile Include="BinaryTreeSame.cpp" />
     <ClCompile Include="211_Medium_Leetcode.cpp" />
