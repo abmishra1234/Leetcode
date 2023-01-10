@@ -135,6 +135,7 @@
     <ClCompile Include="125_Easy_ValidPalindrome.cpp" />
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
+    <ClCompile Include="1474_Easy_DeleteNNodes.cpp" />
     <ClCompile Include="1721_Medium_SwappingNode.cpp" />
     <ClCompile Include="1756_Medium_Approach02.cpp" />
     <ClCompile Include="1756_Medium_DesignMRUQueue.cpp" />

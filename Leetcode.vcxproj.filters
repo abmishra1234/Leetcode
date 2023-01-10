@@ -450,6 +450,9 @@
     <ClCompile Include="2046_medium_SortLinkedList.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="1474_Easy_DeleteNNodes.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
