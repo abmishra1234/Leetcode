@@ -453,6 +453,9 @@
     <ClCompile Include="1474_Easy_DeleteNNodes.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="1669_Medium_MergeInLinklist.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
