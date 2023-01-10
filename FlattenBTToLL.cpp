@@ -14,7 +14,7 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-//#define FORREF
+#define FORREF
 /*
     This is very good question and it is not easy to solve,
     until you have good grasp of recursion
