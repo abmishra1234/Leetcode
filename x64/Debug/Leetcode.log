@@ -1,2 +1,7 @@
 ﻿  2326_Medium_SpiralMatrixIV.cpp
-  Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe
+  ArrayReverse.cpp
+  Permutation.cpp
+  PowerSet.cpp
+  Generating Code...
+MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe : fatal error LNK1120: 1 unresolved externals

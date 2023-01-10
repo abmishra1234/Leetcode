@@ -61,6 +61,9 @@
     <Filter Include="Source Files\Dynamic_Programming">
       <UniqueIdentifier>{9b03ff7e-1264-4a55-a60b-2c6bef041a20}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Recursion-Practice-001">
+      <UniqueIdentifier>{7ab4dc19-2142-4e6c-9697-dffea2268f8f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -461,6 +464,18 @@
     </ClCompile>
     <ClCompile Include="2326_Medium_SpiralMatrixIV.cpp">
       <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayReverse.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
+    </ClCompile>
+    <ClCompile Include="PowerSet.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
+    </ClCompile>
+    <ClCompile Include="Permutation.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
+    </ClCompile>
+    <ClCompile Include="PermutationII.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
