@@ -147,6 +147,7 @@
     <ClCompile Include="2130_Medium_MaximumTwinSum.cpp" />
     <ClCompile Include="2181_Medium_MergeNodes.cpp" />
     <ClCompile Include="2244_Medium_Minimum Rounds to Complete All Tasks.cpp" />
+    <ClCompile Include="2326_Medium_SpiralMatrixIV.cpp" />
     <ClCompile Include="237_Medium_DeleteNode.cpp" />
     <ClCompile Include="2433.cpp" />
     <ClCompile Include="2487_Medium_RemoveNode.cpp" />
