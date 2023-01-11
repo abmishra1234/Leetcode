@@ -130,6 +130,7 @@
     <ClCompile Include="01Matrix.cpp" />
     <ClCompile Include="1019_Medium_NextGreaterNode.cpp" />
     <ClCompile Include="1071_Easy_GCDofString.cpp" />
+    <ClCompile Include="109_Medium_ConvertSortedLL2BST.cpp" />
     <ClCompile Include="110_Easy_BalancedBinaryTree.cpp" />
     <ClCompile Include="111_Easy_MinDepth.cpp" />
     <ClCompile Include="1206_Hard_DesignSkiplist.cpp" />
@@ -157,6 +158,7 @@
     <ClCompile Include="445_Medium_AddTwoNumbersII.cpp" />
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp" />
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
+    <ClCompile Include="817_Medium_LLComponents.cpp" />
     <ClCompile Include="ArrayReverse.cpp" />
     <ClCompile Include="CombinationII.cpp" />
     <ClCompile Include="CombinationSum.cpp" />

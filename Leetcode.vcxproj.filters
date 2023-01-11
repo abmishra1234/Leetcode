@@ -510,6 +510,12 @@
     <ClCompile Include="445_Medium_AddTwoNumbersII.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="817_Medium_LLComponents.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="109_Medium_ConvertSortedLL2BST.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
