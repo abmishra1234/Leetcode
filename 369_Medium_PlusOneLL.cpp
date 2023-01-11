@@ -51,7 +51,7 @@ public:
             val = val % 10;
             head->val = val;
         }
-        else if(carry > 0)
+        else
         {
             val = head->val + carry;
             carry = val / 10;
@@ -60,7 +60,7 @@ public:
         }
     }
 
-    ListNode* plusOne(ListNode* head) {
+    ListNode* rplusOne(ListNode* head) {
         bool fadd = true; // one's you add, make it false
         int carry = 0; // default value will be 0
 
@@ -72,6 +72,51 @@ public:
             head = node;
         }
         return head;
+    }
+
+    ListNode* plusOne(ListNode* head) {
+        bool fadd = true; // one's you add, make it false
+        int carry = 0; // default value will be 0
+
+        //util(head, fadd, carry);
+        stack<ListNode*> s;
+        
+        ListNode* h = head;
+        while (h) {
+            s.push(h);
+            h = h->next;
+        }
+
+        ListNode* newhead = nullptr;
+        int val = 0;
+        while (false == s.empty()) {
+            ListNode* temp = s.top(); s.pop();
+            if (fadd) {
+                fadd = false;
+                val = temp->val + 1;
+                carry = val / 10;
+                val = val % 10;
+                temp->val = val;
+                temp->next = nullptr;
+                newhead = temp;
+            }
+            else {
+                val = temp->val + carry;
+                carry = val / 10;
+                val = val % 10;
+                temp->val = val;
+
+                temp->next = newhead;
+                newhead = temp;
+            }
+        }
+
+        if (carry > 0) {
+            ListNode* node = new ListNode(carry);
+            node->next = newhead;
+            newhead = node;
+        }
+        return newhead;
     }
 };
 
