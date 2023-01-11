@@ -13,7 +13,7 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 struct ListNode {
     int val;
@@ -27,12 +27,12 @@ struct ListNode {
     There are two different approach possible here
     1. Recursive Approach
     Summary:
-
+    Time Complexity: O(n)
+    Space Complexity : O(n)
 
     2. Iterative Approach
-
-
-
+    How you will improve recursive solution using the iterative solution?
+    
 */
 
 class Solution {
@@ -60,13 +60,34 @@ public:
         ++r;
     }
 
-    ListNode* deleteMiddle(ListNode* head) {
+    // Just for handling the problem with recursion
+    ListNode* rdeleteMiddle(ListNode* head) {
         ListNode* newhead = nullptr;
         int l = 0;
         int r = 0;
 
         util(head, l, r, newhead);
         return newhead;
+    }
+    
+    // This is the code in which I am solving the problem using the
+    // Iterative approach
+    ListNode* deleteMiddle(ListNode* head) {
+        if (!head) return head;
+
+        ListNode* slow = head;
+        ListNode* fast = head;
+        ListNode* prev = nullptr;
+
+        while (fast && fast->next) {
+            prev = slow;
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        if (prev) prev->next = slow->next;
+        else head = head->next;
+
+        return head;
     }
 };
 
