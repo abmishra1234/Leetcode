@@ -139,6 +139,7 @@
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="1474_Easy_DeleteNNodes.cpp" />
     <ClCompile Include="1669_Medium_MergeInLinklist.cpp" />
+    <ClCompile Include="1670_Medium_DesignFrontMiddleBackQueue.cpp" />
     <ClCompile Include="1721_Medium_SwappingNode.cpp" />
     <ClCompile Include="1756_Medium_Approach02.cpp" />
     <ClCompile Include="1756_Medium_DesignMRUQueue.cpp" />
@@ -156,6 +157,7 @@
     <ClCompile Include="2487_Medium_RemoveNode.cpp" />
     <ClCompile Include="369_Medium_PlusOneLL.cpp" />
     <ClCompile Include="445_Medium_AddTwoNumbersII.cpp" />
+    <ClCompile Include="641_Medium_DesignCircularDeque.cpp" />
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp" />
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
     <ClCompile Include="817_Medium_LLComponents.cpp" />

@@ -516,6 +516,12 @@
     <ClCompile Include="109_Medium_ConvertSortedLL2BST.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="641_Medium_DesignCircularDeque.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="1670_Medium_DesignFrontMiddleBackQueue.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
