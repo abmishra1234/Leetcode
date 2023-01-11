@@ -66,7 +66,7 @@ public:
         newhead->val = val;
      }
 
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    ListNode* raddTwoNumbers(ListNode* l1, ListNode* l2) {
         // iterate and push all the node into the s
         deque<ListNode*> s;
         while (l1) {
@@ -96,6 +96,17 @@ public:
         
         return newhead;
     }
+    /*
+       The below code using the iteration??     
+       will do it later...
+    */
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+
+
+
+
+    }
+
 };
 
 
