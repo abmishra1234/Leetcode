@@ -13,28 +13,33 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 
 class Skiplist {
 public:
+    vector<vector<int>> nums;
     Skiplist() {
-
+        nums.resize(20005, {});
     }
 
     bool search(int target) {
-
+        return (nums[target].size() > 0);
     }
 
     void add(int num) {
-
+        nums[num].push_back(num);
     }
 
     bool erase(int num) {
-
+        bool result = false;
+        if (nums[num].size() > 0) {
+            result = true;
+            nums[num].pop_back();
+        }
+        return result;
     }
 };
-
 /**
  * Your Skiplist object will be instantiated and called as such:
  * Skiplist* obj = new Skiplist();

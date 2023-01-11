@@ -158,6 +158,7 @@
     <ClCompile Include="ArrayReverse.cpp" />
     <ClCompile Include="CombinationII.cpp" />
     <ClCompile Include="CombinationSum.cpp" />
+    <ClCompile Include="CombinationSumII.cpp" />
     <ClCompile Include="CombinationSumIII.cpp" />
     <ClCompile Include="FlattenBTToLL.cpp" />
     <ClCompile Include="LetterCombination.cpp" />
