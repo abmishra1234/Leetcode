@@ -154,6 +154,7 @@
     <ClCompile Include="2433.cpp" />
     <ClCompile Include="2487_Medium_RemoveNode.cpp" />
     <ClCompile Include="369_Medium_PlusOneLL.cpp" />
+    <ClCompile Include="445_Medium_AddTwoNumbersII.cpp" />
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp" />
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
     <ClCompile Include="ArrayReverse.cpp" />
