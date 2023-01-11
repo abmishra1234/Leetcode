@@ -492,6 +492,15 @@
     <ClCompile Include="CombinationSumIII.cpp">
       <Filter>Source Files\Recursion-Practice-001</Filter>
     </ClCompile>
+    <ClCompile Include="LetterCombination.cpp">
+      <Filter>Source Files\Recursion-Practice-001</Filter>
+    </ClCompile>
+    <ClCompile Include="369_Medium_PlusOneLL.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="1206_Hard_DesignSkiplist.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

@@ -132,6 +132,7 @@
     <ClCompile Include="1071_Easy_GCDofString.cpp" />
     <ClCompile Include="110_Easy_BalancedBinaryTree.cpp" />
     <ClCompile Include="111_Easy_MinDepth.cpp" />
+    <ClCompile Include="1206_Hard_DesignSkiplist.cpp" />
     <ClCompile Include="125_Easy_ValidPalindrome.cpp" />
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
@@ -151,6 +152,7 @@
     <ClCompile Include="237_Medium_DeleteNode.cpp" />
     <ClCompile Include="2433.cpp" />
     <ClCompile Include="2487_Medium_RemoveNode.cpp" />
+    <ClCompile Include="369_Medium_PlusOneLL.cpp" />
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp" />
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
     <ClCompile Include="ArrayReverse.cpp" />
@@ -158,6 +160,7 @@
     <ClCompile Include="CombinationSum.cpp" />
     <ClCompile Include="CombinationSumIII.cpp" />
     <ClCompile Include="FlattenBTToLL.cpp" />
+    <ClCompile Include="LetterCombination.cpp" />
     <ClCompile Include="N_212_Hard_WordSearchII.cpp" />
     <ClCompile Include="290_Easy_WordPattern.cpp" />
     <ClCompile Include="35_Easy_SearchInsertPosition.cpp" />
