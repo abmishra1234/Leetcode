@@ -1,1 +1,15 @@
-﻿  109_Medium_ConvertSortedLL2BST.cpp
+﻿  1670_Medium_DesignFrontMiddleBackQueue.cpp
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(69,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(70,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(77,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(78,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(93,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(94,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(103,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(110,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(120,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(121,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(131,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(141,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\1670_Medium_DesignFrontMiddleBackQueue.cpp(149,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe
