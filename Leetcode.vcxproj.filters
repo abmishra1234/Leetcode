@@ -522,6 +522,9 @@
     <ClCompile Include="1670_Medium_DesignFrontMiddleBackQueue.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="725_Medium_SplitLinkedList.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

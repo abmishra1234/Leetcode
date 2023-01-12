@@ -158,6 +158,7 @@
     <ClCompile Include="369_Medium_PlusOneLL.cpp" />
     <ClCompile Include="445_Medium_AddTwoNumbersII.cpp" />
     <ClCompile Include="641_Medium_DesignCircularDeque.cpp" />
+    <ClCompile Include="725_Medium_SplitLinkedList.cpp" />
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp" />
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
     <ClCompile Include="817_Medium_LLComponents.cpp" />
