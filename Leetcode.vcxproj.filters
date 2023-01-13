@@ -537,6 +537,9 @@
     <ClCompile Include="379_DesignPhoneDirectory.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="716_Hard_MaxStack.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
