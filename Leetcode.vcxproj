@@ -147,6 +147,7 @@
     <ClCompile Include="1836_Medium_RemoveDuplicate.cpp" />
     <ClCompile Include="198_Medium_HouseRobber.cpp" />
     <ClCompile Include="2046_medium_SortLinkedList.cpp" />
+    <ClCompile Include="2058_Medium_MinimumAndMaximumNodes.cpp" />
     <ClCompile Include="2095_Medium_DeleteMiddleNode.cpp" />
     <ClCompile Include="2130_Medium_MaximumTwinSum.cpp" />
     <ClCompile Include="2181_Medium_MergeNodes.cpp" />
