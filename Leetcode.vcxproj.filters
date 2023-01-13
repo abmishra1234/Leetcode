@@ -531,6 +531,9 @@
     <ClCompile Include="148_Medium_SortList.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="1634_Medium_TwoPolynomial.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
