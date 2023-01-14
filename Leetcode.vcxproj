@@ -161,6 +161,7 @@
     <ClCompile Include="369_Medium_PlusOneLL.cpp" />
     <ClCompile Include="379_DesignPhoneDirectory.cpp" />
     <ClCompile Include="445_Medium_AddTwoNumbersII.cpp" />
+    <ClCompile Include="460_Hard_LFUCache.cpp" />
     <ClCompile Include="641_Medium_DesignCircularDeque.cpp" />
     <ClCompile Include="716_Hard_MaxStack.cpp" />
     <ClCompile Include="725_Medium_SplitLinkedList.cpp" />
