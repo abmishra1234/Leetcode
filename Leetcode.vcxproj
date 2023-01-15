@@ -154,6 +154,7 @@
     <ClCompile Include="2130_Medium_MaximumTwinSum.cpp" />
     <ClCompile Include="2181_Medium_MergeNodes.cpp" />
     <ClCompile Include="2244_Medium_Minimum Rounds to Complete All Tasks.cpp" />
+    <ClCompile Include="2296_Hard_TexEditor.cpp" />
     <ClCompile Include="2326_Medium_SpiralMatrixIV.cpp" />
     <ClCompile Include="237_Medium_DeleteNode.cpp" />
     <ClCompile Include="2433.cpp" />
@@ -174,6 +175,7 @@
     <ClCompile Include="CombinationSumII.cpp" />
     <ClCompile Include="CombinationSumIII.cpp" />
     <ClCompile Include="FlattenBTToLL.cpp" />
+    <ClCompile Include="FloodFill02.cpp" />
     <ClCompile Include="LetterCombination.cpp" />
     <ClCompile Include="N_212_Hard_WordSearchII.cpp" />
     <ClCompile Include="290_Easy_WordPattern.cpp" />
@@ -195,11 +197,13 @@
     <ClCompile Include="77_Medium_Combinations.cpp" />
     <ClCompile Include="790_Medium_Approach01.cpp" />
     <ClCompile Include="886_Medium_Bipartition.cpp" />
+    <ClCompile Include="PartitionToKEqualSum.cpp" />
     <ClCompile Include="Permutation.cpp" />
     <ClCompile Include="PermutationII.cpp" />
     <ClCompile Include="PowerSet.cpp" />
     <ClCompile Include="Combination.cpp" />
     <ClCompile Include="SubsetII.cpp" />
+    <ClCompile Include="UniqueStringConcat.cpp" />
     <ClCompile Include="[N]95_Medium_UniqueBinarySearchTreeII.cpp" />
     <ClCompile Include="BinaryTreeSame.cpp" />
     <ClCompile Include="211_Medium_Leetcode.cpp" />
