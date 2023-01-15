@@ -168,6 +168,7 @@
     <ClCompile Include="725_Medium_SplitLinkedList.cpp" />
     <ClCompile Include="740_Medium_DeleteAndEarn.cpp" />
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
+    <ClCompile Include="79_Medium_WordSearch.cpp" />
     <ClCompile Include="817_Medium_LLComponents.cpp" />
     <ClCompile Include="ArrayReverse.cpp" />
     <ClCompile Include="CombinationII.cpp" />

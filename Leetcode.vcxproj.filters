@@ -555,6 +555,9 @@
     <ClCompile Include="FloodFill02.cpp">
       <Filter>Source Files\Recursion-Practice-001</Filter>
     </ClCompile>
+    <ClCompile Include="79_Medium_WordSearch.cpp">
+      <Filter>Source Files\RecursionII</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
