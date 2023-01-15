@@ -69,7 +69,7 @@ public:
         for (int i = 0; i < R; ++i) {
             for (int j = 0; j < C; ++j) {
                 if (board[i][j] == word[0]) {
-                    result = solve(0, 0, 0, visited, board, word);
+                    result = solve(i, j, 0, visited, board, word);
                     if (result) return true;
                 }
             }
