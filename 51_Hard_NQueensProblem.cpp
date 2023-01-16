@@ -49,7 +49,8 @@ public:
         return true;
     }
 
-    void solve(v2c &board, int row, int nqueen, vector<v2c> &ans) {
+    void solve(v2c &board, int row, int nqueen, vector<v2c> &ans, 
+        vector<int> &col, vector<int> &tl, vector<int> &tr) {
         if (row >= board.size()) {
             if (nqueen == 0) ans.push_back(board);
             return;
@@ -62,11 +63,13 @@ public:
                 valid means here with the plaing of queen at [row, i] is valid
                 and don't attacking by any existing queen [on row, col and diagonal]
             */
-            if (valid(board, row, i)) {
+            if (!col[i] && !tl[row-i+ board.size() - 1] && !tr[row + i]) {
                 board[row][i] = 'Q';
-                solve(board, row + 1, nqueen - 1, ans);
+                col[i] = tl[row - i + board.size() - 1] = tr[i + row] = 1;
+                solve(board, row + 1, nqueen-1, ans, col, tl, tr);
                 // backtrace step
                 board[row][i] = '.';
+                col[i] = tl[row - i + board.size() - 1] = tr[i + row] = 0;
             }
         }
     }
@@ -74,8 +77,13 @@ public:
     vector<vector<string>> solveNQueens(int n) {
         v2c board(n, vector<char>(n, '.'));
         vector<v2c> ans;
-        solve(board, 0, n, ans);
+        
+        // for optimisation of validity check
+        vector<int> col(n, 0);
+        vector<int> tl(2 * n+1, 0);
+        vector<int> tr(2 * n+1, 0);
 
+        solve(board, 0, n, ans, col, tl, tr);
         vector<vector<string>> result;
         
         for (v2c item : ans) {
@@ -98,7 +106,7 @@ Solution sln;
 
 int main(void)
 {
-    int n = 5;
+    int n = 4;
 
     vector<vector<string>> ans = sln.solveNQueens(n);
     cout << ans.size() << endl << endl;
