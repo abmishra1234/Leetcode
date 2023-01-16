@@ -170,6 +170,7 @@
     <ClCompile Include="746_Easy_MinCostClimbingStair.cpp" />
     <ClCompile Include="79_Medium_WordSearch.cpp" />
     <ClCompile Include="817_Medium_LLComponents.cpp" />
+    <ClCompile Include="944_Easy.cpp" />
     <ClCompile Include="ArrayReverse.cpp" />
     <ClCompile Include="CombinationII.cpp" />
     <ClCompile Include="CombinationSum.cpp" />
@@ -178,6 +179,7 @@
     <ClCompile Include="FlattenBTToLL.cpp" />
     <ClCompile Include="FloodFill02.cpp" />
     <ClCompile Include="LetterCombination.cpp" />
+    <ClCompile Include="NQueenProblem.cpp" />
     <ClCompile Include="N_212_Hard_WordSearchII.cpp" />
     <ClCompile Include="290_Easy_WordPattern.cpp" />
     <ClCompile Include="35_Easy_SearchInsertPosition.cpp" />
@@ -203,6 +205,7 @@
     <ClCompile Include="PermutationII.cpp" />
     <ClCompile Include="PowerSet.cpp" />
     <ClCompile Include="Combination.cpp" />
+    <ClCompile Include="RatInaMaze.cpp" />
     <ClCompile Include="SubsetII.cpp" />
     <ClCompile Include="UniqueStringConcat.cpp" />
     <ClCompile Include="[N]95_Medium_UniqueBinarySearchTreeII.cpp" />

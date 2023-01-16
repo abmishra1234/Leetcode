@@ -22,33 +22,6 @@ public:
 
     typedef vector<vector<char>> v2c;
 
-    bool valid(v2c& board, int r, int c) {
-        int R = board.size();
-        int C = board[0].size();
-
-        if (r < 0 || r >= R) return false;
-        // @Note: Col might not be out of range in anycase so
-        // you might remove later. For now leave this as it is...
-        if (c < 0 || c >= C) return false;
-
-        // diagonal d1
-        for (int i = r - 1, j = c - 1; i >= 0 && j >= 0; --i, --j) {
-            if (board[i][j] == 'Q') return false;
-        }
-
-        // vertical up
-        for (int i = r - 1; i >= 0; --i) {
-            if (board[i][c] == 'Q') return false;
-        }
-
-        // diagonal d2
-        for (int i = r - 1, j = c + 1; i >= 0 && j < C; --i, ++j) {
-            if (board[i][j] == 'Q') return false;
-        }
-        
-        return true;
-    }
-
     void solve(v2c &board, int row, int nqueen, vector<v2c> &ans, 
         vector<int> &col, vector<int> &tl, vector<int> &tr) {
         if (row >= board.size()) {
