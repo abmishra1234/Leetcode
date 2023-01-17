@@ -567,6 +567,9 @@
     <ClCompile Include="944_Easy.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="1443_Medium_MinTime.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

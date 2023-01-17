@@ -137,6 +137,7 @@
     <ClCompile Include="125_Easy_ValidPalindrome.cpp" />
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
+    <ClCompile Include="1443_Medium_MinTime.cpp" />
     <ClCompile Include="1474_Easy_DeleteNNodes.cpp" />
     <ClCompile Include="148_Medium_SortList.cpp" />
     <ClCompile Include="1634_Medium_TwoPolynomial.cpp" />
