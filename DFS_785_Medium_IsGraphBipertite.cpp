@@ -19,36 +19,25 @@ using namespace std;
 
 class Solution {
 public:
-	bool bfs(int s, vector<int>& color,
-		vector<vector<int>>& adj) {
-		deque<int> q;
-
-		q.push_back(s);
-		color[s] = 0;
-
-		while (!q.empty()) {
-			int u = q.front();
-			q.pop_front();
-			int col = color[u];
-
-			for (auto v : adj[u]) {
-				if (color[v] == -1) {
-					color[v] = 1 - col;
-					q.push_back(v);
-				}
-				else if (col == color[v]) return false;
+	bool dfs(int u, int col, vector<int>& color, vector<vector<int>>& graph) {
+		color[u] = col;
+		// let's color the adjacent vertex
+		for (auto v : graph[u]) {
+			if (color[v] == -1) {
+				if (!dfs(v, 1 - col, color, graph)) return false;
 			}
+			else if (color[v] == col) return false;
 		}
-		// you don't find any violation of rule until now 
 		return true;
 	}
+
 	bool isBipartite(vector<vector<int>>& graph) {
 		// Color value is -1 means not colored yet
 		// value 0 and 1 for Black and white 
 		vector<int> color(graph.size(), -1);
 		for (int i = 0; i < graph.size(); ++i) {
 			if (color[i] == -1) {
-				if (!bfs(i, color, graph)) return false;
+				if (!dfs(i, 0, color, graph)) return false;
 			}
 		}
 		return true;
