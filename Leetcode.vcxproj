@@ -142,6 +142,7 @@
     <ClCompile Include="BipertiteGraph_bfs.cpp" />
     <ClCompile Include="G16.cpp" />
     <ClCompile Include="G19.cpp" />
+    <ClCompile Include="TopologicalSort.cpp" />
     <ClCompile Include="N_1443_Medium_MinTime.cpp" />
     <ClCompile Include="1474_Easy_DeleteNNodes.cpp" />
     <ClCompile Include="148_Medium_SortList.cpp" />
@@ -213,6 +214,7 @@
     <ClCompile Include="Combination.cpp" />
     <ClCompile Include="RatInaMaze.cpp" />
     <ClCompile Include="SubsetII.cpp" />
+    <ClCompile Include="TopologicalSortII.cpp" />
     <ClCompile Include="UniqueStringConcat.cpp" />
     <ClCompile Include="[N]95_Medium_UniqueBinarySearchTreeII.cpp" />
     <ClCompile Include="BinaryTreeSame.cpp" />
