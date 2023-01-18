@@ -33,6 +33,12 @@ public:
         Than, we should try to undertsand that , how we will check it.
         For that we will check does you reach here again in the same path traversal?
         if yes than you will say that it has cycle otherwise won't.
+
+        And so the intuitive way of checking the path is DFS Approach,
+        am I Right???
+
+        YES
+
     */
     bool dfs(int u, vector<int>& vis, vector<int>& path,
         vector<int> adj[]) {
