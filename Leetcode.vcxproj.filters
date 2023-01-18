@@ -591,6 +591,9 @@
     <ClCompile Include="TopologicalSortII.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="CycleDetectionUsingBFS_DAG.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

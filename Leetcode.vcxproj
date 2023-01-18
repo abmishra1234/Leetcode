@@ -138,6 +138,7 @@
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="323_Medium_NumberOfConnectedComponent.cpp" />
+    <ClCompile Include="CycleDetectionUsingBFS_DAG.cpp" />
     <ClCompile Include="DFS_785_Medium_IsGraphBipertite.cpp" />
     <ClCompile Include="BipertiteGraph_bfs.cpp" />
     <ClCompile Include="G16.cpp" />
