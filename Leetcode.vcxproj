@@ -138,6 +138,7 @@
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="323_Medium_NumberOfConnectedComponent.cpp" />
+    <ClCompile Include="BipertiteGraph_bfs.cpp" />
     <ClCompile Include="G16.cpp" />
     <ClCompile Include="N_1443_Medium_MinTime.cpp" />
     <ClCompile Include="1474_Easy_DeleteNNodes.cpp" />
@@ -299,6 +300,7 @@
     <ClCompile Include="[Approach02]886_Medium_Leetcode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="bp.txt" />
     <Text Include="g16.txt" />
     <Text Include="lca.txt" />
     <Text Include="merge.txt" />

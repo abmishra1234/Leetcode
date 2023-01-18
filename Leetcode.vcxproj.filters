@@ -576,6 +576,9 @@
     <ClCompile Include="323_Medium_NumberOfConnectedComponent.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="BipertiteGraph_bfs.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
@@ -588,6 +591,9 @@
       <Filter>Source Files\Backtracking</Filter>
     </Text>
     <Text Include="g16.txt">
+      <Filter>Source Files\Graph</Filter>
+    </Text>
+    <Text Include="bp.txt">
       <Filter>Source Files\Graph</Filter>
     </Text>
   </ItemGroup>
