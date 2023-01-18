@@ -137,7 +137,8 @@
     <ClCompile Include="125_Easy_ValidPalindrome.cpp" />
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
-    <ClCompile Include="1443_Medium_MinTime.cpp" />
+    <ClCompile Include="G16.cpp" />
+    <ClCompile Include="N_1443_Medium_MinTime.cpp" />
     <ClCompile Include="1474_Easy_DeleteNNodes.cpp" />
     <ClCompile Include="148_Medium_SortList.cpp" />
     <ClCompile Include="1634_Medium_TwoPolynomial.cpp" />
@@ -155,7 +156,7 @@
     <ClCompile Include="2130_Medium_MaximumTwinSum.cpp" />
     <ClCompile Include="2181_Medium_MergeNodes.cpp" />
     <ClCompile Include="2244_Medium_Minimum Rounds to Complete All Tasks.cpp" />
-    <ClCompile Include="2296_Hard_TexEditor.cpp" />
+    <ClCompile Include="N_2296_Hard_TexEditor.cpp" />
     <ClCompile Include="2326_Medium_SpiralMatrixIV.cpp" />
     <ClCompile Include="237_Medium_DeleteNode.cpp" />
     <ClCompile Include="2433.cpp" />
@@ -297,6 +298,7 @@
     <ClCompile Include="[Approach02]886_Medium_Leetcode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="g16.txt" />
     <Text Include="lca.txt" />
     <Text Include="merge.txt" />
     <Text Include="Theory_Backtracking.txt" />
