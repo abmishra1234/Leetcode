@@ -15,7 +15,7 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 /*
     Let's try to understand this problem, and also find the
