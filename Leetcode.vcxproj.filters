@@ -579,7 +579,10 @@
     <ClCompile Include="BipertiteGraph_bfs.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
-    <ClCompile Include="785_Medium_IsGraphBipertite.cpp">
+    <ClCompile Include="DFS_785_Medium_IsGraphBipertite.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="G19.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
   </ItemGroup>

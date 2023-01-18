@@ -138,9 +138,10 @@
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="323_Medium_NumberOfConnectedComponent.cpp" />
-    <ClCompile Include="785_Medium_IsGraphBipertite.cpp" />
+    <ClCompile Include="DFS_785_Medium_IsGraphBipertite.cpp" />
     <ClCompile Include="BipertiteGraph_bfs.cpp" />
     <ClCompile Include="G16.cpp" />
+    <ClCompile Include="G19.cpp" />
     <ClCompile Include="N_1443_Medium_MinTime.cpp" />
     <ClCompile Include="1474_Easy_DeleteNNodes.cpp" />
     <ClCompile Include="148_Medium_SortList.cpp" />
