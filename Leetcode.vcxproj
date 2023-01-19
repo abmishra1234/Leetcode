@@ -133,6 +133,7 @@
     <ClCompile Include="109_Medium_ConvertSortedLL2BST.cpp" />
     <ClCompile Include="110_Easy_BalancedBinaryTree.cpp" />
     <ClCompile Include="111_Easy_MinDepth.cpp" />
+    <ClCompile Include="1165. Single-Row Keyboard.cpp" />
     <ClCompile Include="1206_Hard_DesignSkiplist.cpp" />
     <ClCompile Include="125_Easy_ValidPalindrome.cpp" />
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
@@ -143,6 +144,7 @@
     <ClCompile Include="BipertiteGraph_bfs.cpp" />
     <ClCompile Include="G16.cpp" />
     <ClCompile Include="G19.cpp" />
+    <ClCompile Include="ShortestPathInDAGWeighted.cpp" />
     <ClCompile Include="Shortestpath_unweighted_graph.cpp" />
     <ClCompile Include="TopologicalSort.cpp" />
     <ClCompile Include="N_1443_Medium_MinTime.cpp" />
