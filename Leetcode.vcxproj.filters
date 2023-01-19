@@ -603,6 +603,9 @@
     <ClCompile Include="1165. Single-Row Keyboard.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="1874. Minimize Product Sum of Two Arrays.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
