@@ -139,7 +139,7 @@
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="1874. Minimize Product Sum of Two Arrays.cpp" />
-    <ClCompile Include="269_Hard_AlienDictionary.cpp" />
+    <ClCompile Include="N_269_Hard_AlienDictionary.cpp" />
     <ClCompile Include="323_Medium_NumberOfConnectedComponent.cpp" />
     <ClCompile Include="432. All O`one Data Structure.cpp" />
     <ClCompile Include="CycleDetectionUsingBFS_DAG.cpp" />
