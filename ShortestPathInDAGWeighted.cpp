@@ -37,17 +37,56 @@ using namespace std;
 	might be BFS is better solution instead DFS but in general theoritically 
 	BFS and DFS both will work in all the scenario with miner customisation
 	in all graph problem.
+
+
+
 */
 
-class ShortestPath {
+class ShortestPathWithBFS {
+public:
+	typedef pair<int, pair<int, int>> p3i; // u,v,w
 
 
 
+	/*
+		N - Number of vertex : { 0 ~ N-1 }
+		graph : this is the collection of two vertex [u,v] as an edge 
+	
+	Approach:
+		Find the topological ordering from the ‘src’ node
+		Now traverse the vertices in the ordering one by one.
+		If there are some nodes in the ordering before the ‘src’ node, they are not reachable from the ‘src’ node, hence no need to update their distances from the ‘src’ node.
+		Now for each vertex from the ‘src’ node in the ordering, relax its connecting edges one by one and update the distances of the other vertex connecting the edge with the current vertex if their respective edges get relaxed.
+		Once all edges get relaxed, return the list of distances.
+
+
+	*/
+
+	void toposort(int s, int N, vector<int> &order,vector<vector<pair<int, int>>> adj) {
+
+
+
+
+
+
+
+
+
+
+	}
+
+
+	vector<int> shortestpath(int s, int N, vector<p3i> graph) {
+		// Step 01 : Create the topological sort order of vertex
+		
+
+
+
+
+
+
+	}
 };
-
-
-
-
 
 int main(void)
 {
