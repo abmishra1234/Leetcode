@@ -627,6 +627,12 @@
     <ClCompile Include="653_Easy_Two Sum IV - Input is a BST.cpp">
       <Filter>Source Files\BinarySearchTree</Filter>
     </ClCompile>
+    <ClCompile Include="236_Medium_LCA.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelOrderTraversal.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
