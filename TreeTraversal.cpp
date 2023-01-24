@@ -13,8 +13,18 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
+/*
+    Key learning from this exercise is 
+    one how to write the recursive tree traversing,
+    which is super easy
+
+    Another key learning, incase you want to avoid to write the code recursively
+    than what should you sdo to write this iteratively.
+*/
+
+
 template<typename T>
 class BinaryTreeNode
 {
@@ -37,12 +47,50 @@ void preorder(BinaryTreeNode<int>* root, vector<int>& pre) {
     preorder(root->right, pre);
 }
 
+void ipreorder(BinaryTreeNode<int>* root, vector<int>& pre) {
+    if (!root) return;
+    stack<BinaryTreeNode<int>*> s;
+    s.push(root);
+
+    while (!s.empty()) {
+        BinaryTreeNode<int>* np = s.top();
+        pre.push_back(np->data);
+        s.pop();
+        // RL
+        if (np->right) s.push(np->right);
+        if (np->left) s.push(np->left);
+    }
+}
+
+
 void postorder(BinaryTreeNode<int>* root, vector<int>& post) {
     if (!root) return;
     postorder(root->left, post);
     postorder(root->right, post);
     post.push_back(root->data);
 }
+
+void ipostorder(BinaryTreeNode<int>* root, vector<int>& post) {
+    if (!root) return;
+    stack<BinaryTreeNode<int>*> s;
+    stack<int> ss; // second stack
+    s.push(root);
+
+    while (!s.empty()) {
+        BinaryTreeNode<int>* np = s.top();
+        s.pop();
+        ss.push(np->data);
+        // RL
+        if (np->left) s.push(np->left);
+        if (np->right) s.push(np->right);
+    }
+
+    while (!ss.empty()) {
+        post.push_back(ss.top()); ss.pop();
+    }
+}
+
+
 
 void inorder(BinaryTreeNode<int>* root, vector<int>& in) {
     if (!root) return;
