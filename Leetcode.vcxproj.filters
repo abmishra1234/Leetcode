@@ -624,6 +624,9 @@
     <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="653_Easy_Two Sum IV - Input is a BST.cpp">
+      <Filter>Source Files\BinarySearchTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
