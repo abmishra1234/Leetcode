@@ -38,8 +38,6 @@ using namespace std;
 	BFS and DFS both will work in all the scenario with miner customisation
 	in all graph problem.
 
-
-
 */
 
 class ShortestPathWithBFS {
