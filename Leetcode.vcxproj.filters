@@ -615,6 +615,15 @@
     <ClCompile Include="654_Medium_MaximumBinaryTree.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="1464_Easy_MaximumProduct.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
+    <ClCompile Include="515_Medium_LargestValueInEachRow.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
