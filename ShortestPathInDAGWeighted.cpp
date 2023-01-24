@@ -17,7 +17,7 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 /*
 	Pre-Condition here is
