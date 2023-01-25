@@ -639,6 +639,12 @@
     <ClCompile Include="543_Easy_DiameterOfBT.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="103_Medium_ZigZagLevelPrinting.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="1698_Medium_DistinctSubString.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

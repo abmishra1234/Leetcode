@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="01Matrix.cpp" />
     <ClCompile Include="1019_Medium_NextGreaterNode.cpp" />
+    <ClCompile Include="103_Medium_ZigZagLevelPrinting.cpp" />
     <ClCompile Include="1071_Easy_GCDofString.cpp" />
     <ClCompile Include="109_Medium_ConvertSortedLL2BST.cpp" />
     <ClCompile Include="110_Easy_BalancedBinaryTree.cpp" />
@@ -139,6 +140,7 @@
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="1464_Easy_MaximumProduct.cpp" />
+    <ClCompile Include="1698_Medium_DistinctSubString.cpp" />
     <ClCompile Include="1874. Minimize Product Sum of Two Arrays.cpp" />
     <ClCompile Include="236_Medium_LCA.cpp" />
     <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp" />
