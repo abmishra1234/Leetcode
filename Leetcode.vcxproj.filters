@@ -643,7 +643,13 @@
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
     <ClCompile Include="1698_Medium_DistinctSubString.cpp">
-      <Filter>Source Files\BinaryTree</Filter>
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
+    <ClCompile Include="TrieImpl.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
+    <ClCompile Include="TrieImplII.cpp">
+      <Filter>Source Files\Trie</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

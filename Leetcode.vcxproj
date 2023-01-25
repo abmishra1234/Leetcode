@@ -233,6 +233,8 @@
     <ClCompile Include="SubsetII.cpp" />
     <ClCompile Include="TopologicalSortII.cpp" />
     <ClCompile Include="TreeTraversal.cpp" />
+    <ClCompile Include="TrieImpl.cpp" />
+    <ClCompile Include="TrieImplII.cpp" />
     <ClCompile Include="UniqueStringConcat.cpp" />
     <ClCompile Include="[N]95_Medium_UniqueBinarySearchTreeII.cpp" />
     <ClCompile Include="BinaryTreeSame.cpp" />
