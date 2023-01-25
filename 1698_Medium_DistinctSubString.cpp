@@ -35,6 +35,10 @@ public:
     }
 };
 
+/*
+    Trie based Solution got accepted with memory pool
+*/
+
 class Solution {
 public:
     int countDistinct(string s) {
