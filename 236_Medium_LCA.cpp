@@ -23,13 +23,20 @@ struct TreeNode {
     TreeNode(int x, TreeNode* l, TreeNode* r) : val(x), left(l), right(r) {}
 };
 
-typedef unordered_set<TreeNode*> MySet;
-
 class Solution {
 public:
-    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+    TreeNode* lowestCommonAncestor(TreeNode* root, 
+        TreeNode* p, TreeNode* q) {
+        // base condition or breaking condn
+        if (!root || root == p || root == q) return root;
         
-        return nullptr;
+        // head recursion
+        TreeNode* l = lowestCommonAncestor(root->left, p, q);
+        TreeNode* r = lowestCommonAncestor(root->right, p, q);
+        
+        if (l && r) return root;
+        else if (!l) return r;
+        else return l;
     }
 };
 
