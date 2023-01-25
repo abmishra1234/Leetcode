@@ -143,6 +143,7 @@
     <ClCompile Include="236_Medium_LCA.cpp" />
     <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp" />
     <ClCompile Include="515_Medium_LargestValueInEachRow.cpp" />
+    <ClCompile Include="543_Easy_DiameterOfBT.cpp" />
     <ClCompile Include="653_Easy_Two Sum IV - Input is a BST.cpp" />
     <ClCompile Include="654_Medium_MaximumBinaryTree.cpp" />
     <ClCompile Include="LevelOrderTraversal.cpp" />
@@ -229,6 +230,7 @@
     <ClCompile Include="RatInaMaze.cpp" />
     <ClCompile Include="SubsetII.cpp" />
     <ClCompile Include="TopologicalSortII.cpp" />
+    <ClCompile Include="TreeTraversal.cpp" />
     <ClCompile Include="UniqueStringConcat.cpp" />
     <ClCompile Include="[N]95_Medium_UniqueBinarySearchTreeII.cpp" />
     <ClCompile Include="BinaryTreeSame.cpp" />
