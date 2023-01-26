@@ -651,6 +651,9 @@
     <ClCompile Include="TrieImplII.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
+    <ClCompile Include="Complete String.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
