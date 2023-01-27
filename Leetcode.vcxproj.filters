@@ -660,6 +660,12 @@
     <ClCompile Include="MaximumXOR.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
+    <ClCompile Include="MaximumXORWithAnElementFromArray.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
+    <ClCompile Include="541_Easy_ReverseStringII.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

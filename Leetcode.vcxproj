@@ -145,6 +145,7 @@
     <ClCompile Include="236_Medium_LCA.cpp" />
     <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp" />
     <ClCompile Include="515_Medium_LargestValueInEachRow.cpp" />
+    <ClCompile Include="541_Easy_ReverseStringII.cpp" />
     <ClCompile Include="543_Easy_DiameterOfBT.cpp" />
     <ClCompile Include="653_Easy_Two Sum IV - Input is a BST.cpp" />
     <ClCompile Include="654_Medium_MaximumBinaryTree.cpp" />
@@ -152,6 +153,7 @@
     <ClCompile Include="CountDistinctSubstring.cpp" />
     <ClCompile Include="LevelOrderTraversal.cpp" />
     <ClCompile Include="MaximumXOR.cpp" />
+    <ClCompile Include="MaximumXORWithAnElementFromArray.cpp" />
     <ClCompile Include="N_269_Hard_AlienDictionary.cpp" />
     <ClCompile Include="323_Medium_NumberOfConnectedComponent.cpp" />
     <ClCompile Include="432. All O`one Data Structure.cpp" />
