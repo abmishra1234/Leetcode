@@ -669,6 +669,9 @@
     <ClCompile Include="1967_Easy_NOSTASW.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
+    <ClCompile Include="124_Hard_BTMPS.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

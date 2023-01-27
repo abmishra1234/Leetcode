@@ -136,6 +136,7 @@
     <ClCompile Include="111_Easy_MinDepth.cpp" />
     <ClCompile Include="1165. Single-Row Keyboard.cpp" />
     <ClCompile Include="1206_Hard_DesignSkiplist.cpp" />
+    <ClCompile Include="124_Hard_BTMPS.cpp" />
     <ClCompile Include="125_Easy_ValidPalindrome.cpp" />
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
