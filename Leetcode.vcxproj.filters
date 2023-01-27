@@ -654,6 +654,12 @@
     <ClCompile Include="Complete String.cpp">
       <Filter>Source Files\Trie</Filter>
     </ClCompile>
+    <ClCompile Include="CountDistinctSubstring.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
+    <ClCompile Include="MaximumXOR.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
