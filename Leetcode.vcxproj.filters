@@ -666,6 +666,9 @@
     <ClCompile Include="541_Easy_ReverseStringII.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="1967_Easy_NOSTASW.cpp">
+      <Filter>Source Files\Trie</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

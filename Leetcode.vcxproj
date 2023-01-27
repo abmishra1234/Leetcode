@@ -142,6 +142,7 @@
     <ClCompile Include="1464_Easy_MaximumProduct.cpp" />
     <ClCompile Include="1698_Medium_DistinctSubString.cpp" />
     <ClCompile Include="1874. Minimize Product Sum of Two Arrays.cpp" />
+    <ClCompile Include="1967_Easy_NOSTASW.cpp" />
     <ClCompile Include="236_Medium_LCA.cpp" />
     <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp" />
     <ClCompile Include="515_Medium_LargestValueInEachRow.cpp" />
