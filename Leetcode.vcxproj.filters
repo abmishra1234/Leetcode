@@ -686,5 +686,8 @@
     <Text Include="bp.txt">
       <Filter>Source Files\Graph</Filter>
     </Text>
+    <Text Include="maxXOR.txt">
+      <Filter>Source Files\Trie</Filter>
+    </Text>
   </ItemGroup>
 </Project>

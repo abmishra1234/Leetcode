@@ -333,6 +333,7 @@
     <Text Include="bp.txt" />
     <Text Include="g16.txt" />
     <Text Include="lca.txt" />
+    <Text Include="maxXOR.txt" />
     <Text Include="merge.txt" />
     <Text Include="Theory_Backtracking.txt" />
   </ItemGroup>

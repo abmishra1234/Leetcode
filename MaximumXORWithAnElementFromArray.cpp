@@ -13,10 +13,6 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-/*
-    TBD -- Do it as soon as possible
-*/
-
 #define FORREF
 #ifndef FORREF
 struct Node {
@@ -40,7 +36,6 @@ struct Node {
     }
 }; // pool[200000];
 int pind;
-
 class Trie {
     Node* root;
 
@@ -125,28 +120,206 @@ public:
     }
 };
 
-int maxXOR(int n, int m, vector<int>& arr1, vector<int>& arr2)
-{
+struct MySort {
+    auto operator()(const vector<int>& a, const vector<int>& b) const
+    {
+        return a[1] <= b[1];
+    }
+};
+
+struct MyHash {
+    auto operator()(const pair<int, int>& a) const
+    {
+        return (hash<int>{}(a.first) ^ hash<int>{}(a.second));
+    }
+};
+
+typedef unordered_map<pair<int, int>, int, MyHash> MyMap;
+
+vector<int> maxXorQueries(vector<int>& arr, vector<vector<int>>& queries) {
+    // Step 01 is sort the array according to value
+    sort(arr.begin(), arr.end());
+
+
+    // Step 02  - You should prepare trie as per requirement only
+    // Sort the query according to the value of A[i]
+    vector<vector<int>> queries_bkp = queries;
+    sort(queries.begin(), queries.end(), MySort());
+
+    // Step 03
+    // I will calculate the max value for the queries and push this 
+    // pair of {query vs max value } into some solution map to
+    // return the output later according to the queries
+    
     Trie t;
+    MyMap m;
 
-    // Let's complete the first step
-    t.insertnums(arr1);
+    for (int i = 0; i < (int) queries.size(); ++i) {
+        int ai = queries[i][0];
+        int xi = queries[i][1];
 
-    // Let's concentrate on second step
-    int maxv = -1;
-    for (auto n : arr2) {
-        int val = t.getMaxValue(n);
-        maxv = max(maxv, val);
+        vector<int> nums;
+
+        for (int j = 0; j < arr.size(); ++j) {
+            if (arr[j] < xi) {
+                nums.push_back(arr[j]);
+            }
+        }
+        
+        if (nums.size() == 0) {
+            m.insert({ { ai,xi }, -1 });
+        }
+        else
+        {
+            // insert into trie
+            t.insertnums(nums);
+            int val = t.getMaxValue(ai);
+            m.insert({ { ai,xi }, val });
+        }
     }
 
-    return maxv;
+    vector<int> ans;
+    for (int i = 0; i < queries_bkp.size(); ++i) {
+        ans.push_back(m[{queries_bkp[i][0], queries_bkp[i][1]}]);
+    }
+
+    return ans;
 }
 
+
+/*
+    5 -1 15
+    1 1 
+*/
 
 int main(void)
 {
+    FILE* fp;
+    freopen_s(&fp, "maxXOR.txt", "r", stdin);
+    
+    int T, N, Q;
+    cin >> T;
+
+    vector<int> arr;
+    vector<vector<int>> queries;
+
+    for (int t = 1; t <= T; ++t) {
+        cin >> N; cin >> Q;
+        arr.resize(N);
+        for (int i = 0; i < N; ++i) {
+            cin >> arr[i];
+        }
+        queries.resize(Q);
+        vector<int> v;
+        for (int i = 0; i < Q; ++i) {
+            v.resize(2);
+            cin >> v[0]; cin >> v[1];
+            queries[i] = v;
+        }
+        vector<int> ans = maxXorQueries(arr, queries);
+        for (auto n : ans) cout << n << " ";
+        cout << endl;
+    }
+
+    //arr.clear();
+    //queries.clear();
 
     return 0;
 }
+
+/*
+
+Help:
+#include<bits/stdc++.h>
+struct Node {
+    Node *links[2];
+
+    bool containsKey(int ind) {
+        return (links[ind] != NULL);
+    }
+    Node* get(int ind) {
+        return links[ind];
+    }
+    void put(int ind, Node* node) {
+        links[ind] = node;
+    }
+};
+class Trie {
+    private: Node* root;
+public:
+    Trie() {
+        root = new Node();
+    }
+
+    public:
+    void insert(int num) {
+        Node* node = root;
+        // cout << num << endl;
+        for(int i = 31;i>=0;i--) {
+            int bit = (num >> i) & 1;
+            if(!node->containsKey(bit)) {
+                node->put(bit, new Node());
+            }
+            node = node->get(bit);
+        }
+    }
+    public:
+    int findMax(int num) {
+        Node* node = root;
+        int maxNum = 0;
+        for(int i = 31;i>=0;i--) {
+            int bit = (num >> i) & 1;
+            if(node->containsKey(!bit)) {
+                maxNum = maxNum | (1<<i);
+                node = node->get(!bit);
+            }
+            else {
+                node = node->get(bit);
+            }
+        }
+        return maxNum;
+    }
+};
+vector<int> maxXorQueries(vector<int> &arr, vector<vector<int>> &queries){
+    vector<int> ans(queries.size(), 0);
+    vector<pair<int, pair<int,int>>> offlineQueries;
+    sort(arr.begin(), arr.end());
+    int index = 0;
+    for(auto &it: queries) {
+        offlineQueries.push_back({it[1],{it[0], index++}});
+    }
+    sort(offlineQueries.begin(), offlineQueries.end());
+    int i = 0;
+    int n = arr.size();
+    Trie trie;
+
+    for(auto &it : offlineQueries) {
+        while(i < n && arr[i] <= it.first) {
+            trie.insert(arr[i]);
+            i++;
+        }
+        if(i!=0) ans[it.second.second] = trie.findMax(it.second.first);
+        else ans[it.second.second] = -1;
+    }
+    return ans;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
 
 #endif // FORREF
