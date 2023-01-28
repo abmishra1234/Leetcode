@@ -672,6 +672,15 @@
     <ClCompile Include="124_Hard_BTMPS.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="100_Easy_SameTree.cpp">
+      <Filter>Source Files\BinarySearchTree</Filter>
+    </ClCompile>
+    <ClCompile Include="545_Medium_BoundryTraversal.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="987_Hard_VerticalOrder.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

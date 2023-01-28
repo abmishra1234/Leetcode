@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="01Matrix.cpp" />
+    <ClCompile Include="100_Easy_SameTree.cpp" />
     <ClCompile Include="1019_Medium_NextGreaterNode.cpp" />
     <ClCompile Include="103_Medium_ZigZagLevelPrinting.cpp" />
     <ClCompile Include="1071_Easy_GCDofString.cpp" />
@@ -149,8 +150,10 @@
     <ClCompile Include="515_Medium_LargestValueInEachRow.cpp" />
     <ClCompile Include="541_Easy_ReverseStringII.cpp" />
     <ClCompile Include="543_Easy_DiameterOfBT.cpp" />
+    <ClCompile Include="545_Medium_BoundryTraversal.cpp" />
     <ClCompile Include="653_Easy_Two Sum IV - Input is a BST.cpp" />
     <ClCompile Include="654_Medium_MaximumBinaryTree.cpp" />
+    <ClCompile Include="987_Hard_VerticalOrder.cpp" />
     <ClCompile Include="Complete String.cpp" />
     <ClCompile Include="CountDistinctSubstring.cpp" />
     <ClCompile Include="LevelOrderTraversal.cpp" />
