@@ -154,6 +154,7 @@
     <ClCompile Include="653_Easy_Two Sum IV - Input is a BST.cpp" />
     <ClCompile Include="654_Medium_MaximumBinaryTree.cpp" />
     <ClCompile Include="987_Hard_VerticalOrder.cpp" />
+    <ClCompile Include="BinaryTreeTopView.cpp" />
     <ClCompile Include="Complete String.cpp" />
     <ClCompile Include="CountDistinctSubstring.cpp" />
     <ClCompile Include="LevelOrderTraversal.cpp" />
