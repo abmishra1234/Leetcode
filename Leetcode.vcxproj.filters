@@ -285,7 +285,7 @@
     <ClCompile Include="116_Medium_Leetcode.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
-    <ClCompile Include="236_Medium_Leetcode.cpp">
+    <ClCompile Include="N_236_Medium_Leetcode.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
     <ClCompile Include="MergeSort_TopDown.cpp">
@@ -682,6 +682,15 @@
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
     <ClCompile Include="BinaryTreeTopView.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="BinaryTreeBottomView.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="199_Medium_BinaryTreeRightSideView.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="102_Medium_BinaryTreeLevelOrder.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
   </ItemGroup>
