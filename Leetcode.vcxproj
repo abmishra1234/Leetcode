@@ -160,6 +160,7 @@
     <ClCompile Include="987_Hard_VerticalOrder.cpp" />
     <ClCompile Include="BinaryTreeBottomView.cpp" />
     <ClCompile Include="BinaryTreeTopView.cpp" />
+    <ClCompile Include="ChildrenSumProperty.cpp" />
     <ClCompile Include="Complete String.cpp" />
     <ClCompile Include="CountDistinctSubstring.cpp" />
     <ClCompile Include="LevelOrderTraversal.cpp" />
