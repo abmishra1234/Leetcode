@@ -130,6 +130,7 @@
     <ClCompile Include="01Matrix.cpp" />
     <ClCompile Include="100_Easy_SameTree.cpp" />
     <ClCompile Include="1019_Medium_NextGreaterNode.cpp" />
+    <ClCompile Include="101_Medium_SymmetricTree.cpp" />
     <ClCompile Include="102_Medium_BinaryTreeLevelOrder.cpp" />
     <ClCompile Include="103_Medium_ZigZagLevelPrinting.cpp" />
     <ClCompile Include="1071_Easy_GCDofString.cpp" />
@@ -155,6 +156,7 @@
     <ClCompile Include="545_Medium_BoundryTraversal.cpp" />
     <ClCompile Include="653_Easy_Two Sum IV - Input is a BST.cpp" />
     <ClCompile Include="654_Medium_MaximumBinaryTree.cpp" />
+    <ClCompile Include="662_Medium_MaximumWidth.cpp" />
     <ClCompile Include="987_Hard_VerticalOrder.cpp" />
     <ClCompile Include="BinaryTreeBottomView.cpp" />
     <ClCompile Include="BinaryTreeTopView.cpp" />

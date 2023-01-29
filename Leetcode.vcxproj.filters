@@ -693,6 +693,12 @@
     <ClCompile Include="102_Medium_BinaryTreeLevelOrder.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="101_Medium_SymmetricTree.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="662_Medium_MaximumWidth.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
