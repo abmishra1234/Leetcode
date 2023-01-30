@@ -30,13 +30,18 @@ struct TreeNode {
 
 class Solution {
 public:
-    bool isSymmetric(TreeNode* root) {
-	class Solution {
-		public:
-			bool isSymmetric(TreeNode* root) {
 
-			}
-		};
+	bool isSymmetric(TreeNode* fnode, TreeNode* snode) {
+		if (!fnode || !snode) return (fnode == snode);
+		if (fnode->val != snode->val) return false;
+
+		return isSymmetric(fnode->left, snode->right)
+			&& isSymmetric(fnode->right, snode->left);
+	}
+
+    bool isSymmetric(TreeNode* root) {
+		if (!root) return true;
+		return isSymmetric(root->left, root->right);
 	}
 };
 
