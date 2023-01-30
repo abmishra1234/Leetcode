@@ -702,6 +702,15 @@
     <ClCompile Include="ChildrenSumProperty.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="863_Medium_AllNodesDistKInBT.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeToBurnTree.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="222_Medium_CountCompleteTreeNodes.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
