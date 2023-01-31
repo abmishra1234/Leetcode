@@ -151,6 +151,7 @@
     <ClCompile Include="222_Medium_CountCompleteTreeNodes.cpp" />
     <ClCompile Include="236_Medium_LCA.cpp" />
     <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp" />
+    <ClCompile Include="297_Hard_SerializeAndDeserialize.cpp" />
     <ClCompile Include="515_Medium_LargestValueInEachRow.cpp" />
     <ClCompile Include="541_Easy_ReverseStringII.cpp" />
     <ClCompile Include="543_Easy_DiameterOfBT.cpp" />
