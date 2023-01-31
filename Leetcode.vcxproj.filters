@@ -714,6 +714,12 @@
     <ClCompile Include="297_Hard_SerializeAndDeserialize.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="230_Medium_KthSmallestElementInBST.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="98_Medium_ValidateBinarySearchTree.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

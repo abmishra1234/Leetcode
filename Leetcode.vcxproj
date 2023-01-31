@@ -149,6 +149,7 @@
     <ClCompile Include="1967_Easy_NOSTASW.cpp" />
     <ClCompile Include="199_Medium_BinaryTreeRightSideView.cpp" />
     <ClCompile Include="222_Medium_CountCompleteTreeNodes.cpp" />
+    <ClCompile Include="230_Medium_KthSmallestElementInBST.cpp" />
     <ClCompile Include="236_Medium_LCA.cpp" />
     <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp" />
     <ClCompile Include="297_Hard_SerializeAndDeserialize.cpp" />
@@ -161,6 +162,7 @@
     <ClCompile Include="662_Medium_MaximumWidth.cpp" />
     <ClCompile Include="863_Medium_AllNodesDistKInBT.cpp" />
     <ClCompile Include="987_Hard_VerticalOrder.cpp" />
+    <ClCompile Include="98_Medium_ValidateBinarySearchTree.cpp" />
     <ClCompile Include="BinaryTreeBottomView.cpp" />
     <ClCompile Include="BinaryTreeTopView.cpp" />
     <ClCompile Include="ChildrenSumProperty.cpp" />
