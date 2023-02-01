@@ -25,7 +25,7 @@ using namespace std;
 #include<cstring>
 #include<climits>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 struct TreeNode {
 	int val;
