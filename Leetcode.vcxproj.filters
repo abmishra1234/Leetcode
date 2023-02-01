@@ -720,6 +720,12 @@
     <ClCompile Include="98_Medium_ValidateBinarySearchTree.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="235_Medium_LCA_BST.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="1008_Medium_ConstructBinarySearchTreeFromPreOrder.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

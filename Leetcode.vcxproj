@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="01Matrix.cpp" />
+    <ClCompile Include="1008_Medium_ConstructBinarySearchTreeFromPreOrder.cpp" />
     <ClCompile Include="100_Easy_SameTree.cpp" />
     <ClCompile Include="1019_Medium_NextGreaterNode.cpp" />
     <ClCompile Include="101_Medium_SymmetricTree.cpp" />
@@ -150,6 +151,7 @@
     <ClCompile Include="199_Medium_BinaryTreeRightSideView.cpp" />
     <ClCompile Include="222_Medium_CountCompleteTreeNodes.cpp" />
     <ClCompile Include="230_Medium_KthSmallestElementInBST.cpp" />
+    <ClCompile Include="235_Medium_LCA_BST.cpp" />
     <ClCompile Include="236_Medium_LCA.cpp" />
     <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp" />
     <ClCompile Include="297_Hard_SerializeAndDeserialize.cpp" />
