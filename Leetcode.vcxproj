@@ -146,6 +146,7 @@
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="1464_Easy_MaximumProduct.cpp" />
     <ClCompile Include="1698_Medium_DistinctSubString.cpp" />
+    <ClCompile Include="173_Medium_BinarySearchTreeIterato.cpp" />
     <ClCompile Include="1874. Minimize Product Sum of Two Arrays.cpp" />
     <ClCompile Include="1967_Easy_NOSTASW.cpp" />
     <ClCompile Include="199_Medium_BinaryTreeRightSideView.cpp" />
