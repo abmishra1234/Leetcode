@@ -726,6 +726,9 @@
     <ClCompile Include="1008_Medium_ConstructBinarySearchTreeFromPreOrder.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="285_Medium_InorderSuccessorInBST.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

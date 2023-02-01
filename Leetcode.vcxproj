@@ -154,6 +154,7 @@
     <ClCompile Include="235_Medium_LCA_BST.cpp" />
     <ClCompile Include="236_Medium_LCA.cpp" />
     <ClCompile Include="241_Medium_DifferentWays2AddParenthesis.cpp" />
+    <ClCompile Include="285_Medium_InorderSuccessorInBST.cpp" />
     <ClCompile Include="297_Hard_SerializeAndDeserialize.cpp" />
     <ClCompile Include="515_Medium_LargestValueInEachRow.cpp" />
     <ClCompile Include="541_Easy_ReverseStringII.cpp" />
