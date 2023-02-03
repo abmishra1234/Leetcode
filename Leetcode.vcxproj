@@ -167,6 +167,7 @@
     <ClCompile Include="863_Medium_AllNodesDistKInBT.cpp" />
     <ClCompile Include="987_Hard_VerticalOrder.cpp" />
     <ClCompile Include="98_Medium_ValidateBinarySearchTree.cpp" />
+    <ClCompile Include="99_Medium_RecoverBST.cpp" />
     <ClCompile Include="BinaryTreeBottomView.cpp" />
     <ClCompile Include="BinaryTreeTopView.cpp" />
     <ClCompile Include="ChildrenSumProperty.cpp" />

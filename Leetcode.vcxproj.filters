@@ -732,6 +732,9 @@
     <ClCompile Include="173_Medium_BinarySearchTreeIterato.cpp">
       <Filter>Source Files\BinarySearchTree</Filter>
     </ClCompile>
+    <ClCompile Include="99_Medium_RecoverBST.cpp">
+      <Filter>Source Files\BinarySearchTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

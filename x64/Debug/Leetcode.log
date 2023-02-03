@@ -1,3 +1,2 @@
-﻿  173_Medium_BinarySearchTreeIterato.cpp
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\173_Medium_BinarySearchTreeIterato.cpp(56,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe
+﻿  99_Medium_RecoverBST.cpp
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\99_Medium_RecoverBST.cpp(60,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
