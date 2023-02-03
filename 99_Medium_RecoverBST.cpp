@@ -49,65 +49,30 @@ struct TreeNode {
 */
 
 class Solution {
-	/*
-		Key is the TreeNode*
-		value is pair<parent node, child node is left child or right child>
-		
-		For Left child put 0 as value and for right child put 1 as value
+	vector<int> inorder;
 
-	*/
-	typedef unordered_map<TreeNode*, pair<TreeNode*, int>> MyMap;
-	MyMap m;
-
-	TreeNode* fnode;
-	TreeNode* snode;
 public:
-	// Thumb rule is any thing which is not part of state 
-	// as per the problem size than that wouldn't be part 
-	// of recursion.
-	bool solve(TreeNode* root, int lrange, int rrange) {
-		// if you reach at this point means the complete 
-		// BST have no violation in principal
-		if (!root) return true;
+	void solve(TreeNode* root) {
+		if (!root) return;
+		solve(root->left);
+		inorder.push_back(root->val);
+		solve(root->right);
+	}
 
-		// the below ids the violation condition
-		if (root->val < lrange || root->val > rrange) return false;
-		
-		m[root->left] = { root, 0 };
-		if (!solve(root->left, lrange, min(rrange, root->val))) {
-			fnode = root;
-			return false;
+	void custm_inorder(TreeNode* root, int &ind) {
+		if (!root) return;
+		custm_inorder(root->left, ind);
+		if (root->val != inorder[ind]) {
+			root->val = inorder[ind];
 		}
-
-		m[root->right] = { root, 1 };
-		if (!solve(root->right, max(root->val, lrange), rrange)) {
-			fnode = root;
-			return false;
-		}
-		
-		return true;
+		++ind;
+		custm_inorder(root->right, ind);
 	}
 
 	void recoverTree(TreeNode* root) {
-		m.clear();
-		fnode = nullptr;
-		snode = nullptr;
-
-
-		if (!solve(root, INT_MIN, INT_MAX)) {
-			// so you found one node for now and you
-			// need to find the another node to swap their values to avoid the violation
-			// As per the problem, we have only one violation...
-
-
-
-
-
-		}
-
-
-
-
+		sort(inorder.begin(), inorder.end());
+		int ind = 0;
+		custm_inorder(root, ind);
 	}
 };
 
