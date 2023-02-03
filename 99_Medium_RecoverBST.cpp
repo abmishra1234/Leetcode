@@ -48,6 +48,10 @@ struct TreeNode {
 	6. Once you identified both the node in BST, just swap the two node and that sit.
 */
 
+/*
+	There are one improvement is pending, which we will do later...
+*/
+
 class Solution {
 	vector<int> inorder;
 
@@ -59,7 +63,7 @@ public:
 		solve(root->right);
 	}
 
-	void custm_inorder(TreeNode* root, int &ind) {
+	void custm_inorder(TreeNode* root, int& ind) {
 		if (!root) return;
 		custm_inorder(root->left, ind);
 		if (root->val != inorder[ind]) {
@@ -70,6 +74,7 @@ public:
 	}
 
 	void recoverTree(TreeNode* root) {
+		solve(root);
 		sort(inorder.begin(), inorder.end());
 		int ind = 0;
 		custm_inorder(root, ind);
