@@ -145,6 +145,7 @@
     <ClCompile Include="1265_Medium_LinkListInReverse.cpp" />
     <ClCompile Include="127_Hard_Leetcode.cpp" />
     <ClCompile Include="1464_Easy_MaximumProduct.cpp" />
+    <ClCompile Include="1512_Easy_NumberOfGoodPair.cpp" />
     <ClCompile Include="1698_Medium_DistinctSubString.cpp" />
     <ClCompile Include="173_Medium_BinarySearchTreeIterato.cpp" />
     <ClCompile Include="1874. Minimize Product Sum of Two Arrays.cpp" />
@@ -161,6 +162,7 @@
     <ClCompile Include="541_Easy_ReverseStringII.cpp" />
     <ClCompile Include="543_Easy_DiameterOfBT.cpp" />
     <ClCompile Include="545_Medium_BoundryTraversal.cpp" />
+    <ClCompile Include="567_PermutationInString.cpp" />
     <ClCompile Include="653_Easy_Two Sum IV - Input is a BST.cpp" />
     <ClCompile Include="654_Medium_MaximumBinaryTree.cpp" />
     <ClCompile Include="662_Medium_MaximumWidth.cpp" />

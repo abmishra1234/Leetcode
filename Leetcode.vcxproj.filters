@@ -735,6 +735,12 @@
     <ClCompile Include="99_Medium_RecoverBST.cpp">
       <Filter>Source Files\BinarySearchTree</Filter>
     </ClCompile>
+    <ClCompile Include="567_PermutationInString.cpp">
+      <Filter>Source Files\Recursion-I</Filter>
+    </ClCompile>
+    <ClCompile Include="1512_Easy_NumberOfGoodPair.cpp">
+      <Filter>Source Files\Hashtable</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
