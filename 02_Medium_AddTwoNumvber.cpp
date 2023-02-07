@@ -14,7 +14,7 @@ using namespace std;
 #include<cstring>
 #include<climits>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 struct ListNode {
     int val;
@@ -45,10 +45,19 @@ public:
             if (!l1) {
                 temp->val = carry + l2->val;
                 carry = 0;
+                if (temp->val >= 10) {
+                    carry = temp->val / 10;
+                    temp->val %= 10;
+                }
             }
             else if (!l2) {
                 temp->val = carry + l1->val;
                 carry = 0;
+                if (temp->val >= 10) {
+                    carry = temp->val / 10;
+                    temp->val %= 10;
+                }
+
             }
             else {
                 temp->val = carry + l1->val + l2->val;
