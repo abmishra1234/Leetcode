@@ -744,6 +744,9 @@
     <ClCompile Include="02_Medium_AddTwoNumvber.cpp">
       <Filter>Source Files\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="96_Medium_UniqueBSTCount.cpp">
+      <Filter>Source Files\BinarySearchTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

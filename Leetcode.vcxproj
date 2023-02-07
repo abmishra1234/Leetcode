@@ -168,6 +168,7 @@
     <ClCompile Include="654_Medium_MaximumBinaryTree.cpp" />
     <ClCompile Include="662_Medium_MaximumWidth.cpp" />
     <ClCompile Include="863_Medium_AllNodesDistKInBT.cpp" />
+    <ClCompile Include="96_Medium_UniqueBSTCount.cpp" />
     <ClCompile Include="987_Hard_VerticalOrder.cpp" />
     <ClCompile Include="98_Medium_ValidateBinarySearchTree.cpp" />
     <ClCompile Include="99_Medium_RecoverBST.cpp" />

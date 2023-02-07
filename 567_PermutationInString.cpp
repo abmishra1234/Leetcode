@@ -37,7 +37,7 @@ using namespace std;
     s1 and s2 consist of lowercase English letters.
 */
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 
 class Solution {
