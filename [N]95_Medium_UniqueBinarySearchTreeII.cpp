@@ -31,16 +31,12 @@ public:
         return root;
     }
 
-    void 
-
-
     // generate unique BST
     vector<TreeNode*> generateTrees(int n) {
         TreeNode* root = nullptr;
-        solve(root, n);
 
 
-
+        return {};
     }
 };
 

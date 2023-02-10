@@ -747,6 +747,9 @@
     <ClCompile Include="96_Medium_UniqueBSTCount.cpp">
       <Filter>Source Files\BinarySearchTree</Filter>
     </ClCompile>
+    <ClCompile Include="1162_Leetcode_AsFarFromLandAsPossible.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
