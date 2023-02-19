@@ -139,6 +139,8 @@
     <ClCompile Include="109_Medium_ConvertSortedLL2BST.cpp" />
     <ClCompile Include="110_Easy_BalancedBinaryTree.cpp" />
     <ClCompile Include="111_Easy_MinDepth.cpp" />
+    <ClCompile Include="2477_Medium_MinimumFuelCost_ReporttoCapital.cpp" />
+    <ClCompile Include="N_1129_Medium_ShortestPathWithAlternativeColor.cpp" />
     <ClCompile Include="1162_Leetcode_AsFarFromLandAsPossible.cpp" />
     <ClCompile Include="1165. Single-Row Keyboard.cpp" />
     <ClCompile Include="1206_Hard_DesignSkiplist.cpp" />

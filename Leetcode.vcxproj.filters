@@ -750,6 +750,12 @@
     <ClCompile Include="1162_Leetcode_AsFarFromLandAsPossible.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="N_1129_Medium_ShortestPathWithAlternativeColor.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="2477_Medium_MinimumFuelCost_ReporttoCapital.cpp">
+      <Filter>Source Files\Graph</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
