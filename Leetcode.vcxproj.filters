@@ -756,6 +756,9 @@
     <ClCompile Include="2477_Medium_MinimumFuelCost_ReporttoCapital.cpp">
       <Filter>Source Files\Graph</Filter>
     </ClCompile>
+    <ClCompile Include="226_Medium_InvertTree.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
