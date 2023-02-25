@@ -1,6 +1,1 @@
-﻿  2477_Medium_MinimumFuelCost_ReporttoCapital.cpp
-  N_1129_Medium_ShortestPathWithAlternativeColor.cpp
-  Generating Code...
-  LINK : C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe not found or not built by the last incremental link; performing full link
-MSVCRTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe : fatal error LNK1120: 1 unresolved externals
+﻿  57_InsertInterval.cpp
