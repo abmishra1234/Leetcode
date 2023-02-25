@@ -64,6 +64,9 @@
     <Filter Include="Source Files\Recursion-Practice-001">
       <UniqueIdentifier>{7ab4dc19-2142-4e6c-9697-dffea2268f8f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Greedy">
+      <UniqueIdentifier>{232d5891-af76-4ba7-ac23-2ee41e3bbce2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -758,6 +761,12 @@
     </ClCompile>
     <ClCompile Include="226_Medium_InvertTree.cpp">
       <Filter>Source Files\BinaryTree</Filter>
+    </ClCompile>
+    <ClCompile Include="57_InsertInterval.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
+    <ClCompile Include="502_IPO.cpp">
+      <Filter>Source Files\Greedy</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

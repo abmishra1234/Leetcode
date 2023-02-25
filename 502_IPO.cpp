@@ -37,7 +37,7 @@ public:
 
         for (int i = 0; i < k; ++i) {
             while (pind < n && projects[pind].first <= w) {
-                q.push(projects[pind].second);
+                q.push(projects[pind++].second);
             }
 
             if (q.empty()) break;

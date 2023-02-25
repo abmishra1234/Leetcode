@@ -141,6 +141,8 @@
     <ClCompile Include="111_Easy_MinDepth.cpp" />
     <ClCompile Include="226_Medium_InvertTree.cpp" />
     <ClCompile Include="2477_Medium_MinimumFuelCost_ReporttoCapital.cpp" />
+    <ClCompile Include="502_IPO.cpp" />
+    <ClCompile Include="57_InsertInterval.cpp" />
     <ClCompile Include="N_1129_Medium_ShortestPathWithAlternativeColor.cpp" />
     <ClCompile Include="1162_Leetcode_AsFarFromLandAsPossible.cpp" />
     <ClCompile Include="1165. Single-Row Keyboard.cpp" />
