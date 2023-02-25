@@ -36,7 +36,7 @@ public:
         priority_queue<int> q;
 
         for (int i = 0; i < k; ++i) {
-            while (pind < n && projects[pind].first <= w) {
+            while (pind < n && projects[pind++].first <= w) {
                 q.push(projects[pind].second);
             }
 
