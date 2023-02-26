@@ -139,6 +139,7 @@
     <ClCompile Include="109_Medium_ConvertSortedLL2BST.cpp" />
     <ClCompile Include="110_Easy_BalancedBinaryTree.cpp" />
     <ClCompile Include="111_Easy_MinDepth.cpp" />
+    <ClCompile Include="1363_LargestMultipleofThree.cpp" />
     <ClCompile Include="226_Medium_InvertTree.cpp" />
     <ClCompile Include="2477_Medium_MinimumFuelCost_ReporttoCapital.cpp" />
     <ClCompile Include="502_IPO.cpp" />
