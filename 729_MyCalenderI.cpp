@@ -13,21 +13,21 @@ using namespace std;
 #include<algorithm>
 #include<cstring>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 
 typedef pair<int, int> pii;
 struct MyCmp {
     auto operator()(const pii& a, const pii& b) const {
-        return a.first <= b.first;
+        return a.first < b.first;
     }
 };
 
 typedef set<pii, MyCmp> MySet;
+MySet org_int;
 
 class MyCalendar {
 public:
-    MySet org_int;
 
     bool isOverlap(pii in1, pii in2) {
         int diff = min(in1.second, in2.second) - max(in1.first, in2.first);
@@ -36,22 +36,22 @@ public:
 
     MyCalendar() {
         org_int.clear();
+
     }
 
     bool book(int start, int end) {
+
         if (org_int.size() == 0) {
             org_int.insert({ start, end });
             return true;
         }
 
-        int n = org_int.size();
-        
         bool flag = false;
-
         auto it = org_int.begin();
+        auto itE = org_int.upper_bound({ end, end });
 
-        for (; it != org_int.end(); ++it) {
-            flag = isOverlap({it->first, it->second}, { start, end });
+        for (; it != itE; ++it) {
+            flag = isOverlap({ it->first, it->second }, { start, end });
             if (flag) break;
         }
 
