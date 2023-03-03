@@ -783,6 +783,9 @@
     <ClCompile Include="443_StringCompression.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="732_Hard_NyCalenderIII.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

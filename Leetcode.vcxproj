@@ -147,6 +147,7 @@
     <ClCompile Include="57_InsertInterval.cpp" />
     <ClCompile Include="729_MyCalenderI.cpp" />
     <ClCompile Include="731_MyArrayII.cpp" />
+    <ClCompile Include="732_Hard_NyCalenderIII.cpp" />
     <ClCompile Include="912_SortAnArray.cpp" />
     <ClCompile Include="N_1129_Medium_ShortestPathWithAlternativeColor.cpp" />
     <ClCompile Include="1162_Leetcode_AsFarFromLandAsPossible.cpp" />
