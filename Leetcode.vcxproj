@@ -143,6 +143,7 @@
     <ClCompile Include="226_Medium_InvertTree.cpp" />
     <ClCompile Include="2477_Medium_MinimumFuelCost_ReporttoCapital.cpp" />
     <ClCompile Include="443_StringCompression.cpp" />
+    <ClCompile Include="493_ReversePair.cpp" />
     <ClCompile Include="502_IPO.cpp" />
     <ClCompile Include="57_InsertInterval.cpp" />
     <ClCompile Include="729_MyCalenderI.cpp" />
@@ -368,6 +369,7 @@
     <ClCompile Include="[Approach02]886_Medium_Leetcode.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="732_Algorithm.txt" />
     <Text Include="bp.txt" />
     <Text Include="g16.txt" />
     <Text Include="lca.txt" />

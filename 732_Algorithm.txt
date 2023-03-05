@@ -1,0 +1,33 @@
+    /*
+        Algorithm:
+        1. Let's check the overlapping case with existing
+           schedule
+
+        2. a. NO OVERLAP ??
+        you need to add new interval 
+        in
+        - interval array
+        - you need to insert interval 
+        into s1
+        - you need to insert interval 
+        into s2
+
+        2. b. OVERLAP ??
+        
+        YES, than call one utility 
+        method for overlap, which 
+        will handle
+        following all overlap cases 
+        as explained
+
+        If required, s1 and s2 will 
+        be also updated and interval 
+        array also need to 
+        be updated.
+        
+        3. Fetch the highest 
+        frequency interval from 
+        s2 and returned the frequency 
+        as output
+        of book api call..
+    */

@@ -15,7 +15,16 @@ using namespace std;
 #include<cstring>
 #include<climits>
 
-//#define FORREF
+// TBD
+/*
+    Your this problem is not yet completed, 
+    please complete this problem as soon as possible.
+
+    you probably completed your logic and now time is to complete your code
+*/
+
+
+#define FORREF
 #ifndef FORREF
 
 // <int, <int, int>>
@@ -49,28 +58,34 @@ public:
         s1.clear();
         s2.clear();
     }
-    
-    /*
-        Algorithm:
-        1. Let's check the overlapping case with existing
-           schedule
 
-        2. a. NO OVERLAP ??
-        you need to add new interval in
-        - interval array
-        - you need to insert interval into s1
-        - you need to insert interval into s2
+    void overlap(int s, int e) {
+        auto it = s1.begin();
+        while (it != s1.end()) {
+            p3i p = intervalArr[*it];
 
-        2. b. OVERLAP ??
-        different type of overlapping is possible right?
+            if()
 
-                
 
-    
-    
-    */
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
     int book(int startTime, int endTime) {
-        
+
+
+
 
 
     }

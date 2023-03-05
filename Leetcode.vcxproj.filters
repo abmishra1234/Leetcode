@@ -786,6 +786,9 @@
     <ClCompile Include="732_Hard_NyCalenderIII.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
     </ClCompile>
+    <ClCompile Include="493_ReversePair.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
@@ -805,6 +808,9 @@
     </Text>
     <Text Include="maxXOR.txt">
       <Filter>Source Files\Trie</Filter>
+    </Text>
+    <Text Include="732_Algorithm.txt">
+      <Filter>Source Files\ArrayAndString</Filter>
     </Text>
   </ItemGroup>
 </Project>
