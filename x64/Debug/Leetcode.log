@@ -1,4 +1,8 @@
 ﻿  443_StringCompression.cpp
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\443_StringCompression.cpp(24,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\443_StringCompression.cpp(96,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  493_ReversePair.cpp
+  57_InsertInterval.cpp
+  732_Hard_NyCalenderIII.cpp
+  732_MyCalenderIII.cpp
+  Leetcode-875.cpp
+  Generating Code...
   Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe
