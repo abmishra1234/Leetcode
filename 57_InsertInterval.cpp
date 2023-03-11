@@ -77,6 +77,8 @@ public:
 
 int main(void)
 {
+    Solution sln;
+    
     return 0;
 }
 

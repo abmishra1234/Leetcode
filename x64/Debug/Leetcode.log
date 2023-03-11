@@ -1,8 +1,2 @@
-﻿  443_StringCompression.cpp
-  493_ReversePair.cpp
-  57_InsertInterval.cpp
-  732_Hard_NyCalenderIII.cpp
-  732_MyCalenderIII.cpp
-  Leetcode-875.cpp
-  Generating Code...
-  Leetcode.vcxproj -> C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\x64\Debug\Leetcode.exe
+﻿  57_InsertInterval.cpp
+C:\Abinash-Work\Leetcode-Daily-Practice\Coding-2022-Target\Leetcode\57_InsertInterval.cpp(80,14): warning C4101: 'sln': unreferenced local variable
