@@ -810,6 +810,9 @@
     <ClCompile Include="84_Hard_LargestrectangleInHistogram.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="46_Medium_Permutation.cpp">
+      <Filter>Source Files\RecursionII</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">

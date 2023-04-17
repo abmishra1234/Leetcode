@@ -143,6 +143,7 @@
     <ClCompile Include="226_Medium_InvertTree.cpp" />
     <ClCompile Include="2477_Medium_MinimumFuelCost_ReporttoCapital.cpp" />
     <ClCompile Include="443_StringCompression.cpp" />
+    <ClCompile Include="46_Medium_Permutation.cpp" />
     <ClCompile Include="493_ReversePair.cpp" />
     <ClCompile Include="502_IPO.cpp" />
     <ClCompile Include="57_InsertInterval.cpp" />
