@@ -67,6 +67,9 @@
     <Filter Include="Source Files\Greedy">
       <UniqueIdentifier>{232d5891-af76-4ba7-ac23-2ee41e3bbce2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Leetcode-Hard-Design">
+      <UniqueIdentifier>{9b4f2ab3-1f1d-4a55-8367-dc03d5f85b07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -794,6 +797,15 @@
     </ClCompile>
     <ClCompile Include="Leetcode-875.cpp">
       <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
+    <ClCompile Include="Leetcode1912_Hard.cpp">
+      <Filter>Source Files\Leetcode-Hard-Design</Filter>
+    </ClCompile>
+    <ClCompile Include="Partition_Linkedlist.cpp">
+      <Filter>Source Files\LinkedList</Filter>
+    </ClCompile>
+    <ClCompile Include="95_Medium_UniqueBinarySearchTrees_II.cpp">
+      <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

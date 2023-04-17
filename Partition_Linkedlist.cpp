@@ -14,7 +14,7 @@ using namespace std;
 #include<cstring>
 #include<climits>
 
-//#define FORREF
+#define FORREF
 #ifndef FORREF
 /*
     This code defines a singly-linked list structure ListNode and a function partition that takes a linked list and an integer x as input, 

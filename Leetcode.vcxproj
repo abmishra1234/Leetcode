@@ -151,7 +151,9 @@
     <ClCompile Include="732_Hard_NyCalenderIII.cpp" />
     <ClCompile Include="732_MyCalenderIII.cpp" />
     <ClCompile Include="912_SortAnArray.cpp" />
+    <ClCompile Include="95_Medium_UniqueBinarySearchTrees_II.cpp" />
     <ClCompile Include="Leetcode-875.cpp" />
+    <ClCompile Include="Leetcode1912_Hard.cpp" />
     <ClCompile Include="N_1129_Medium_ShortestPathWithAlternativeColor.cpp" />
     <ClCompile Include="1162_Leetcode_AsFarFromLandAsPossible.cpp" />
     <ClCompile Include="1165. Single-Row Keyboard.cpp" />
@@ -203,6 +205,7 @@
     <ClCompile Include="BipertiteGraph_bfs.cpp" />
     <ClCompile Include="G16.cpp" />
     <ClCompile Include="G19.cpp" />
+    <ClCompile Include="Partition_Linkedlist.cpp" />
     <ClCompile Include="ShortestPathInDAGWeighted.cpp" />
     <ClCompile Include="Shortestpath_unweighted_graph.cpp" />
     <ClCompile Include="TimeToBurnTree.cpp" />
