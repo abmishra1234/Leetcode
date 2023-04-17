@@ -140,9 +140,12 @@
     <ClCompile Include="110_Easy_BalancedBinaryTree.cpp" />
     <ClCompile Include="111_Easy_MinDepth.cpp" />
     <ClCompile Include="1363_LargestMultipleofThree.cpp" />
+    <ClCompile Include="17_Medium_LetterCombinationOfaPhone.cpp" />
+    <ClCompile Include="218_Hard_TheSkylineProblem.cpp" />
     <ClCompile Include="226_Medium_InvertTree.cpp" />
     <ClCompile Include="2477_Medium_MinimumFuelCost_ReporttoCapital.cpp" />
     <ClCompile Include="443_StringCompression.cpp" />
+    <ClCompile Include="46_Medium_Permutation.cpp" />
     <ClCompile Include="493_ReversePair.cpp" />
     <ClCompile Include="502_IPO.cpp" />
     <ClCompile Include="57_InsertInterval.cpp" />
@@ -150,6 +153,7 @@
     <ClCompile Include="731_MyArrayII.cpp" />
     <ClCompile Include="732_Hard_NyCalenderIII.cpp" />
     <ClCompile Include="732_MyCalenderIII.cpp" />
+    <ClCompile Include="84_Hard_LargestrectangleInHistogram.cpp" />
     <ClCompile Include="912_SortAnArray.cpp" />
     <ClCompile Include="95_Medium_UniqueBinarySearchTrees_II.cpp" />
     <ClCompile Include="Leetcode-875.cpp" />
