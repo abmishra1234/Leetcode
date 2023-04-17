@@ -807,6 +807,9 @@
     <ClCompile Include="95_Medium_UniqueBinarySearchTrees_II.cpp">
       <Filter>Source Files\BinaryTree</Filter>
     </ClCompile>
+    <ClCompile Include="84_Hard_LargestrectangleInHistogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
