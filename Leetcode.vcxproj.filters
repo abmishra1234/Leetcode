@@ -819,6 +819,9 @@
     <ClCompile Include="218_Hard_TheSkylineProblem.cpp">
       <Filter>Source Files\RecursionII</Filter>
     </ClCompile>
+    <ClCompile Include="1768.MergeStringsAlternately.cpp">
+      <Filter>Source Files\ArrayAndString</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="lca.txt">
