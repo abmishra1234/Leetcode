@@ -14,6 +14,7 @@ using namespace std;
 #define FORREF
 #ifndef FORREF
 
+// This is the structure of ListNode for merging the relevant code structure.
 struct ListNode {
     int val;
     ListNode* next;

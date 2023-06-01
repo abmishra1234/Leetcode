@@ -13,6 +13,8 @@ using namespace std;
 
 #define FORREF
 #ifndef FORREF
+    
+// This is the structure for ListNode    
 struct ListNode {
     int val;
     ListNode *next;
