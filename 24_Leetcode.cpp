@@ -38,8 +38,9 @@ public:
 
             int temp = curr->val;
             curr->val = next->val;
-            next->val = temp;
+	            next->val = temp;
             curr = curr->next->next;
+	    // Just checking the new addition
         }
 
         return head;
