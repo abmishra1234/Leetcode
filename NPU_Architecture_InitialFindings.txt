@@ -1,0 +1,21 @@
+On-Device Architecture with different NPUs?
+On-device architecture with different NPUs refers to the way in which different neural processing units (NPUs) are integrated into a device's hardware and software. NPU is a type of processor that is specifically designed for machine learning and artificial intelligence (AI) tasks. Different NPUs have different strengths and weaknesses, so it is important to choose the right NPU for the specific task at hand.
+
+There are a number of different ways to integrate NPUs into a device's architecture. One common approach is to use a dedicated NPU chip. This approach provides the best performance, but it can also be the most expensive. Another approach is to use a general-purpose processor with a built-in NPU. This approach is less expensive than using a dedicated NPU chip, but it may not provide the same level of performance.
+
+The choice of NPU architecture also depends on the specific device. For example, a mobile phone will have different requirements than a server. Mobile phones need to be small and power-efficient, while servers need to be powerful and scalable.
+
+Here are some of the most common on-device architectures with different NPUs:
+
+Dedicated NPU chip: This is the most common type of on-device architecture. Dedicated NPUs are designed specifically for machine learning and AI tasks, and they can provide the best performance. However, they can also be the most expensive.
+
+https://www.firstpost.com/tech/news-analysis/samsung-unveils-8-nm-exynos-9820-chip-with-dedicated-npu-and-8k-video-support-5555081.html
+
+General-purpose processor with built-in NPU: This is a less expensive option than using a dedicated NPU chip. General-purpose processors with built-in NPUs are not as powerful as dedicated NPUs, but they can still provide good performance for many AI tasks.
+https://www.cnx-software.com/2022/06/14/nxp-mcx-general-purpose-arm-mcu-family-30x-faster-machine-learning-performance/
+
+Software-defined NPU: This is the most flexible option, but it can also be the most complex. Software-defined NPUs are created by using software to emulate the functionality of a dedicated NPU. This can be done on any device that has a general-purpose processor. However, software-defined NPUs may not provide the same level of performance as dedicated NPUs.
+
+https://ecotrons.com/news/ai-computing-chip-analysis-for-software-defined-vehicles-blog/
+
+The choice of on-device architecture with different NPUs depends on a number of factors, including the specific device, the budget, and the performance requirements.
